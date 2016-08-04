@@ -72,17 +72,35 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FRM_CLIENTES.vb">
+    <Compile Include="FRM_CLIENTE.Designer.vb">
+      <DependentUpon>FRM_CLIENTE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_CLIENTE.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_CLIENTES.Designer.vb">
-      <DependentUpon>FRM_CLIENTES.vb</DependentUpon>
+    <Compile Include="FRM_TEMPLATE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_TEMPLATE.Designer.vb">
+      <DependentUpon>FRM_TEMPLATE.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_INSERTAR_USUARIOS.Designer.vb">
+      <DependentUpon>FRM_INSERTAR_USUARIOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_INSERTAR_USUARIOS.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRM_PRINCIPAL.Designer.vb">
       <DependentUpon>FRM_PRINCIPAL.vb</DependentUpon>
     </Compile>
     <Compile Include="FRM_PRINCIPAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PROVEEDORES.Designer.vb">
+      <DependentUpon>FRM_PROVEEDORES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PROVEEDORES.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRM_USUARIOS.Designer.vb">
@@ -108,11 +126,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FRM_CLIENTES.resx">
-      <DependentUpon>FRM_CLIENTES.vb</DependentUpon>
+    <EmbeddedResource Include="FRM_CLIENTE.resx">
+      <DependentUpon>FRM_CLIENTE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_TEMPLATE.resx">
+      <DependentUpon>FRM_TEMPLATE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_INSERTAR_USUARIOS.resx">
+      <DependentUpon>FRM_INSERTAR_USUARIOS.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_PRINCIPAL.resx">
       <DependentUpon>FRM_PRINCIPAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PROVEEDORES.resx">
+      <DependentUpon>FRM_PROVEEDORES.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_USUARIOS.resx">
       <DependentUpon>FRM_USUARIOS.vb</DependentUpon>

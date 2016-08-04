@@ -23,7 +23,6 @@ Partial Class FRM_PRINCIPAL
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.GlobalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmpresaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -57,14 +56,16 @@ Partial Class FRM_PRINCIPAL
         Me.PromocionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BNT_CLIENTES = New System.Windows.Forms.Button()
-        Me.BTN_VENTAS = New System.Windows.Forms.Button()
-        Me.BTN_ORDEN = New System.Windows.Forms.Button()
-        Me.BTN_ENTREGA = New System.Windows.Forms.Button()
-        Me.BTN_FACTURA = New System.Windows.Forms.Button()
-        Me.BTN_INSUMOS = New System.Windows.Forms.Button()
-        Me.BTN_PAGOS_EXTRA = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.BTN_SALIR = New System.Windows.Forms.Button()
+        Me.BTN_PAGOS_EXTRA = New System.Windows.Forms.Button()
+        Me.BTN_INSUMOS = New System.Windows.Forms.Button()
+        Me.BTN_FACTURA = New System.Windows.Forms.Button()
+        Me.BTN_ENTREGA = New System.Windows.Forms.Button()
+        Me.BTN_ORDEN = New System.Windows.Forms.Button()
+        Me.BTN_VENTAS = New System.Windows.Forms.Button()
+        Me.BNT_CLIENTES = New System.Windows.Forms.Button()
+        Me.ProveedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -79,22 +80,6 @@ Partial Class FRM_PRINCIPAL
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.BTN_SALIR)
-        Me.Panel1.Controls.Add(Me.BTN_PAGOS_EXTRA)
-        Me.Panel1.Controls.Add(Me.BTN_INSUMOS)
-        Me.Panel1.Controls.Add(Me.BTN_FACTURA)
-        Me.Panel1.Controls.Add(Me.BTN_ENTREGA)
-        Me.Panel1.Controls.Add(Me.BTN_ORDEN)
-        Me.Panel1.Controls.Add(Me.BTN_VENTAS)
-        Me.Panel1.Controls.Add(Me.BNT_CLIENTES)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 28)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(982, 135)
-        Me.Panel1.TabIndex = 1
-        '
         'GlobalToolStripMenuItem
         '
         Me.GlobalToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmpresaToolStripMenuItem, Me.SalirToolStripMenuItem})
@@ -105,18 +90,18 @@ Partial Class FRM_PRINCIPAL
         'EmpresaToolStripMenuItem
         '
         Me.EmpresaToolStripMenuItem.Name = "EmpresaToolStripMenuItem"
-        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(141, 26)
         Me.EmpresaToolStripMenuItem.Text = "Empresa"
         '
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(141, 26)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'ArchivosToolStripMenuItem
         '
-        Me.ArchivosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuariosToolStripMenuItem, Me.ClientesToolStripMenuItem})
+        Me.ArchivosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuariosToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.ProveedoresToolStripMenuItem})
         Me.ArchivosToolStripMenuItem.Name = "ArchivosToolStripMenuItem"
         Me.ArchivosToolStripMenuItem.Size = New System.Drawing.Size(77, 24)
         Me.ArchivosToolStripMenuItem.Text = "Archivos"
@@ -298,78 +283,24 @@ Partial Class FRM_PRINCIPAL
         'AcercaDeToolStripMenuItem
         '
         Me.AcercaDeToolStripMenuItem.Name = "AcercaDeToolStripMenuItem"
-        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(150, 26)
         Me.AcercaDeToolStripMenuItem.Text = "Acerca de"
         '
-        'BNT_CLIENTES
+        'Panel1
         '
-        Me.BNT_CLIENTES.Location = New System.Drawing.Point(3, 3)
-        Me.BNT_CLIENTES.Name = "BNT_CLIENTES"
-        Me.BNT_CLIENTES.Size = New System.Drawing.Size(100, 120)
-        Me.BNT_CLIENTES.TabIndex = 0
-        Me.BNT_CLIENTES.Text = "CLIENTES"
-        Me.BNT_CLIENTES.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BNT_CLIENTES.UseVisualStyleBackColor = True
-        '
-        'BTN_VENTAS
-        '
-        Me.BTN_VENTAS.Location = New System.Drawing.Point(136, 3)
-        Me.BTN_VENTAS.Name = "BTN_VENTAS"
-        Me.BTN_VENTAS.Size = New System.Drawing.Size(100, 120)
-        Me.BTN_VENTAS.TabIndex = 1
-        Me.BTN_VENTAS.Text = "VENTAS"
-        Me.BTN_VENTAS.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTN_VENTAS.UseVisualStyleBackColor = True
-        '
-        'BTN_ORDEN
-        '
-        Me.BTN_ORDEN.Location = New System.Drawing.Point(242, 3)
-        Me.BTN_ORDEN.Name = "BTN_ORDEN"
-        Me.BTN_ORDEN.Size = New System.Drawing.Size(100, 120)
-        Me.BTN_ORDEN.TabIndex = 2
-        Me.BTN_ORDEN.Text = "ORDEN"
-        Me.BTN_ORDEN.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTN_ORDEN.UseVisualStyleBackColor = True
-        '
-        'BTN_ENTREGA
-        '
-        Me.BTN_ENTREGA.Location = New System.Drawing.Point(348, 3)
-        Me.BTN_ENTREGA.Name = "BTN_ENTREGA"
-        Me.BTN_ENTREGA.Size = New System.Drawing.Size(100, 120)
-        Me.BTN_ENTREGA.TabIndex = 3
-        Me.BTN_ENTREGA.Text = "ENTREGA"
-        Me.BTN_ENTREGA.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTN_ENTREGA.UseVisualStyleBackColor = True
-        '
-        'BTN_FACTURA
-        '
-        Me.BTN_FACTURA.Location = New System.Drawing.Point(479, 3)
-        Me.BTN_FACTURA.Name = "BTN_FACTURA"
-        Me.BTN_FACTURA.Size = New System.Drawing.Size(100, 120)
-        Me.BTN_FACTURA.TabIndex = 4
-        Me.BTN_FACTURA.Text = "FACTURA"
-        Me.BTN_FACTURA.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTN_FACTURA.UseVisualStyleBackColor = True
-        '
-        'BTN_INSUMOS
-        '
-        Me.BTN_INSUMOS.Location = New System.Drawing.Point(585, 3)
-        Me.BTN_INSUMOS.Name = "BTN_INSUMOS"
-        Me.BTN_INSUMOS.Size = New System.Drawing.Size(100, 120)
-        Me.BTN_INSUMOS.TabIndex = 5
-        Me.BTN_INSUMOS.Text = "INSUMOS"
-        Me.BTN_INSUMOS.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTN_INSUMOS.UseVisualStyleBackColor = True
-        '
-        'BTN_PAGOS_EXTRA
-        '
-        Me.BTN_PAGOS_EXTRA.Location = New System.Drawing.Point(691, 3)
-        Me.BTN_PAGOS_EXTRA.Name = "BTN_PAGOS_EXTRA"
-        Me.BTN_PAGOS_EXTRA.Size = New System.Drawing.Size(100, 120)
-        Me.BTN_PAGOS_EXTRA.TabIndex = 6
-        Me.BTN_PAGOS_EXTRA.Text = "PAGOS "
-        Me.BTN_PAGOS_EXTRA.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTN_PAGOS_EXTRA.UseVisualStyleBackColor = True
+        Me.Panel1.Controls.Add(Me.BTN_SALIR)
+        Me.Panel1.Controls.Add(Me.BTN_PAGOS_EXTRA)
+        Me.Panel1.Controls.Add(Me.BTN_INSUMOS)
+        Me.Panel1.Controls.Add(Me.BTN_FACTURA)
+        Me.Panel1.Controls.Add(Me.BTN_ENTREGA)
+        Me.Panel1.Controls.Add(Me.BTN_ORDEN)
+        Me.Panel1.Controls.Add(Me.BTN_VENTAS)
+        Me.Panel1.Controls.Add(Me.BNT_CLIENTES)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 28)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(982, 135)
+        Me.Panel1.TabIndex = 1
         '
         'BTN_SALIR
         '
@@ -381,10 +312,87 @@ Partial Class FRM_PRINCIPAL
         Me.BTN_SALIR.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.BTN_SALIR.UseVisualStyleBackColor = True
         '
+        'BTN_PAGOS_EXTRA
+        '
+        Me.BTN_PAGOS_EXTRA.Location = New System.Drawing.Point(691, 3)
+        Me.BTN_PAGOS_EXTRA.Name = "BTN_PAGOS_EXTRA"
+        Me.BTN_PAGOS_EXTRA.Size = New System.Drawing.Size(100, 120)
+        Me.BTN_PAGOS_EXTRA.TabIndex = 6
+        Me.BTN_PAGOS_EXTRA.Text = "PAGOS "
+        Me.BTN_PAGOS_EXTRA.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BTN_PAGOS_EXTRA.UseVisualStyleBackColor = True
+        '
+        'BTN_INSUMOS
+        '
+        Me.BTN_INSUMOS.Location = New System.Drawing.Point(585, 3)
+        Me.BTN_INSUMOS.Name = "BTN_INSUMOS"
+        Me.BTN_INSUMOS.Size = New System.Drawing.Size(100, 120)
+        Me.BTN_INSUMOS.TabIndex = 5
+        Me.BTN_INSUMOS.Text = "INSUMOS"
+        Me.BTN_INSUMOS.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BTN_INSUMOS.UseVisualStyleBackColor = True
+        '
+        'BTN_FACTURA
+        '
+        Me.BTN_FACTURA.Location = New System.Drawing.Point(479, 3)
+        Me.BTN_FACTURA.Name = "BTN_FACTURA"
+        Me.BTN_FACTURA.Size = New System.Drawing.Size(100, 120)
+        Me.BTN_FACTURA.TabIndex = 4
+        Me.BTN_FACTURA.Text = "FACTURA"
+        Me.BTN_FACTURA.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BTN_FACTURA.UseVisualStyleBackColor = True
+        '
+        'BTN_ENTREGA
+        '
+        Me.BTN_ENTREGA.Location = New System.Drawing.Point(348, 3)
+        Me.BTN_ENTREGA.Name = "BTN_ENTREGA"
+        Me.BTN_ENTREGA.Size = New System.Drawing.Size(100, 120)
+        Me.BTN_ENTREGA.TabIndex = 3
+        Me.BTN_ENTREGA.Text = "ENTREGA"
+        Me.BTN_ENTREGA.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BTN_ENTREGA.UseVisualStyleBackColor = True
+        '
+        'BTN_ORDEN
+        '
+        Me.BTN_ORDEN.Location = New System.Drawing.Point(242, 3)
+        Me.BTN_ORDEN.Name = "BTN_ORDEN"
+        Me.BTN_ORDEN.Size = New System.Drawing.Size(100, 120)
+        Me.BTN_ORDEN.TabIndex = 2
+        Me.BTN_ORDEN.Text = "ORDEN"
+        Me.BTN_ORDEN.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BTN_ORDEN.UseVisualStyleBackColor = True
+        '
+        'BTN_VENTAS
+        '
+        Me.BTN_VENTAS.Location = New System.Drawing.Point(136, 3)
+        Me.BTN_VENTAS.Name = "BTN_VENTAS"
+        Me.BTN_VENTAS.Size = New System.Drawing.Size(100, 120)
+        Me.BTN_VENTAS.TabIndex = 1
+        Me.BTN_VENTAS.Text = "VENTAS"
+        Me.BTN_VENTAS.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BTN_VENTAS.UseVisualStyleBackColor = True
+        '
+        'BNT_CLIENTES
+        '
+        Me.BNT_CLIENTES.Location = New System.Drawing.Point(3, 3)
+        Me.BNT_CLIENTES.Name = "BNT_CLIENTES"
+        Me.BNT_CLIENTES.Size = New System.Drawing.Size(100, 120)
+        Me.BNT_CLIENTES.TabIndex = 0
+        Me.BNT_CLIENTES.Text = "CLIENTES"
+        Me.BNT_CLIENTES.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BNT_CLIENTES.UseVisualStyleBackColor = True
+        '
+        'ProveedoresToolStripMenuItem
+        '
+        Me.ProveedoresToolStripMenuItem.Name = "ProveedoresToolStripMenuItem"
+        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.ProveedoresToolStripMenuItem.Text = "Proveedores"
+        '
         'FRM_PRINCIPAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(982, 853)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -392,6 +400,7 @@ Partial Class FRM_PRINCIPAL
         Me.Name = "FRM_PRINCIPAL"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "LAVANDERIA"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.Panel1.ResumeLayout(False)
@@ -443,4 +452,5 @@ Partial Class FRM_PRINCIPAL
     Friend WithEvents BTN_ORDEN As Button
     Friend WithEvents BTN_VENTAS As Button
     Friend WithEvents BNT_CLIENTES As Button
+    Friend WithEvents ProveedoresToolStripMenuItem As ToolStripMenuItem
 End Class

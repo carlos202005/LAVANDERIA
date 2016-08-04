@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FRM_USUARIOS
+Partial Class FRM_CLIENTE
     Inherits LAVANDERIA.FRM_CLIENTES_INICIO
 
     'Form invalida a Dispose para limpiar la lista de componentes.
@@ -32,16 +32,12 @@ Partial Class FRM_USUARIOS
         'BTN_NUEVO
         '
         '
-        'CLIENTES
-        '
-        Me.CLIENTES.Text = "USUARIOS"
-        '
-        'FRM_USUARIOS
+        'FRM_CLIENTE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.ClientSize = New System.Drawing.Size(982, 653)
-        Me.Name = "FRM_USUARIOS"
-        Me.Text = "USUARIOS"
+        Me.Name = "FRM_CLIENTE"
+        Me.Text = "CLIENTES"
         Me.OPCIONES.ResumeLayout(False)
         Me.BUSCAR.ResumeLayout(False)
         Me.BUSCAR.PerformLayout()
