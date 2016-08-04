@@ -1,17 +1,14 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
-    Inherits System.Windows.Forms.Form
+Partial Class FRM_USUARIOS
+    Inherits LAVANDERIA.FRM_CLIENTES_INICIO
 
-    'Form reemplaza a Dispose para limpiar la lista de componentes.
+    'Form invalida a Dispose para limpiar la lista de componentes.
     <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-        Try
-            If disposing AndAlso components IsNot Nothing Then
-                components.Dispose()
-            End If
-        Finally
-            MyBase.Dispose(disposing)
-        End Try
+        If disposing AndAlso components IsNot Nothing Then
+            components.Dispose()
+        End If
+        MyBase.Dispose(disposing)
     End Sub
 
     'Requerido por el Diseñador de Windows Forms
@@ -22,15 +19,23 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.OPCIONES.SuspendLayout()
+        Me.BUSCAR.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Form1
+        'CLIENTES
+        '
+        Me.CLIENTES.Text = "USUARIOS"
+        '
+        'FRM_USUARIOS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1192, 567)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.ClientSize = New System.Drawing.Size(982, 653)
+        Me.Name = "FRM_USUARIOS"
+        Me.Text = "USUARIOS"
+        Me.OPCIONES.ResumeLayout(False)
+        Me.BUSCAR.ResumeLayout(False)
+        Me.BUSCAR.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

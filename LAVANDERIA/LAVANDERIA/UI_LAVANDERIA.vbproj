@@ -72,11 +72,23 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="FRM_CLIENTES.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="FRM_CLIENTES.Designer.vb">
+      <DependentUpon>FRM_CLIENTES.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PRINCIPAL.Designer.vb">
+      <DependentUpon>FRM_PRINCIPAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PRINCIPAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_USUARIOS.Designer.vb">
+      <DependentUpon>FRM_USUARIOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_USUARIOS.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -96,8 +108,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="FRM_CLIENTES.resx">
+      <DependentUpon>FRM_CLIENTES.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PRINCIPAL.resx">
+      <DependentUpon>FRM_PRINCIPAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_USUARIOS.resx">
+      <DependentUpon>FRM_USUARIOS.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
