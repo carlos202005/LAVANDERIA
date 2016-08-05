@@ -29,6 +29,7 @@ Partial Class FRM_PRINCIPAL
         Me.ArchivosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ProveedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InsumosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RecibosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -65,7 +66,6 @@ Partial Class FRM_PRINCIPAL
         Me.BTN_ORDEN = New System.Windows.Forms.Button()
         Me.BTN_VENTAS = New System.Windows.Forms.Button()
         Me.BNT_CLIENTES = New System.Windows.Forms.Button()
-        Me.ProveedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -109,14 +109,20 @@ Partial Class FRM_PRINCIPAL
         'UsuariosToolStripMenuItem
         '
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(166, 26)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'ClientesToolStripMenuItem
         '
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(166, 26)
         Me.ClientesToolStripMenuItem.Text = "Clientes"
+        '
+        'ProveedoresToolStripMenuItem
+        '
+        Me.ProveedoresToolStripMenuItem.Name = "ProveedoresToolStripMenuItem"
+        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(166, 26)
+        Me.ProveedoresToolStripMenuItem.Text = "Proveedores"
         '
         'ComprasToolStripMenuItem
         '
@@ -178,13 +184,13 @@ Partial Class FRM_PRINCIPAL
         'PrendasToolStripMenuItem
         '
         Me.PrendasToolStripMenuItem.Name = "PrendasToolStripMenuItem"
-        Me.PrendasToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.PrendasToolStripMenuItem.Size = New System.Drawing.Size(142, 26)
         Me.PrendasToolStripMenuItem.Text = "Prendas"
         '
         'ServiciosToolStripMenuItem1
         '
         Me.ServiciosToolStripMenuItem1.Name = "ServiciosToolStripMenuItem1"
-        Me.ServiciosToolStripMenuItem1.Size = New System.Drawing.Size(181, 26)
+        Me.ServiciosToolStripMenuItem1.Size = New System.Drawing.Size(142, 26)
         Me.ServiciosToolStripMenuItem1.Text = "Servicios"
         '
         'VentasToolStripMenuItem
@@ -381,12 +387,6 @@ Partial Class FRM_PRINCIPAL
         Me.BNT_CLIENTES.Text = "CLIENTES"
         Me.BNT_CLIENTES.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.BNT_CLIENTES.UseVisualStyleBackColor = True
-        '
-        'ProveedoresToolStripMenuItem
-        '
-        Me.ProveedoresToolStripMenuItem.Name = "ProveedoresToolStripMenuItem"
-        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
-        Me.ProveedoresToolStripMenuItem.Text = "Proveedores"
         '
         'FRM_PRINCIPAL
         '

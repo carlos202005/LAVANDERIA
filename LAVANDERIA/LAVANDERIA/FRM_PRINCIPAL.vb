@@ -22,4 +22,16 @@
     Private Sub UsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UsuariosToolStripMenuItem.Click
         FRM_USUARIOS.Show()
     End Sub
+
+    Private Sub RecibosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RecibosToolStripMenuItem.Click
+        FRM_RECIBOS.Show()
+    End Sub
+
+    Private Sub PagosExtraToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PagosExtraToolStripMenuItem.Click
+        FRM_PAGOS_EXTRA.Show()
+    End Sub
+
+    Private Sub InsumosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InsumosToolStripMenuItem.Click
+        FRM_INSUMOS.Show()
+    End Sub
 End Class

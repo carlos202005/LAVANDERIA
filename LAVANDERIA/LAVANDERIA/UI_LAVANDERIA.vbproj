@@ -78,11 +78,41 @@
     <Compile Include="FRM_CLIENTE.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_TEMPLATE.vb">
+    <Compile Include="FRM_INSERTAR_GASTOS.Designer.vb">
+      <DependentUpon>FRM_INSERTAR_GASTOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_INSERTAR_GASTOS.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_TEMPLATE.Designer.vb">
-      <DependentUpon>FRM_TEMPLATE.vb</DependentUpon>
+    <Compile Include="FRM_INSUMOS.Designer.vb">
+      <DependentUpon>FRM_INSUMOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_INSUMOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PAGOS_EXTRA.Designer.vb">
+      <DependentUpon>FRM_PAGOS_EXTRA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PAGOS_EXTRA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_RECIBOS.Designer.vb">
+      <DependentUpon>FRM_RECIBOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_RECIBOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_TEMPLATE_RECIBOS.Designer.vb">
+      <DependentUpon>FRM_TEMPLATE_RECIBOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_TEMPLATE_RECIBOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_TEMPLATE_USUARIOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_TEMPLATE_USUARIOS.Designer.vb">
+      <DependentUpon>FRM_TEMPLATE_USUARIOS.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRM_INSERTAR_USUARIOS.Designer.vb">
@@ -129,8 +159,23 @@
     <EmbeddedResource Include="FRM_CLIENTE.resx">
       <DependentUpon>FRM_CLIENTE.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRM_TEMPLATE.resx">
-      <DependentUpon>FRM_TEMPLATE.vb</DependentUpon>
+    <EmbeddedResource Include="FRM_INSERTAR_GASTOS.resx">
+      <DependentUpon>FRM_INSERTAR_GASTOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_INSUMOS.resx">
+      <DependentUpon>FRM_INSUMOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PAGOS_EXTRA.resx">
+      <DependentUpon>FRM_PAGOS_EXTRA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_RECIBOS.resx">
+      <DependentUpon>FRM_RECIBOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_TEMPLATE_RECIBOS.resx">
+      <DependentUpon>FRM_TEMPLATE_RECIBOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_TEMPLATE_USUARIOS.resx">
+      <DependentUpon>FRM_TEMPLATE_USUARIOS.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_INSERTAR_USUARIOS.resx">
       <DependentUpon>FRM_INSERTAR_USUARIOS.vb</DependentUpon>
