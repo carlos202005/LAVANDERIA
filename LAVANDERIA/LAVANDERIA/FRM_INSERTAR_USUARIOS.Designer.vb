@@ -146,8 +146,8 @@ Partial Class FRM_INSERTAR_USUARIOS
         '
         'TabPage3
         '
-        Me.TabPage3.Controls.Add(Me.GroupBox5)
         Me.TabPage3.Controls.Add(Me.GroupBox3)
+        Me.TabPage3.Controls.Add(Me.GroupBox5)
         Me.TabPage3.Location = New System.Drawing.Point(4, 25)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Size = New System.Drawing.Size(812, 597)
@@ -157,21 +157,21 @@ Partial Class FRM_INSERTAR_USUARIOS
         '
         'GroupBox3
         '
-        Me.GroupBox3.Location = New System.Drawing.Point(3, 3)
+        Me.GroupBox3.Location = New System.Drawing.Point(6, 441)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(800, 429)
-        Me.GroupBox3.TabIndex = 2
+        Me.GroupBox3.Size = New System.Drawing.Size(800, 150)
+        Me.GroupBox3.TabIndex = 3
         Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "DATOS"
+        Me.GroupBox3.Text = "OPCIONES"
         '
         'GroupBox5
         '
-        Me.GroupBox5.Location = New System.Drawing.Point(3, 441)
+        Me.GroupBox5.Location = New System.Drawing.Point(6, 6)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(800, 150)
-        Me.GroupBox5.TabIndex = 3
+        Me.GroupBox5.Size = New System.Drawing.Size(800, 429)
+        Me.GroupBox5.TabIndex = 2
         Me.GroupBox5.TabStop = False
-        Me.GroupBox5.Text = "OPCIONES"
+        Me.GroupBox5.Text = "GroupBox5"
         '
         'FRM_INSERTAR_USUARIOS
         '
@@ -202,6 +202,6 @@ Partial Class FRM_INSERTAR_USUARIOS
     Friend WithEvents TAB_CONTROL1 As TabControl
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents TabPage3 As TabPage
-    Protected WithEvents GroupBox5 As GroupBox
     Protected WithEvents GroupBox3 As GroupBox
+    Protected WithEvents GroupBox5 As GroupBox
 End Class

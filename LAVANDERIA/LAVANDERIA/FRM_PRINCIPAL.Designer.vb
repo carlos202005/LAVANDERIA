@@ -134,19 +134,19 @@ Partial Class FRM_PRINCIPAL
         'InsumosToolStripMenuItem
         '
         Me.InsumosToolStripMenuItem.Name = "InsumosToolStripMenuItem"
-        Me.InsumosToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.InsumosToolStripMenuItem.Size = New System.Drawing.Size(161, 26)
         Me.InsumosToolStripMenuItem.Text = "Insumos"
         '
         'RecibosToolStripMenuItem
         '
         Me.RecibosToolStripMenuItem.Name = "RecibosToolStripMenuItem"
-        Me.RecibosToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.RecibosToolStripMenuItem.Size = New System.Drawing.Size(161, 26)
         Me.RecibosToolStripMenuItem.Text = "Recibos"
         '
         'PagosExtraToolStripMenuItem
         '
         Me.PagosExtraToolStripMenuItem.Name = "PagosExtraToolStripMenuItem"
-        Me.PagosExtraToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.PagosExtraToolStripMenuItem.Size = New System.Drawing.Size(161, 26)
         Me.PagosExtraToolStripMenuItem.Text = "Pagos Extra"
         '
         'CajaToolStripMenuItem

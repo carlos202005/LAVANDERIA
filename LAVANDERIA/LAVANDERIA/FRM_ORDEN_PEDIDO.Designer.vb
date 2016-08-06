@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FRM_TEMPLATE_RECIBOS
+Partial Class FRM_ORDEN_PEDIDO
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,81 +22,18 @@ Partial Class FRM_TEMPLATE_RECIBOS
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.BUSCAR = New System.Windows.Forms.GroupBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.BTN_BUSCAR = New System.Windows.Forms.Button()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.CLIENTES = New System.Windows.Forms.GroupBox()
-        Me.DGV_CLIENTES = New System.Windows.Forms.DataGridView()
         Me.OPCIONES = New System.Windows.Forms.GroupBox()
         Me.BTN_SALIR = New System.Windows.Forms.Button()
         Me.BTN_VER = New System.Windows.Forms.Button()
         Me.BTN_ELIMINAR = New System.Windows.Forms.Button()
         Me.BTN_EDITAR = New System.Windows.Forms.Button()
         Me.BTN_NUEVO = New System.Windows.Forms.Button()
-        Me.BUSCAR.SuspendLayout()
+        Me.CLIENTES = New System.Windows.Forms.GroupBox()
+        Me.DGV_CLIENTES = New System.Windows.Forms.DataGridView()
+        Me.OPCIONES.SuspendLayout()
         Me.CLIENTES.SuspendLayout()
         CType(Me.DGV_CLIENTES, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.OPCIONES.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'BUSCAR
-        '
-        Me.BUSCAR.Controls.Add(Me.TextBox1)
-        Me.BUSCAR.Controls.Add(Me.BTN_BUSCAR)
-        Me.BUSCAR.Controls.Add(Me.ComboBox1)
-        Me.BUSCAR.Location = New System.Drawing.Point(134, 537)
-        Me.BUSCAR.Name = "BUSCAR"
-        Me.BUSCAR.Size = New System.Drawing.Size(836, 102)
-        Me.BUSCAR.TabIndex = 4
-        Me.BUSCAR.TabStop = False
-        Me.BUSCAR.Text = "BUSCAR"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(225, 42)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(475, 27)
-        Me.TextBox1.TabIndex = 2
-        '
-        'BTN_BUSCAR
-        '
-        Me.BTN_BUSCAR.Location = New System.Drawing.Point(735, 36)
-        Me.BTN_BUSCAR.Name = "BTN_BUSCAR"
-        Me.BTN_BUSCAR.Size = New System.Drawing.Size(95, 36)
-        Me.BTN_BUSCAR.TabIndex = 1
-        Me.BTN_BUSCAR.Text = "BUSCAR"
-        Me.BTN_BUSCAR.UseVisualStyleBackColor = True
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"NOMBRE", "APELLIDO", "SEXO", "COLOR", "DNI"})
-        Me.ComboBox1.Location = New System.Drawing.Point(27, 42)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(162, 28)
-        Me.ComboBox1.TabIndex = 0
-        '
-        'CLIENTES
-        '
-        Me.CLIENTES.Controls.Add(Me.DGV_CLIENTES)
-        Me.CLIENTES.Location = New System.Drawing.Point(134, 13)
-        Me.CLIENTES.Name = "CLIENTES"
-        Me.CLIENTES.Size = New System.Drawing.Size(836, 518)
-        Me.CLIENTES.TabIndex = 3
-        Me.CLIENTES.TabStop = False
-        Me.CLIENTES.Text = "RECIBOS"
-        '
-        'DGV_CLIENTES
-        '
-        Me.DGV_CLIENTES.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGV_CLIENTES.Location = New System.Drawing.Point(6, 21)
-        Me.DGV_CLIENTES.Name = "DGV_CLIENTES"
-        Me.DGV_CLIENTES.RowTemplate.Height = 24
-        Me.DGV_CLIENTES.Size = New System.Drawing.Size(824, 491)
-        Me.DGV_CLIENTES.TabIndex = 0
         '
         'OPCIONES
         '
@@ -105,10 +42,10 @@ Partial Class FRM_TEMPLATE_RECIBOS
         Me.OPCIONES.Controls.Add(Me.BTN_ELIMINAR)
         Me.OPCIONES.Controls.Add(Me.BTN_EDITAR)
         Me.OPCIONES.Controls.Add(Me.BTN_NUEVO)
-        Me.OPCIONES.Location = New System.Drawing.Point(12, 13)
+        Me.OPCIONES.Location = New System.Drawing.Point(12, 15)
         Me.OPCIONES.Name = "OPCIONES"
         Me.OPCIONES.Size = New System.Drawing.Size(116, 626)
-        Me.OPCIONES.TabIndex = 2
+        Me.OPCIONES.TabIndex = 1
         Me.OPCIONES.TabStop = False
         Me.OPCIONES.Text = "OPCIONES"
         '
@@ -131,7 +68,6 @@ Partial Class FRM_TEMPLATE_RECIBOS
         Me.BTN_VER.Text = "VER"
         Me.BTN_VER.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.BTN_VER.UseVisualStyleBackColor = True
-        Me.BTN_VER.Visible = False
         '
         'BTN_ELIMINAR
         '
@@ -142,7 +78,6 @@ Partial Class FRM_TEMPLATE_RECIBOS
         Me.BTN_ELIMINAR.Text = "ELIMINAR"
         Me.BTN_ELIMINAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.BTN_ELIMINAR.UseVisualStyleBackColor = True
-        Me.BTN_ELIMINAR.Visible = False
         '
         'BTN_EDITAR
         '
@@ -153,7 +88,6 @@ Partial Class FRM_TEMPLATE_RECIBOS
         Me.BTN_EDITAR.Text = "EDITAR"
         Me.BTN_EDITAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.BTN_EDITAR.UseVisualStyleBackColor = True
-        Me.BTN_EDITAR.Visible = False
         '
         'BTN_NUEVO
         '
@@ -161,40 +95,52 @@ Partial Class FRM_TEMPLATE_RECIBOS
         Me.BTN_NUEVO.Name = "BTN_NUEVO"
         Me.BTN_NUEVO.Size = New System.Drawing.Size(100, 115)
         Me.BTN_NUEVO.TabIndex = 0
-        Me.BTN_NUEVO.Text = "NUEVO"
+        Me.BTN_NUEVO.Text = "ENTREGAR"
         Me.BTN_NUEVO.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.BTN_NUEVO.UseVisualStyleBackColor = True
         '
-        'FRM_TEMPLATE_RECIBOS
+        'CLIENTES
+        '
+        Me.CLIENTES.Controls.Add(Me.DGV_CLIENTES)
+        Me.CLIENTES.Location = New System.Drawing.Point(134, 15)
+        Me.CLIENTES.Name = "CLIENTES"
+        Me.CLIENTES.Size = New System.Drawing.Size(836, 626)
+        Me.CLIENTES.TabIndex = 2
+        Me.CLIENTES.TabStop = False
+        Me.CLIENTES.Text = "ORDEN"
+        '
+        'DGV_CLIENTES
+        '
+        Me.DGV_CLIENTES.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGV_CLIENTES.Location = New System.Drawing.Point(6, 21)
+        Me.DGV_CLIENTES.Name = "DGV_CLIENTES"
+        Me.DGV_CLIENTES.RowTemplate.Height = 24
+        Me.DGV_CLIENTES.Size = New System.Drawing.Size(824, 599)
+        Me.DGV_CLIENTES.TabIndex = 0
+        '
+        'FRM_ORDEN_PEDIDO
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(982, 653)
-        Me.Controls.Add(Me.BUSCAR)
         Me.Controls.Add(Me.CLIENTES)
         Me.Controls.Add(Me.OPCIONES)
-        Me.Name = "FRM_TEMPLATE_RECIBOS"
+        Me.Name = "FRM_ORDEN_PEDIDO"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "RECIBOS"
-        Me.BUSCAR.ResumeLayout(False)
-        Me.BUSCAR.PerformLayout()
+        Me.Text = "ORDEN DE PEDIDO"
+        Me.OPCIONES.ResumeLayout(False)
         Me.CLIENTES.ResumeLayout(False)
         CType(Me.DGV_CLIENTES, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.OPCIONES.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
-    Protected WithEvents BUSCAR As GroupBox
-    Protected WithEvents TextBox1 As TextBox
-    Protected WithEvents BTN_BUSCAR As Button
-    Protected WithEvents ComboBox1 As ComboBox
-    Protected WithEvents CLIENTES As GroupBox
-    Protected WithEvents DGV_CLIENTES As DataGridView
     Protected WithEvents OPCIONES As GroupBox
     Protected WithEvents BTN_SALIR As Button
     Protected WithEvents BTN_VER As Button
     Protected WithEvents BTN_ELIMINAR As Button
     Protected WithEvents BTN_EDITAR As Button
     Protected WithEvents BTN_NUEVO As Button
+    Protected WithEvents CLIENTES As GroupBox
+    Protected WithEvents DGV_CLIENTES As DataGridView
 End Class

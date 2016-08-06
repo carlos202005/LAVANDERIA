@@ -72,10 +72,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FRM_APERTURA_CAJA.Designer.vb">
+      <DependentUpon>FRM_APERTURA_CAJA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_APERTURA_CAJA.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FRM_CLIENTE.Designer.vb">
       <DependentUpon>FRM_CLIENTE.vb</DependentUpon>
     </Compile>
     <Compile Include="FRM_CLIENTE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ENTREGA_SERVICIO.Designer.vb">
+      <DependentUpon>FRM_ENTREGA_SERVICIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ENTREGA_SERVICIO.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRM_INSERTAR_GASTOS.Designer.vb">
@@ -88,6 +100,12 @@
       <DependentUpon>FRM_INSUMOS.vb</DependentUpon>
     </Compile>
     <Compile Include="FRM_INSUMOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ORDEN_PEDIDO.Designer.vb">
+      <DependentUpon>FRM_ORDEN_PEDIDO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ORDEN_PEDIDO.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRM_PAGOS_EXTRA.Designer.vb">
@@ -139,6 +157,12 @@
     <Compile Include="FRM_USUARIOS.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FRM_VENTAS.Designer.vb">
+      <DependentUpon>FRM_VENTAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_VENTAS.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -156,14 +180,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FRM_APERTURA_CAJA.resx">
+      <DependentUpon>FRM_APERTURA_CAJA.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRM_CLIENTE.resx">
       <DependentUpon>FRM_CLIENTE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ENTREGA_SERVICIO.resx">
+      <DependentUpon>FRM_ENTREGA_SERVICIO.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_INSERTAR_GASTOS.resx">
       <DependentUpon>FRM_INSERTAR_GASTOS.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_INSUMOS.resx">
       <DependentUpon>FRM_INSUMOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ORDEN_PEDIDO.resx">
+      <DependentUpon>FRM_ORDEN_PEDIDO.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_PAGOS_EXTRA.resx">
       <DependentUpon>FRM_PAGOS_EXTRA.vb</DependentUpon>
@@ -188,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_USUARIOS.resx">
       <DependentUpon>FRM_USUARIOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_VENTAS.resx">
+      <DependentUpon>FRM_VENTAS.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

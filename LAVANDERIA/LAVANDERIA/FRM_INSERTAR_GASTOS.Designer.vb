@@ -30,11 +30,11 @@ Partial Class FRM_INSERTAR_GASTOS
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.OPCIONES = New System.Windows.Forms.GroupBox()
         Me.BTN_SALIR = New System.Windows.Forms.Button()
         Me.BTN_NUEVO = New System.Windows.Forms.Button()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.TAB_CONTROL1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -115,32 +115,14 @@ Partial Class FRM_INSERTAR_GASTOS
         '
         'TabPage3
         '
-        Me.TabPage3.Controls.Add(Me.GroupBox5)
         Me.TabPage3.Controls.Add(Me.GroupBox3)
+        Me.TabPage3.Controls.Add(Me.GroupBox5)
         Me.TabPage3.Location = New System.Drawing.Point(4, 25)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Size = New System.Drawing.Size(812, 597)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "PAGOS ADICIONALES"
         Me.TabPage3.UseVisualStyleBackColor = True
-        '
-        'GroupBox5
-        '
-        Me.GroupBox5.Location = New System.Drawing.Point(3, 441)
-        Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(800, 150)
-        Me.GroupBox5.TabIndex = 3
-        Me.GroupBox5.TabStop = False
-        Me.GroupBox5.Text = "OPCIONES"
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Location = New System.Drawing.Point(3, 3)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(800, 429)
-        Me.GroupBox3.TabIndex = 2
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "DATOS"
         '
         'OPCIONES
         '
@@ -173,6 +155,24 @@ Partial Class FRM_INSERTAR_GASTOS
         Me.BTN_NUEVO.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.BTN_NUEVO.UseVisualStyleBackColor = True
         '
+        'GroupBox3
+        '
+        Me.GroupBox3.Location = New System.Drawing.Point(6, 441)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(800, 150)
+        Me.GroupBox3.TabIndex = 4
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "OPCIONES"
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.Location = New System.Drawing.Point(6, 6)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(800, 429)
+        Me.GroupBox5.TabIndex = 3
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "DATOS"
+        '
         'FRM_INSERTAR_GASTOS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -182,7 +182,7 @@ Partial Class FRM_INSERTAR_GASTOS
         Me.Controls.Add(Me.OPCIONES)
         Me.Name = "FRM_INSERTAR_GASTOS"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FRM_INSERTAR_GASTOS"
+        Me.Text = "INGRESAR GASTOS"
         Me.TAB_CONTROL1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
@@ -200,9 +200,9 @@ Partial Class FRM_INSERTAR_GASTOS
     Protected WithEvents GroupBox4 As GroupBox
     Protected WithEvents GroupBox1 As GroupBox
     Friend WithEvents TabPage3 As TabPage
-    Protected WithEvents GroupBox5 As GroupBox
-    Protected WithEvents GroupBox3 As GroupBox
     Protected WithEvents OPCIONES As GroupBox
     Protected WithEvents BTN_SALIR As Button
     Protected WithEvents BTN_NUEVO As Button
+    Protected WithEvents GroupBox3 As GroupBox
+    Protected WithEvents GroupBox5 As GroupBox
 End Class

@@ -34,4 +34,41 @@
     Private Sub InsumosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InsumosToolStripMenuItem.Click
         FRM_INSUMOS.Show()
     End Sub
+
+    Private Sub BTN_ENTREGA_Click(sender As Object, e As EventArgs) Handles BTN_ENTREGA.Click
+        FRM_ENTREGA_SERVICIO.Show()
+    End Sub
+
+    Private Sub EntregaDePedidoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EntregaDePedidoToolStripMenuItem.Click
+        FRM_ENTREGA_SERVICIO.Show()
+    End Sub
+
+    Private Sub OrdenDePedidoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OrdenDePedidoToolStripMenuItem.Click
+        FRM_ORDEN_PEDIDO.Show()
+    End Sub
+
+    Private Sub VentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VentaToolStripMenuItem.Click
+        FRM_VENTAS.Show()
+    End Sub
+
+    Private Sub BTN_VENTAS_Click(sender As Object, e As EventArgs) Handles BTN_VENTAS.Click
+        FRM_VENTAS.Show()
+    End Sub
+
+    Private Sub BTN_ORDEN_Click(sender As Object, e As EventArgs) Handles BTN_ORDEN.Click
+        FRM_ORDEN_PEDIDO.Show()
+    End Sub
+
+    Private Sub BTN_INSUMOS_Click(sender As Object, e As EventArgs) Handles BTN_INSUMOS.Click
+        Dim FRM As New FRM_INSERTAR_GASTOS
+        FRM.TAB_CONTROL1.SelectedIndex = 0
+        FRM.Show()
+
+    End Sub
+
+    Private Sub BTN_PAGOS_EXTRA_Click(sender As Object, e As EventArgs) Handles BTN_PAGOS_EXTRA.Click
+        Dim FRM As New FRM_INSERTAR_GASTOS
+        FRM.TAB_CONTROL1.SelectedIndex = 2
+        FRM.Show()
+    End Sub
 End Class
