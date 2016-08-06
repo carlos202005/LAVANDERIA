@@ -78,6 +78,12 @@
     <Compile Include="FRM_APERTURA_CAJA.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FRM_CIERRE_CAJA.Designer.vb">
+      <DependentUpon>FRM_CIERRE_CAJA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_CIERRE_CAJA.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FRM_CLIENTE.Designer.vb">
       <DependentUpon>FRM_CLIENTE.vb</DependentUpon>
     </Compile>
@@ -182,6 +188,9 @@
   <ItemGroup>
     <EmbeddedResource Include="FRM_APERTURA_CAJA.resx">
       <DependentUpon>FRM_APERTURA_CAJA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_CIERRE_CAJA.resx">
+      <DependentUpon>FRM_CIERRE_CAJA.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_CLIENTE.resx">
       <DependentUpon>FRM_CLIENTE.vb</DependentUpon>

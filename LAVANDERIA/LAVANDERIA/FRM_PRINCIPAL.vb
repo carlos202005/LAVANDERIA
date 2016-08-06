@@ -71,4 +71,12 @@
         FRM.TAB_CONTROL1.SelectedIndex = 2
         FRM.Show()
     End Sub
+
+    Private Sub AperturaDeCajaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AperturaDeCajaToolStripMenuItem.Click
+        FRM_APERTURA_CAJA.Show()
+    End Sub
+
+    Private Sub CierreDeCajaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CierreDeCajaToolStripMenuItem.Click
+        FRM_CIERRE_CAJA.Show()
+    End Sub
 End Class
