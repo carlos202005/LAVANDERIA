@@ -79,4 +79,24 @@
     Private Sub CierreDeCajaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CierreDeCajaToolStripMenuItem.Click
         FRM_CIERRE_CAJA.Show()
     End Sub
+
+    Private Sub PrendasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PrendasToolStripMenuItem.Click
+        Dim FRM As New FRM_INSERTAR_SERVICIOS
+        FRM.TAB_CONTROL1.SelectedIndex = 1
+        FRM.Show()
+    End Sub
+
+    Private Sub ServiciosToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ServiciosToolStripMenuItem1.Click
+        FRM_SERVICIOS.Show()
+    End Sub
+
+    Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem.Click
+        Me.Close()
+    End Sub
+
+    Private Sub BTN_FACTURA_Click(sender As Object, e As EventArgs) Handles BTN_FACTURA.Click
+        Dim FRM As New FRM_INSERTAR_GASTOS
+        FRM.TAB_CONTROL1.SelectedIndex = 1
+        FRM.Show()
+    End Sub
 End Class

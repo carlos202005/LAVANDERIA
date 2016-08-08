@@ -102,6 +102,12 @@
     <Compile Include="FRM_INSERTAR_GASTOS.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FRM_INSERTAR_SERVICIOS.Designer.vb">
+      <DependentUpon>FRM_INSERTAR_SERVICIOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_INSERTAR_SERVICIOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FRM_INSUMOS.Designer.vb">
       <DependentUpon>FRM_INSUMOS.vb</DependentUpon>
     </Compile>
@@ -124,6 +130,12 @@
       <DependentUpon>FRM_RECIBOS.vb</DependentUpon>
     </Compile>
     <Compile Include="FRM_RECIBOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_SERVICIOS.Designer.vb">
+      <DependentUpon>FRM_SERVICIOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_SERVICIOS.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRM_TEMPLATE_RECIBOS.Designer.vb">
@@ -201,6 +213,9 @@
     <EmbeddedResource Include="FRM_INSERTAR_GASTOS.resx">
       <DependentUpon>FRM_INSERTAR_GASTOS.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRM_INSERTAR_SERVICIOS.resx">
+      <DependentUpon>FRM_INSERTAR_SERVICIOS.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRM_INSUMOS.resx">
       <DependentUpon>FRM_INSUMOS.vb</DependentUpon>
     </EmbeddedResource>
@@ -212,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_RECIBOS.resx">
       <DependentUpon>FRM_RECIBOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_SERVICIOS.resx">
+      <DependentUpon>FRM_SERVICIOS.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_TEMPLATE_RECIBOS.resx">
       <DependentUpon>FRM_TEMPLATE_RECIBOS.vb</DependentUpon>

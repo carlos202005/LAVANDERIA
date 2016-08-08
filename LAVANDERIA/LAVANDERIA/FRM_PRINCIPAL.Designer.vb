@@ -37,7 +37,6 @@ Partial Class FRM_PRINCIPAL
         Me.CajaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AperturaDeCajaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CierreDeCajaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ArqueoDeCajaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ServiciosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PrendasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ServiciosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
@@ -96,7 +95,7 @@ Partial Class FRM_PRINCIPAL
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(141, 26)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'ArchivosToolStripMenuItem
@@ -151,7 +150,7 @@ Partial Class FRM_PRINCIPAL
         '
         'CajaToolStripMenuItem
         '
-        Me.CajaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AperturaDeCajaToolStripMenuItem, Me.CierreDeCajaToolStripMenuItem, Me.ArqueoDeCajaToolStripMenuItem})
+        Me.CajaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AperturaDeCajaToolStripMenuItem, Me.CierreDeCajaToolStripMenuItem})
         Me.CajaToolStripMenuItem.Name = "CajaToolStripMenuItem"
         Me.CajaToolStripMenuItem.Size = New System.Drawing.Size(50, 24)
         Me.CajaToolStripMenuItem.Text = "Caja"
@@ -168,12 +167,6 @@ Partial Class FRM_PRINCIPAL
         Me.CierreDeCajaToolStripMenuItem.Size = New System.Drawing.Size(196, 26)
         Me.CierreDeCajaToolStripMenuItem.Text = "Cierre de Caja"
         '
-        'ArqueoDeCajaToolStripMenuItem
-        '
-        Me.ArqueoDeCajaToolStripMenuItem.Name = "ArqueoDeCajaToolStripMenuItem"
-        Me.ArqueoDeCajaToolStripMenuItem.Size = New System.Drawing.Size(196, 26)
-        Me.ArqueoDeCajaToolStripMenuItem.Text = "Arqueo de Caja"
-        '
         'ServiciosToolStripMenuItem
         '
         Me.ServiciosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PrendasToolStripMenuItem, Me.ServiciosToolStripMenuItem1})
@@ -184,13 +177,13 @@ Partial Class FRM_PRINCIPAL
         'PrendasToolStripMenuItem
         '
         Me.PrendasToolStripMenuItem.Name = "PrendasToolStripMenuItem"
-        Me.PrendasToolStripMenuItem.Size = New System.Drawing.Size(142, 26)
+        Me.PrendasToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
         Me.PrendasToolStripMenuItem.Text = "Prendas"
         '
         'ServiciosToolStripMenuItem1
         '
         Me.ServiciosToolStripMenuItem1.Name = "ServiciosToolStripMenuItem1"
-        Me.ServiciosToolStripMenuItem1.Size = New System.Drawing.Size(142, 26)
+        Me.ServiciosToolStripMenuItem1.Size = New System.Drawing.Size(181, 26)
         Me.ServiciosToolStripMenuItem1.Text = "Servicios"
         '
         'VentasToolStripMenuItem
@@ -344,7 +337,7 @@ Partial Class FRM_PRINCIPAL
         Me.BTN_FACTURA.Name = "BTN_FACTURA"
         Me.BTN_FACTURA.Size = New System.Drawing.Size(100, 120)
         Me.BTN_FACTURA.TabIndex = 4
-        Me.BTN_FACTURA.Text = "FACTURA"
+        Me.BTN_FACTURA.Text = "RECIBOS"
         Me.BTN_FACTURA.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.BTN_FACTURA.UseVisualStyleBackColor = True
         '
@@ -424,7 +417,6 @@ Partial Class FRM_PRINCIPAL
     Friend WithEvents CajaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AperturaDeCajaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CierreDeCajaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ArqueoDeCajaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ServiciosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PrendasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ServiciosToolStripMenuItem1 As ToolStripMenuItem
