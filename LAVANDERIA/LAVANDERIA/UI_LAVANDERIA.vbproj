@@ -126,6 +126,12 @@
     <Compile Include="FRM_PAGOS_EXTRA.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FRM_PROVEEDORES.Designer.vb">
+      <DependentUpon>FRM_PROVEEDORES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PROVEEDORES.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FRM_RECIBOS.Designer.vb">
       <DependentUpon>FRM_RECIBOS.vb</DependentUpon>
     </Compile>
@@ -144,13 +150,6 @@
     <Compile Include="FRM_TEMPLATE_RECIBOS.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_TEMPLATE_USUARIOS.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FRM_TEMPLATE_USUARIOS.Designer.vb">
-      <DependentUpon>FRM_TEMPLATE_USUARIOS.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FRM_INSERTAR_USUARIOS.Designer.vb">
       <DependentUpon>FRM_INSERTAR_USUARIOS.vb</DependentUpon>
     </Compile>
@@ -161,12 +160,6 @@
       <DependentUpon>FRM_PRINCIPAL.vb</DependentUpon>
     </Compile>
     <Compile Include="FRM_PRINCIPAL.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FRM_PROVEEDORES.Designer.vb">
-      <DependentUpon>FRM_PROVEEDORES.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FRM_PROVEEDORES.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRM_USUARIOS.Designer.vb">
@@ -225,6 +218,9 @@
     <EmbeddedResource Include="FRM_PAGOS_EXTRA.resx">
       <DependentUpon>FRM_PAGOS_EXTRA.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PROVEEDORES.resx">
+      <DependentUpon>FRM_PROVEEDORES.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRM_RECIBOS.resx">
       <DependentUpon>FRM_RECIBOS.vb</DependentUpon>
     </EmbeddedResource>
@@ -234,17 +230,11 @@
     <EmbeddedResource Include="FRM_TEMPLATE_RECIBOS.resx">
       <DependentUpon>FRM_TEMPLATE_RECIBOS.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRM_TEMPLATE_USUARIOS.resx">
-      <DependentUpon>FRM_TEMPLATE_USUARIOS.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FRM_INSERTAR_USUARIOS.resx">
       <DependentUpon>FRM_INSERTAR_USUARIOS.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_PRINCIPAL.resx">
       <DependentUpon>FRM_PRINCIPAL.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FRM_PROVEEDORES.resx">
-      <DependentUpon>FRM_PROVEEDORES.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_USUARIOS.resx">
       <DependentUpon>FRM_USUARIOS.vb</DependentUpon>
@@ -389,6 +379,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1470052742_search_161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FORMULARIOS2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470052722_plus_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DASDAD.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

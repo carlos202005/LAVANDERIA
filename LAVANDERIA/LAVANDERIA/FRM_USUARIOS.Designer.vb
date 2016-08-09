@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class FRM_USUARIOS
-    Inherits LAVANDERIA.FRM_CLIENTES_INICIO
+    Inherits LAVANDERIA.FRM_TEMPLATE_RECIBOS
 
     'Form invalida a Dispose para limpiar la lista de componentes.
     <System.Diagnostics.DebuggerNonUserCode()> _
@@ -19,22 +19,16 @@ Partial Class FRM_USUARIOS
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.OPCIONES.SuspendLayout()
         Me.BUSCAR.SuspendLayout()
+        Me.OPCIONES.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'BTN_VER
-        '
-        '
-        'BTN_EDITAR
-        '
-        '
-        'BTN_NUEVO
-        '
         '
         'CLIENTES
         '
         Me.CLIENTES.Text = "USUARIOS"
+        '
+        'BTN_NUEVO
+        '
         '
         'FRM_USUARIOS
         '
@@ -42,9 +36,9 @@ Partial Class FRM_USUARIOS
         Me.ClientSize = New System.Drawing.Size(982, 653)
         Me.Name = "FRM_USUARIOS"
         Me.Text = "USUARIOS"
-        Me.OPCIONES.ResumeLayout(False)
         Me.BUSCAR.ResumeLayout(False)
         Me.BUSCAR.PerformLayout()
+        Me.OPCIONES.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub

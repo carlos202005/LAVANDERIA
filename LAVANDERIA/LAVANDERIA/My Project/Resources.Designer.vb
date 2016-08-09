@@ -103,6 +103,16 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property _1470052722_plus_16() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("1470052722_plus_16", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property _1470052726_delete_16() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("1470052726_delete_16", resourceCulture)
@@ -223,9 +233,29 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property DASDAD() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("DASDAD", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property fondo_azul() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("fondo azul", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property FORMULARIOS() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("FORMULARIOS", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
