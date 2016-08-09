@@ -22,6 +22,7 @@ Partial Class FRM_VENTAS
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.GroupBox7 = New System.Windows.Forms.GroupBox()
@@ -72,6 +73,7 @@ Partial Class FRM_VENTAS
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Panel1.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
@@ -88,6 +90,7 @@ Partial Class FRM_VENTAS
         '
         'Panel1
         '
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
         Me.Panel1.Controls.Add(Me.GroupBox4)
         Me.Panel1.Controls.Add(Me.GroupBox3)
         Me.Panel1.Controls.Add(Me.GroupBox2)
@@ -99,6 +102,7 @@ Partial Class FRM_VENTAS
         '
         'GroupBox4
         '
+        Me.GroupBox4.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox4.Controls.Add(Me.GroupBox7)
         Me.GroupBox4.Controls.Add(Me.Panel2)
         Me.GroupBox4.Controls.Add(Me.TextBox6)
@@ -133,32 +137,44 @@ Partial Class FRM_VENTAS
         '
         'Button8
         '
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Image = Global.LAVANDERIA.My.Resources.Resources._1470052726_delete_16
         Me.Button8.Location = New System.Drawing.Point(283, 37)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(100, 115)
         Me.Button8.TabIndex = 14
-        Me.Button8.Text = "SALIR"
-        Me.Button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ToolTip1.SetToolTip(Me.Button8, "SALIR")
         Me.Button8.UseVisualStyleBackColor = True
         '
         'Button7
         '
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Image = Global.LAVANDERIA.My.Resources.Resources._1470053407_credit_cards
         Me.Button7.Location = New System.Drawing.Point(150, 37)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(100, 115)
         Me.Button7.TabIndex = 13
-        Me.Button7.Text = "COBRAR"
-        Me.Button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ToolTip1.SetToolTip(Me.Button7, "COBRAR")
         Me.Button7.UseVisualStyleBackColor = True
         '
         'Button6
         '
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Image = Global.LAVANDERIA.My.Resources.Resources._1470052718_tick_16
         Me.Button6.Location = New System.Drawing.Point(16, 37)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(100, 115)
         Me.Button6.TabIndex = 12
-        Me.Button6.Text = "ACEPTAR"
-        Me.Button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ToolTip1.SetToolTip(Me.Button6, "ACEPTAR")
         Me.Button6.UseVisualStyleBackColor = True
         '
         'Panel2
@@ -317,11 +333,16 @@ Partial Class FRM_VENTAS
         '
         'Button4
         '
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button4.Location = New System.Drawing.Point(305, 29)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(105, 73)
         Me.Button4.TabIndex = 2
         Me.Button4.Text = "CÓDIGO"
+        Me.ToolTip1.SetToolTip(Me.Button4, "GENERAR CÓDIGO DE BARRAS")
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Label9
@@ -342,6 +363,7 @@ Partial Class FRM_VENTAS
         '
         'GroupBox3
         '
+        Me.GroupBox3.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox3.Controls.Add(Me.Label17)
         Me.GroupBox3.Controls.Add(Me.Button3)
         Me.GroupBox3.Controls.Add(Me.DataGridView3)
@@ -363,11 +385,16 @@ Partial Class FRM_VENTAS
         '
         'Button3
         '
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button3.Location = New System.Drawing.Point(289, 369)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(191, 32)
         Me.Button3.TabIndex = 3
         Me.Button3.Text = "ELIMINAR CONSUMO"
+        Me.ToolTip1.SetToolTip(Me.Button3, "ELIMINAR CONSUMO AGREGADO")
         Me.Button3.UseVisualStyleBackColor = True
         '
         'DataGridView3
@@ -381,6 +408,7 @@ Partial Class FRM_VENTAS
         '
         'GroupBox2
         '
+        Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox2.Controls.Add(Me.Label16)
         Me.GroupBox2.Controls.Add(Me.Button5)
         Me.GroupBox2.Controls.Add(Me.TextBox7)
@@ -388,6 +416,7 @@ Partial Class FRM_VENTAS
         Me.GroupBox2.Controls.Add(Me.TextBox2)
         Me.GroupBox2.Controls.Add(Me.DataGridView2)
         Me.GroupBox2.Controls.Add(Me.ComboBox2)
+        Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.GroupBox2.Location = New System.Drawing.Point(16, 426)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(739, 412)
@@ -398,7 +427,7 @@ Partial Class FRM_VENTAS
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(417, 384)
+        Me.Label16.Location = New System.Drawing.Point(390, 380)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(56, 17)
         Me.Label16.TabIndex = 12
@@ -415,18 +444,23 @@ Partial Class FRM_VENTAS
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(479, 381)
+        Me.TextBox7.Location = New System.Drawing.Point(452, 377)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(132, 22)
         Me.TextBox7.TabIndex = 4
         '
         'Button2
         '
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.Location = New System.Drawing.Point(617, 17)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(116, 35)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "BUSCAR"
+        Me.ToolTip1.SetToolTip(Me.Button2, "BUSCAR SERVICIO")
         Me.Button2.UseVisualStyleBackColor = True
         '
         'TextBox2
@@ -455,6 +489,7 @@ Partial Class FRM_VENTAS
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.Label5)
@@ -530,11 +565,16 @@ Partial Class FRM_VENTAS
         '
         'Button1
         '
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Location = New System.Drawing.Point(617, 17)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(116, 35)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "BUSCAR"
+        Me.ToolTip1.SetToolTip(Me.Button1, "BUSCAR CLIENTE")
         Me.Button1.UseVisualStyleBackColor = True
         '
         'TextBox1
@@ -583,6 +623,7 @@ Partial Class FRM_VENTAS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.LAVANDERIA.My.Resources.Resources.smooth_ice1
         Me.ClientSize = New System.Drawing.Size(1682, 953)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "FRM_VENTAS"
@@ -662,4 +703,5 @@ Partial Class FRM_VENTAS
     Friend WithEvents Button6 As Button
     Friend WithEvents GroupBox7 As GroupBox
     Friend WithEvents Label17 As Label
+    Friend WithEvents ToolTip1 As ToolTip
 End Class

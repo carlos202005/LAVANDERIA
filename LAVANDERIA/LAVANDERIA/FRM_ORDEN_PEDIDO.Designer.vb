@@ -22,6 +22,7 @@ Partial Class FRM_ORDEN_PEDIDO
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.OPCIONES = New System.Windows.Forms.GroupBox()
         Me.BTN_SALIR = New System.Windows.Forms.Button()
         Me.BTN_VER = New System.Windows.Forms.Button()
@@ -30,6 +31,7 @@ Partial Class FRM_ORDEN_PEDIDO
         Me.BTN_NUEVO = New System.Windows.Forms.Button()
         Me.CLIENTES = New System.Windows.Forms.GroupBox()
         Me.DGV_CLIENTES = New System.Windows.Forms.DataGridView()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.OPCIONES.SuspendLayout()
         Me.CLIENTES.SuspendLayout()
         CType(Me.DGV_CLIENTES, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -37,6 +39,7 @@ Partial Class FRM_ORDEN_PEDIDO
         '
         'OPCIONES
         '
+        Me.OPCIONES.BackColor = System.Drawing.Color.Transparent
         Me.OPCIONES.Controls.Add(Me.BTN_SALIR)
         Me.OPCIONES.Controls.Add(Me.BTN_VER)
         Me.OPCIONES.Controls.Add(Me.BTN_ELIMINAR)
@@ -51,56 +54,77 @@ Partial Class FRM_ORDEN_PEDIDO
         '
         'BTN_SALIR
         '
+        Me.BTN_SALIR.FlatAppearance.BorderSize = 0
+        Me.BTN_SALIR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.BTN_SALIR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.BTN_SALIR.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_SALIR.Image = Global.LAVANDERIA.My.Resources.Resources._1470052726_delete_16
         Me.BTN_SALIR.Location = New System.Drawing.Point(6, 505)
         Me.BTN_SALIR.Name = "BTN_SALIR"
         Me.BTN_SALIR.Size = New System.Drawing.Size(100, 115)
         Me.BTN_SALIR.TabIndex = 4
-        Me.BTN_SALIR.Text = "SALIR"
-        Me.BTN_SALIR.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ToolTip1.SetToolTip(Me.BTN_SALIR, "SALIR")
         Me.BTN_SALIR.UseVisualStyleBackColor = True
         '
         'BTN_VER
         '
+        Me.BTN_VER.FlatAppearance.BorderSize = 0
+        Me.BTN_VER.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.BTN_VER.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.BTN_VER.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_VER.Image = Global.LAVANDERIA.My.Resources.Resources._1470052742_search_16
         Me.BTN_VER.Location = New System.Drawing.Point(6, 384)
         Me.BTN_VER.Name = "BTN_VER"
         Me.BTN_VER.Size = New System.Drawing.Size(100, 115)
         Me.BTN_VER.TabIndex = 3
-        Me.BTN_VER.Text = "VER"
-        Me.BTN_VER.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ToolTip1.SetToolTip(Me.BTN_VER, "VER")
         Me.BTN_VER.UseVisualStyleBackColor = True
         '
         'BTN_ELIMINAR
         '
+        Me.BTN_ELIMINAR.FlatAppearance.BorderSize = 0
+        Me.BTN_ELIMINAR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.BTN_ELIMINAR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.BTN_ELIMINAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_ELIMINAR.Image = Global.LAVANDERIA.My.Resources.Resources._1470052776_trash_16
         Me.BTN_ELIMINAR.Location = New System.Drawing.Point(6, 263)
         Me.BTN_ELIMINAR.Name = "BTN_ELIMINAR"
         Me.BTN_ELIMINAR.Size = New System.Drawing.Size(100, 115)
         Me.BTN_ELIMINAR.TabIndex = 2
-        Me.BTN_ELIMINAR.Text = "ELIMINAR"
-        Me.BTN_ELIMINAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ToolTip1.SetToolTip(Me.BTN_ELIMINAR, "ELIMINAR")
         Me.BTN_ELIMINAR.UseVisualStyleBackColor = True
         '
         'BTN_EDITAR
         '
+        Me.BTN_EDITAR.FlatAppearance.BorderSize = 0
+        Me.BTN_EDITAR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.BTN_EDITAR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.BTN_EDITAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_EDITAR.Image = Global.LAVANDERIA.My.Resources.Resources._1470053680_reload
         Me.BTN_EDITAR.Location = New System.Drawing.Point(6, 142)
         Me.BTN_EDITAR.Name = "BTN_EDITAR"
         Me.BTN_EDITAR.Size = New System.Drawing.Size(100, 115)
         Me.BTN_EDITAR.TabIndex = 1
-        Me.BTN_EDITAR.Text = "EDITAR"
-        Me.BTN_EDITAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ToolTip1.SetToolTip(Me.BTN_EDITAR, "ACTUALIZAR")
         Me.BTN_EDITAR.UseVisualStyleBackColor = True
         '
         'BTN_NUEVO
         '
+        Me.BTN_NUEVO.FlatAppearance.BorderSize = 0
+        Me.BTN_NUEVO.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.BTN_NUEVO.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.BTN_NUEVO.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_NUEVO.Image = Global.LAVANDERIA.My.Resources.Resources._1470053401_delivery
         Me.BTN_NUEVO.Location = New System.Drawing.Point(6, 21)
         Me.BTN_NUEVO.Name = "BTN_NUEVO"
         Me.BTN_NUEVO.Size = New System.Drawing.Size(100, 115)
         Me.BTN_NUEVO.TabIndex = 0
-        Me.BTN_NUEVO.Text = "ENTREGAR"
-        Me.BTN_NUEVO.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ToolTip1.SetToolTip(Me.BTN_NUEVO, "ENTREGAR")
         Me.BTN_NUEVO.UseVisualStyleBackColor = True
         '
         'CLIENTES
         '
+        Me.CLIENTES.BackColor = System.Drawing.Color.Transparent
         Me.CLIENTES.Controls.Add(Me.DGV_CLIENTES)
         Me.CLIENTES.Location = New System.Drawing.Point(134, 15)
         Me.CLIENTES.Name = "CLIENTES"
@@ -122,6 +146,7 @@ Partial Class FRM_ORDEN_PEDIDO
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.LAVANDERIA.My.Resources.Resources.DASDAD
         Me.ClientSize = New System.Drawing.Size(982, 653)
         Me.Controls.Add(Me.CLIENTES)
         Me.Controls.Add(Me.OPCIONES)
@@ -143,4 +168,5 @@ Partial Class FRM_ORDEN_PEDIDO
     Protected WithEvents BTN_NUEVO As Button
     Protected WithEvents CLIENTES As GroupBox
     Protected WithEvents DGV_CLIENTES As DataGridView
+    Friend WithEvents ToolTip1 As ToolTip
 End Class

@@ -1,4 +1,27 @@
 ﻿Public Class FRM_PRINCIPAL
+    Dim _enabledCerrar As Boolean = False
+    <System.ComponentModel.DefaultValue(False), System.ComponentModel.Description("Define si se habilita el botón cerrar en el formulario")>
+    Public Property EnabledCerrar() As Boolean
+        Get
+            Return _enabledCerrar
+        End Get
+        Set(ByVal Value As Boolean)
+            If _enabledCerrar <> Value Then
+                _enabledCerrar = Value
+            End If
+        End Set
+    End Property
+    Protected Overrides ReadOnly Property CreateParams() As CreateParams
+        Get
+            Dim cp As CreateParams = MyBase.CreateParams
+            If _enabledCerrar = False Then
+                Const CS_NOCLOSE As Integer = &H200
+                cp.ClassStyle = cp.ClassStyle Or CS_NOCLOSE
+            End If
+            Return cp
+        End Get
+    End Property
+
     Private Sub PorEntradasEnCajaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PorEntradasEnCajaToolStripMenuItem.Click
 
     End Sub
@@ -102,7 +125,7 @@
 
     Private Sub FRM_PRINCIPAL_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim desktopSize As Size = System.Windows.Forms.SystemInformation.PrimaryMonitorSize 'Captura el Tamaño del Monitor
-        Panel4.Location = New Point((desktopSize.Width - Panel4.Width) / 2, (desktopSize.Height - Panel4.Height) / 2 + 340)
+        Panel4.Location = New Point((desktopSize.Width - Panel4.Width) / 2, (desktopSize.Height - Panel4.Height) / 2 + 355)
         Panel3.Location = New Point((desktopSize.Width - Panel3.Width) / 2, 0)
         'Panel4.Location = New Point((desktopSize.Width - Panel4.Width) / 2, (desktopSize.Height - Panel4.Height) / 2 + 300)
 
