@@ -253,10 +253,9 @@
       <DependentUpon>FRM_VENTAS.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
-      <CustomToolNamespace>My.Resources</CustomToolNamespace>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -270,6 +269,126 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sencilla-azul-abstracto-4950.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formularios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sencilla-azul-abstracto-4950.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo azul bajo-912242.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smooth-ice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470052684_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470052756_buy_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470053677_document_pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470053401_delivery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470052693_report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470053414_shopping-bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470053407_credit-cards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470052726_delete_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smooth-ice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470052797_pencil_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470052797_pencil_161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470053680_reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470052776_trash_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470052742_search_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470052726_delete_161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FORMULARIOS1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo azul.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470052797_pencil_162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470052718_tick_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470052693_report1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470052726_delete_162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470052726_delete_163.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470052718_tick_161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470052756_buy_161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470052776_trash_161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470053407_credit-cards1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470053407_credit-cards2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470052684_user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470053414_shopping-bag1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470053680_reload1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470053677_document_pencil1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470053401_delivery1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smooth-ice1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smooth-ice2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1470052742_search_161.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -99,4 +99,12 @@
         FRM.TAB_CONTROL1.SelectedIndex = 1
         FRM.Show()
     End Sub
+
+    Private Sub FRM_PRINCIPAL_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim desktopSize As Size = System.Windows.Forms.SystemInformation.PrimaryMonitorSize 'Captura el Tamaño del Monitor
+        Panel4.Location = New Point((desktopSize.Width - Panel4.Width) / 2, (desktopSize.Height - Panel4.Height) / 2 + 340)
+        Panel3.Location = New Point((desktopSize.Width - Panel3.Width) / 2, 0)
+        'Panel4.Location = New Point((desktopSize.Width - Panel4.Width) / 2, (desktopSize.Height - Panel4.Height) / 2 + 300)
+
+    End Sub
 End Class

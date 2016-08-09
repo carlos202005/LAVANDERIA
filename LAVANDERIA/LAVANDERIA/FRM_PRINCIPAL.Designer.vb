@@ -57,16 +57,28 @@ Partial Class FRM_PRINCIPAL
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.BTN_SALIR = New System.Windows.Forms.Button()
         Me.BTN_PAGOS_EXTRA = New System.Windows.Forms.Button()
-        Me.BTN_INSUMOS = New System.Windows.Forms.Button()
-        Me.BTN_FACTURA = New System.Windows.Forms.Button()
-        Me.BTN_ENTREGA = New System.Windows.Forms.Button()
-        Me.BTN_ORDEN = New System.Windows.Forms.Button()
-        Me.BTN_VENTAS = New System.Windows.Forms.Button()
         Me.BNT_CLIENTES = New System.Windows.Forms.Button()
+        Me.BTN_INSUMOS = New System.Windows.Forms.Button()
+        Me.BTN_VENTAS = New System.Windows.Forms.Button()
+        Me.BTN_FACTURA = New System.Windows.Forms.Button()
+        Me.BTN_ORDEN = New System.Windows.Forms.Button()
+        Me.BTN_ENTREGA = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        Me.Panel4.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -75,7 +87,7 @@ Partial Class FRM_PRINCIPAL
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GlobalToolStripMenuItem, Me.ArchivosToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.CajaToolStripMenuItem, Me.ServiciosToolStripMenuItem, Me.VentasToolStripMenuItem, Me.InformesToolStripMenuItem, Me.ConfiguracionToolStripMenuItem, Me.AyudaToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(982, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1032, 28)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -95,7 +107,7 @@ Partial Class FRM_PRINCIPAL
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(141, 26)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'ArchivosToolStripMenuItem
@@ -177,13 +189,13 @@ Partial Class FRM_PRINCIPAL
         'PrendasToolStripMenuItem
         '
         Me.PrendasToolStripMenuItem.Name = "PrendasToolStripMenuItem"
-        Me.PrendasToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.PrendasToolStripMenuItem.Size = New System.Drawing.Size(142, 26)
         Me.PrendasToolStripMenuItem.Text = "Prendas"
         '
         'ServiciosToolStripMenuItem1
         '
         Me.ServiciosToolStripMenuItem1.Name = "ServiciosToolStripMenuItem1"
-        Me.ServiciosToolStripMenuItem1.Size = New System.Drawing.Size(181, 26)
+        Me.ServiciosToolStripMenuItem1.Size = New System.Drawing.Size(142, 26)
         Me.ServiciosToolStripMenuItem1.Text = "Servicios"
         '
         'VentasToolStripMenuItem
@@ -287,23 +299,38 @@ Partial Class FRM_PRINCIPAL
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.BTN_SALIR)
-        Me.Panel1.Controls.Add(Me.BTN_PAGOS_EXTRA)
-        Me.Panel1.Controls.Add(Me.BTN_INSUMOS)
-        Me.Panel1.Controls.Add(Me.BTN_FACTURA)
-        Me.Panel1.Controls.Add(Me.BTN_ENTREGA)
-        Me.Panel1.Controls.Add(Me.BTN_ORDEN)
-        Me.Panel1.Controls.Add(Me.BTN_VENTAS)
-        Me.Panel1.Controls.Add(Me.BNT_CLIENTES)
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.Panel3)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 28)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(982, 135)
+        Me.Panel1.Size = New System.Drawing.Size(1032, 135)
         Me.Panel1.TabIndex = 1
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.Transparent
+        Me.Panel3.Controls.Add(Me.BTN_SALIR)
+        Me.Panel3.Controls.Add(Me.BTN_PAGOS_EXTRA)
+        Me.Panel3.Controls.Add(Me.BNT_CLIENTES)
+        Me.Panel3.Controls.Add(Me.BTN_INSUMOS)
+        Me.Panel3.Controls.Add(Me.BTN_VENTAS)
+        Me.Panel3.Controls.Add(Me.BTN_FACTURA)
+        Me.Panel3.Controls.Add(Me.BTN_ORDEN)
+        Me.Panel3.Controls.Add(Me.BTN_ENTREGA)
+        Me.Panel3.Location = New System.Drawing.Point(12, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(1008, 135)
+        Me.Panel3.TabIndex = 3
         '
         'BTN_SALIR
         '
-        Me.BTN_SALIR.Location = New System.Drawing.Point(839, 3)
+        Me.BTN_SALIR.FlatAppearance.BorderSize = 0
+        Me.BTN_SALIR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.BTN_SALIR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.BTN_SALIR.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_SALIR.Image = Global.LAVANDERIA.My.Resources.Resources._1470052726_delete_16
+        Me.BTN_SALIR.Location = New System.Drawing.Point(858, 7)
         Me.BTN_SALIR.Name = "BTN_SALIR"
         Me.BTN_SALIR.Size = New System.Drawing.Size(100, 120)
         Me.BTN_SALIR.TabIndex = 7
@@ -313,7 +340,12 @@ Partial Class FRM_PRINCIPAL
         '
         'BTN_PAGOS_EXTRA
         '
-        Me.BTN_PAGOS_EXTRA.Location = New System.Drawing.Point(691, 3)
+        Me.BTN_PAGOS_EXTRA.FlatAppearance.BorderSize = 0
+        Me.BTN_PAGOS_EXTRA.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.BTN_PAGOS_EXTRA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.BTN_PAGOS_EXTRA.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_PAGOS_EXTRA.Image = Global.LAVANDERIA.My.Resources.Resources._1470053407_credit_cards
+        Me.BTN_PAGOS_EXTRA.Location = New System.Drawing.Point(710, 7)
         Me.BTN_PAGOS_EXTRA.Name = "BTN_PAGOS_EXTRA"
         Me.BTN_PAGOS_EXTRA.Size = New System.Drawing.Size(100, 120)
         Me.BTN_PAGOS_EXTRA.TabIndex = 6
@@ -321,59 +353,14 @@ Partial Class FRM_PRINCIPAL
         Me.BTN_PAGOS_EXTRA.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.BTN_PAGOS_EXTRA.UseVisualStyleBackColor = True
         '
-        'BTN_INSUMOS
-        '
-        Me.BTN_INSUMOS.Location = New System.Drawing.Point(585, 3)
-        Me.BTN_INSUMOS.Name = "BTN_INSUMOS"
-        Me.BTN_INSUMOS.Size = New System.Drawing.Size(100, 120)
-        Me.BTN_INSUMOS.TabIndex = 5
-        Me.BTN_INSUMOS.Text = "INSUMOS"
-        Me.BTN_INSUMOS.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTN_INSUMOS.UseVisualStyleBackColor = True
-        '
-        'BTN_FACTURA
-        '
-        Me.BTN_FACTURA.Location = New System.Drawing.Point(479, 3)
-        Me.BTN_FACTURA.Name = "BTN_FACTURA"
-        Me.BTN_FACTURA.Size = New System.Drawing.Size(100, 120)
-        Me.BTN_FACTURA.TabIndex = 4
-        Me.BTN_FACTURA.Text = "RECIBOS"
-        Me.BTN_FACTURA.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTN_FACTURA.UseVisualStyleBackColor = True
-        '
-        'BTN_ENTREGA
-        '
-        Me.BTN_ENTREGA.Location = New System.Drawing.Point(348, 3)
-        Me.BTN_ENTREGA.Name = "BTN_ENTREGA"
-        Me.BTN_ENTREGA.Size = New System.Drawing.Size(100, 120)
-        Me.BTN_ENTREGA.TabIndex = 3
-        Me.BTN_ENTREGA.Text = "ENTREGA"
-        Me.BTN_ENTREGA.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTN_ENTREGA.UseVisualStyleBackColor = True
-        '
-        'BTN_ORDEN
-        '
-        Me.BTN_ORDEN.Location = New System.Drawing.Point(242, 3)
-        Me.BTN_ORDEN.Name = "BTN_ORDEN"
-        Me.BTN_ORDEN.Size = New System.Drawing.Size(100, 120)
-        Me.BTN_ORDEN.TabIndex = 2
-        Me.BTN_ORDEN.Text = "ORDEN"
-        Me.BTN_ORDEN.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTN_ORDEN.UseVisualStyleBackColor = True
-        '
-        'BTN_VENTAS
-        '
-        Me.BTN_VENTAS.Location = New System.Drawing.Point(136, 3)
-        Me.BTN_VENTAS.Name = "BTN_VENTAS"
-        Me.BTN_VENTAS.Size = New System.Drawing.Size(100, 120)
-        Me.BTN_VENTAS.TabIndex = 1
-        Me.BTN_VENTAS.Text = "VENTAS"
-        Me.BTN_VENTAS.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTN_VENTAS.UseVisualStyleBackColor = True
-        '
         'BNT_CLIENTES
         '
-        Me.BNT_CLIENTES.Location = New System.Drawing.Point(3, 3)
+        Me.BNT_CLIENTES.FlatAppearance.BorderSize = 0
+        Me.BNT_CLIENTES.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.BNT_CLIENTES.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.BNT_CLIENTES.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BNT_CLIENTES.Image = Global.LAVANDERIA.My.Resources.Resources._1470052684_user
+        Me.BNT_CLIENTES.Location = New System.Drawing.Point(22, 7)
         Me.BNT_CLIENTES.Name = "BNT_CLIENTES"
         Me.BNT_CLIENTES.Size = New System.Drawing.Size(100, 120)
         Me.BNT_CLIENTES.TabIndex = 0
@@ -381,14 +368,190 @@ Partial Class FRM_PRINCIPAL
         Me.BNT_CLIENTES.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.BNT_CLIENTES.UseVisualStyleBackColor = True
         '
+        'BTN_INSUMOS
+        '
+        Me.BTN_INSUMOS.FlatAppearance.BorderSize = 0
+        Me.BTN_INSUMOS.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.BTN_INSUMOS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.BTN_INSUMOS.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_INSUMOS.Image = Global.LAVANDERIA.My.Resources.Resources._1470053414_shopping_bag
+        Me.BTN_INSUMOS.Location = New System.Drawing.Point(604, 7)
+        Me.BTN_INSUMOS.Name = "BTN_INSUMOS"
+        Me.BTN_INSUMOS.Size = New System.Drawing.Size(100, 120)
+        Me.BTN_INSUMOS.TabIndex = 5
+        Me.BTN_INSUMOS.Text = "INSUMOS"
+        Me.BTN_INSUMOS.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BTN_INSUMOS.UseVisualStyleBackColor = True
+        '
+        'BTN_VENTAS
+        '
+        Me.BTN_VENTAS.FlatAppearance.BorderSize = 0
+        Me.BTN_VENTAS.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.BTN_VENTAS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.BTN_VENTAS.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_VENTAS.Image = Global.LAVANDERIA.My.Resources.Resources._1470052756_buy_16
+        Me.BTN_VENTAS.Location = New System.Drawing.Point(155, 7)
+        Me.BTN_VENTAS.Name = "BTN_VENTAS"
+        Me.BTN_VENTAS.Size = New System.Drawing.Size(100, 120)
+        Me.BTN_VENTAS.TabIndex = 1
+        Me.BTN_VENTAS.Text = "VENTAS"
+        Me.BTN_VENTAS.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BTN_VENTAS.UseVisualStyleBackColor = True
+        '
+        'BTN_FACTURA
+        '
+        Me.BTN_FACTURA.FlatAppearance.BorderSize = 0
+        Me.BTN_FACTURA.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.BTN_FACTURA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.BTN_FACTURA.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_FACTURA.Image = Global.LAVANDERIA.My.Resources.Resources._1470052693_report
+        Me.BTN_FACTURA.Location = New System.Drawing.Point(498, 7)
+        Me.BTN_FACTURA.Name = "BTN_FACTURA"
+        Me.BTN_FACTURA.Size = New System.Drawing.Size(100, 120)
+        Me.BTN_FACTURA.TabIndex = 4
+        Me.BTN_FACTURA.Text = "RECIBOS"
+        Me.BTN_FACTURA.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BTN_FACTURA.UseVisualStyleBackColor = True
+        '
+        'BTN_ORDEN
+        '
+        Me.BTN_ORDEN.FlatAppearance.BorderSize = 0
+        Me.BTN_ORDEN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.BTN_ORDEN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.BTN_ORDEN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_ORDEN.Image = Global.LAVANDERIA.My.Resources.Resources._1470053677_document_pencil
+        Me.BTN_ORDEN.Location = New System.Drawing.Point(261, 7)
+        Me.BTN_ORDEN.Name = "BTN_ORDEN"
+        Me.BTN_ORDEN.Size = New System.Drawing.Size(100, 120)
+        Me.BTN_ORDEN.TabIndex = 2
+        Me.BTN_ORDEN.Text = "ORDEN"
+        Me.BTN_ORDEN.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BTN_ORDEN.UseVisualStyleBackColor = True
+        '
+        'BTN_ENTREGA
+        '
+        Me.BTN_ENTREGA.FlatAppearance.BorderSize = 0
+        Me.BTN_ENTREGA.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.BTN_ENTREGA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.BTN_ENTREGA.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_ENTREGA.Image = Global.LAVANDERIA.My.Resources.Resources._1470053401_delivery
+        Me.BTN_ENTREGA.Location = New System.Drawing.Point(367, 7)
+        Me.BTN_ENTREGA.Name = "BTN_ENTREGA"
+        Me.BTN_ENTREGA.Size = New System.Drawing.Size(100, 120)
+        Me.BTN_ENTREGA.TabIndex = 3
+        Me.BTN_ENTREGA.Text = "ENTREGA"
+        Me.BTN_ENTREGA.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BTN_ENTREGA.UseVisualStyleBackColor = True
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.Transparent
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel2.Location = New System.Drawing.Point(0, 781)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(1032, 72)
+        Me.Panel2.TabIndex = 2
+        '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.LinkLabel1.Location = New System.Drawing.Point(949, 23)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(24, 24)
+        Me.LinkLabel1.TabIndex = 6
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "--"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(696, 25)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(139, 20)
+        Me.Label5.TabIndex = 5
+        Me.Label5.Text = "HORA_SISTEMA"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(622, 25)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(68, 20)
+        Me.Label6.TabIndex = 4
+        Me.Label6.Text = "HORA :"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(443, 25)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(70, 20)
+        Me.Label3.TabIndex = 3
+        Me.Label3.Text = "CARGO"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(340, 25)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(80, 20)
+        Me.Label4.TabIndex = 2
+        Me.Label4.Text = "CARGO :"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(134, 27)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(84, 20)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "USUARIO"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(34, 27)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(94, 20)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "USUARIO :"
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.Transparent
+        Me.Panel4.Controls.Add(Me.LinkLabel1)
+        Me.Panel4.Controls.Add(Me.Label5)
+        Me.Panel4.Controls.Add(Me.Label1)
+        Me.Panel4.Controls.Add(Me.Label6)
+        Me.Panel4.Controls.Add(Me.Label2)
+        Me.Panel4.Controls.Add(Me.Label3)
+        Me.Panel4.Controls.Add(Me.Label4)
+        Me.Panel4.Location = New System.Drawing.Point(12, 778)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(1008, 72)
+        Me.Panel4.TabIndex = 4
+        '
         'FRM_PRINCIPAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(982, 853)
+        Me.BackgroundImage = Global.LAVANDERIA.My.Resources.Resources.smooth_ice1
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(1032, 853)
+        Me.Controls.Add(Me.Panel4)
+        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.DoubleBuffered = True
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "FRM_PRINCIPAL"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -397,6 +560,9 @@ Partial Class FRM_PRINCIPAL
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.Panel1.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -445,4 +611,14 @@ Partial Class FRM_PRINCIPAL
     Friend WithEvents BTN_VENTAS As Button
     Friend WithEvents BNT_CLIENTES As Button
     Friend WithEvents ProveedoresToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Panel4 As Panel
 End Class

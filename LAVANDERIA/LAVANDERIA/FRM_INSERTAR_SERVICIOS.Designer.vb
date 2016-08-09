@@ -27,40 +27,40 @@ Partial Class FRM_INSERTAR_SERVICIOS
         Me.BTN_NUEVO = New System.Windows.Forms.Button()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.DATOS = New System.Windows.Forms.GroupBox()
-        Me.TAB_CONTROL1 = New System.Windows.Forms.TabControl()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.BUSCAR = New System.Windows.Forms.GroupBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.BTN_BUSCAR = New System.Windows.Forms.Button()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.DATOS = New System.Windows.Forms.GroupBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TAB_CONTROL1 = New System.Windows.Forms.TabControl()
         Me.OPCIONES.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        Me.BUSCAR.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage1.SuspendLayout()
         Me.DATOS.SuspendLayout()
-        Me.TAB_CONTROL1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.BUSCAR.SuspendLayout()
+        Me.TAB_CONTROL1.SuspendLayout()
         Me.SuspendLayout()
         '
         'OPCIONES
@@ -122,201 +122,6 @@ Partial Class FRM_INSERTAR_SERVICIOS
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "DATOS"
         '
-        'TabPage1
-        '
-        Me.TabPage1.Controls.Add(Me.DATOS)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(812, 597)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "SERVICIOS"
-        Me.TabPage1.UseVisualStyleBackColor = True
-        '
-        'DATOS
-        '
-        Me.DATOS.Controls.Add(Me.ComboBox1)
-        Me.DATOS.Controls.Add(Me.GroupBox3)
-        Me.DATOS.Controls.Add(Me.TextBox4)
-        Me.DATOS.Controls.Add(Me.Label4)
-        Me.DATOS.Controls.Add(Me.Label3)
-        Me.DATOS.Controls.Add(Me.TextBox2)
-        Me.DATOS.Controls.Add(Me.Label2)
-        Me.DATOS.Controls.Add(Me.TextBox1)
-        Me.DATOS.Controls.Add(Me.Label1)
-        Me.DATOS.Location = New System.Drawing.Point(6, 6)
-        Me.DATOS.Name = "DATOS"
-        Me.DATOS.Size = New System.Drawing.Size(800, 585)
-        Me.DATOS.TabIndex = 0
-        Me.DATOS.TabStop = False
-        Me.DATOS.Text = "DATOS"
-        '
-        'TAB_CONTROL1
-        '
-        Me.TAB_CONTROL1.Controls.Add(Me.TabPage1)
-        Me.TAB_CONTROL1.Controls.Add(Me.TabPage2)
-        Me.TAB_CONTROL1.Location = New System.Drawing.Point(150, 13)
-        Me.TAB_CONTROL1.Name = "TAB_CONTROL1"
-        Me.TAB_CONTROL1.SelectedIndex = 0
-        Me.TAB_CONTROL1.Size = New System.Drawing.Size(820, 626)
-        Me.TAB_CONTROL1.TabIndex = 4
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(114, 87)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(63, 17)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "CÓDIGO"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(205, 82)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(416, 22)
-        Me.TextBox1.TabIndex = 1
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(205, 144)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(416, 22)
-        Me.TextBox2.TabIndex = 3
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(114, 149)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(68, 17)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "NOMBRE"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(114, 215)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(65, 17)
-        Me.Label3.TabIndex = 4
-        Me.Label3.Text = "PRENDA"
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(205, 275)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(416, 22)
-        Me.TextBox4.TabIndex = 7
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(114, 280)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(59, 17)
-        Me.Label4.TabIndex = 6
-        Me.Label4.Text = "PRECIO"
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.RadioButton2)
-        Me.GroupBox3.Controls.Add(Me.RadioButton1)
-        Me.GroupBox3.Location = New System.Drawing.Point(117, 340)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(504, 119)
-        Me.GroupBox3.TabIndex = 8
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "TIPO DE PRECIO"
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(108, 54)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(81, 21)
-        Me.RadioButton1.TabIndex = 0
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "UNIDAD"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(310, 54)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(69, 21)
-        Me.RadioButton2.TabIndex = 1
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "KILOS"
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(205, 215)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(416, 24)
-        Me.ComboBox1.TabIndex = 9
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(101, 39)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(63, 17)
-        Me.Label5.TabIndex = 0
-        Me.Label5.Text = "CÓDIGO"
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(223, 39)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(468, 22)
-        Me.TextBox3.TabIndex = 1
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(223, 112)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(468, 22)
-        Me.TextBox5.TabIndex = 3
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(101, 112)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(68, 17)
-        Me.Label6.TabIndex = 2
-        Me.Label6.Text = "NOMBRE"
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(223, 181)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(468, 22)
-        Me.TextBox6.TabIndex = 5
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(101, 181)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(100, 17)
-        Me.Label7.TabIndex = 4
-        Me.Label7.Text = "DESCRIPCIÓN"
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(6, 230)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(788, 260)
-        Me.DataGridView1.TabIndex = 6
-        '
         'BUSCAR
         '
         Me.BUSCAR.Controls.Add(Me.TextBox8)
@@ -356,6 +161,202 @@ Partial Class FRM_INSERTAR_SERVICIOS
         Me.ComboBox2.Size = New System.Drawing.Size(162, 28)
         Me.ComboBox2.TabIndex = 0
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(6, 230)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowTemplate.Height = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(788, 260)
+        Me.DataGridView1.TabIndex = 6
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(223, 123)
+        Me.TextBox6.Multiline = True
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(468, 91)
+        Me.TextBox6.TabIndex = 5
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(101, 126)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(100, 17)
+        Me.Label7.TabIndex = 4
+        Me.Label7.Text = "DESCRIPCIÓN"
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(223, 76)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(468, 22)
+        Me.TextBox5.TabIndex = 3
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(101, 76)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(68, 17)
+        Me.Label6.TabIndex = 2
+        Me.Label6.Text = "NOMBRE"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(223, 32)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(468, 22)
+        Me.TextBox3.TabIndex = 1
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(101, 32)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(63, 17)
+        Me.Label5.TabIndex = 0
+        Me.Label5.Text = "CÓDIGO"
+        '
+        'TabPage1
+        '
+        Me.TabPage1.Controls.Add(Me.DATOS)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(812, 597)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "SERVICIOS"
+        Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'DATOS
+        '
+        Me.DATOS.Controls.Add(Me.ComboBox1)
+        Me.DATOS.Controls.Add(Me.GroupBox3)
+        Me.DATOS.Controls.Add(Me.TextBox4)
+        Me.DATOS.Controls.Add(Me.Label4)
+        Me.DATOS.Controls.Add(Me.Label3)
+        Me.DATOS.Controls.Add(Me.TextBox2)
+        Me.DATOS.Controls.Add(Me.Label2)
+        Me.DATOS.Controls.Add(Me.TextBox1)
+        Me.DATOS.Controls.Add(Me.Label1)
+        Me.DATOS.Location = New System.Drawing.Point(6, 6)
+        Me.DATOS.Name = "DATOS"
+        Me.DATOS.Size = New System.Drawing.Size(800, 585)
+        Me.DATOS.TabIndex = 0
+        Me.DATOS.TabStop = False
+        Me.DATOS.Text = "DATOS"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(205, 215)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(416, 24)
+        Me.ComboBox1.TabIndex = 9
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.RadioButton2)
+        Me.GroupBox3.Controls.Add(Me.RadioButton1)
+        Me.GroupBox3.Location = New System.Drawing.Point(117, 340)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(504, 119)
+        Me.GroupBox3.TabIndex = 8
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "TIPO DE PRECIO"
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(310, 54)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(69, 21)
+        Me.RadioButton2.TabIndex = 1
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "KILOS"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(108, 54)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(81, 21)
+        Me.RadioButton1.TabIndex = 0
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "UNIDAD"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(205, 275)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(416, 22)
+        Me.TextBox4.TabIndex = 7
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(114, 280)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(59, 17)
+        Me.Label4.TabIndex = 6
+        Me.Label4.Text = "PRECIO"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(114, 215)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(65, 17)
+        Me.Label3.TabIndex = 4
+        Me.Label3.Text = "PRENDA"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(205, 144)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(416, 22)
+        Me.TextBox2.TabIndex = 3
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(114, 149)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(68, 17)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "NOMBRE"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(205, 82)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(416, 22)
+        Me.TextBox1.TabIndex = 1
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(114, 87)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(63, 17)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "CÓDIGO"
+        '
+        'TAB_CONTROL1
+        '
+        Me.TAB_CONTROL1.Controls.Add(Me.TabPage1)
+        Me.TAB_CONTROL1.Controls.Add(Me.TabPage2)
+        Me.TAB_CONTROL1.Location = New System.Drawing.Point(150, 13)
+        Me.TAB_CONTROL1.Name = "TAB_CONTROL1"
+        Me.TAB_CONTROL1.SelectedIndex = 0
+        Me.TAB_CONTROL1.Size = New System.Drawing.Size(820, 626)
+        Me.TAB_CONTROL1.TabIndex = 4
+        '
         'FRM_INSERTAR_SERVICIOS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -370,15 +371,15 @@ Partial Class FRM_INSERTAR_SERVICIOS
         Me.TabPage2.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.BUSCAR.ResumeLayout(False)
+        Me.BUSCAR.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage1.ResumeLayout(False)
         Me.DATOS.ResumeLayout(False)
         Me.DATOS.PerformLayout()
-        Me.TAB_CONTROL1.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.BUSCAR.ResumeLayout(False)
-        Me.BUSCAR.PerformLayout()
+        Me.TAB_CONTROL1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
