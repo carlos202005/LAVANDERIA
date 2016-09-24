@@ -149,7 +149,7 @@ Partial Class FRM_APERTURA_CAJA
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Image = Global.LAVANDERIA.My.Resources.Resources._1470052718_tick_16
-        Me.Button1.Location = New System.Drawing.Point(94, 15)
+        Me.Button1.Location = New System.Drawing.Point(108, 15)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(100, 115)
         Me.Button1.TabIndex = 2
