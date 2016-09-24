@@ -538,7 +538,7 @@ Partial Class FRM_PRINCIPAL
         Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
         Me.Button1.Image = Global.LAVANDERIA.My.Resources.Resources._1470052726_delete_16
-        Me.Button1.Location = New System.Drawing.Point(546, 285)
+        Me.Button1.Location = New System.Drawing.Point(700, 294)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(100, 120)
         Me.Button1.TabIndex = 8
