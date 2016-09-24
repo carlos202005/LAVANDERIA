@@ -22,34 +22,33 @@ Partial Class FRM_INSERTAR_GASTOS
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.TAB_CONTROL1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.DATOS = New System.Windows.Forms.GroupBox()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.OPCIONES = New System.Windows.Forms.GroupBox()
-        Me.BTN_SALIR = New System.Windows.Forms.Button()
-        Me.BTN_NUEVO = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.BUSCAR = New System.Windows.Forms.GroupBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.BTN_BUSCAR = New System.Windows.Forms.Button()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.DATOS = New System.Windows.Forms.GroupBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -59,6 +58,7 @@ Partial Class FRM_INSERTAR_GASTOS
         Me.Label9 = New System.Windows.Forms.Label()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.TextBox13 = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -73,22 +73,24 @@ Partial Class FRM_INSERTAR_GASTOS
         Me.Label14 = New System.Windows.Forms.Label()
         Me.TextBox18 = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.OPCIONES = New System.Windows.Forms.GroupBox()
+        Me.BTN_SALIR = New System.Windows.Forms.Button()
+        Me.BTN_NUEVO = New System.Windows.Forms.Button()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.TAB_CONTROL1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
-        Me.DATOS.SuspendLayout()
-        Me.TabPage2.SuspendLayout()
-        Me.TabPage3.SuspendLayout()
-        Me.OPCIONES.SuspendLayout()
         Me.BUSCAR.SuspendLayout()
+        Me.DATOS.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage3.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.OPCIONES.SuspendLayout()
         Me.SuspendLayout()
         '
         'TAB_CONTROL1
@@ -113,161 +115,6 @@ Partial Class FRM_INSERTAR_GASTOS
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "INSUMOS"
         Me.TabPage1.UseVisualStyleBackColor = True
-        '
-        'DATOS
-        '
-        Me.DATOS.Controls.Add(Me.DataGridView1)
-        Me.DATOS.Controls.Add(Me.TextBox5)
-        Me.DATOS.Controls.Add(Me.Label5)
-        Me.DATOS.Controls.Add(Me.TextBox4)
-        Me.DATOS.Controls.Add(Me.Label4)
-        Me.DATOS.Controls.Add(Me.TextBox3)
-        Me.DATOS.Controls.Add(Me.Label3)
-        Me.DATOS.Controls.Add(Me.TextBox2)
-        Me.DATOS.Controls.Add(Me.Label2)
-        Me.DATOS.Controls.Add(Me.TextBox1)
-        Me.DATOS.Controls.Add(Me.Label1)
-        Me.DATOS.Location = New System.Drawing.Point(6, 6)
-        Me.DATOS.Name = "DATOS"
-        Me.DATOS.Size = New System.Drawing.Size(800, 493)
-        Me.DATOS.TabIndex = 0
-        Me.DATOS.TabStop = False
-        Me.DATOS.Text = "DATOS"
-        '
-        'TabPage2
-        '
-        Me.TabPage2.Controls.Add(Me.GroupBox1)
-        Me.TabPage2.Controls.Add(Me.GroupBox2)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(812, 597)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "RECIBOS"
-        Me.TabPage2.UseVisualStyleBackColor = True
-        '
-        'TabPage3
-        '
-        Me.TabPage3.Controls.Add(Me.GroupBox3)
-        Me.TabPage3.Controls.Add(Me.GroupBox4)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(812, 597)
-        Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "PAGOS ADICIONALES"
-        Me.TabPage3.UseVisualStyleBackColor = True
-        '
-        'OPCIONES
-        '
-        Me.OPCIONES.Controls.Add(Me.BTN_SALIR)
-        Me.OPCIONES.Controls.Add(Me.BTN_NUEVO)
-        Me.OPCIONES.Location = New System.Drawing.Point(12, 13)
-        Me.OPCIONES.Name = "OPCIONES"
-        Me.OPCIONES.Size = New System.Drawing.Size(116, 626)
-        Me.OPCIONES.TabIndex = 3
-        Me.OPCIONES.TabStop = False
-        Me.OPCIONES.Text = "OPCIONES"
-        '
-        'BTN_SALIR
-        '
-        Me.BTN_SALIR.Location = New System.Drawing.Point(6, 505)
-        Me.BTN_SALIR.Name = "BTN_SALIR"
-        Me.BTN_SALIR.Size = New System.Drawing.Size(100, 111)
-        Me.BTN_SALIR.TabIndex = 4
-        Me.BTN_SALIR.Text = "CANCELAR"
-        Me.BTN_SALIR.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTN_SALIR.UseVisualStyleBackColor = True
-        '
-        'BTN_NUEVO
-        '
-        Me.BTN_NUEVO.Location = New System.Drawing.Point(6, 21)
-        Me.BTN_NUEVO.Name = "BTN_NUEVO"
-        Me.BTN_NUEVO.Size = New System.Drawing.Size(100, 115)
-        Me.BTN_NUEVO.TabIndex = 0
-        Me.BTN_NUEVO.Text = "ACEPTAR"
-        Me.BTN_NUEVO.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTN_NUEVO.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(130, 34)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(63, 17)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "CÓDIGO"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(245, 29)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(407, 22)
-        Me.TextBox1.TabIndex = 1
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(245, 66)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(407, 22)
-        Me.TextBox2.TabIndex = 3
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(130, 71)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(68, 17)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "NOMBRE"
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(245, 109)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(407, 73)
-        Me.TextBox3.TabIndex = 5
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(130, 109)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(100, 17)
-        Me.Label3.TabIndex = 4
-        Me.Label3.Text = "DESCRIPCIÓN"
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(245, 198)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(407, 22)
-        Me.TextBox4.TabIndex = 7
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(130, 201)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(77, 17)
-        Me.Label4.TabIndex = 6
-        Me.Label4.Text = "CANTIDAD"
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(245, 242)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(407, 22)
-        Me.TextBox5.TabIndex = 9
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(130, 247)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(59, 17)
-        Me.Label5.TabIndex = 8
-        Me.Label5.Text = "PRECIO"
         '
         'BUSCAR
         '
@@ -296,6 +143,7 @@ Partial Class FRM_INSERTAR_GASTOS
         Me.BTN_BUSCAR.Size = New System.Drawing.Size(95, 36)
         Me.BTN_BUSCAR.TabIndex = 1
         Me.BTN_BUSCAR.Text = "BUSCAR"
+        Me.ToolTip1.SetToolTip(Me.BTN_BUSCAR, "BUSCAR")
         Me.BTN_BUSCAR.UseVisualStyleBackColor = True
         '
         'ComboBox2
@@ -308,6 +156,26 @@ Partial Class FRM_INSERTAR_GASTOS
         Me.ComboBox2.Size = New System.Drawing.Size(162, 28)
         Me.ComboBox2.TabIndex = 0
         '
+        'DATOS
+        '
+        Me.DATOS.Controls.Add(Me.DataGridView1)
+        Me.DATOS.Controls.Add(Me.TextBox5)
+        Me.DATOS.Controls.Add(Me.Label5)
+        Me.DATOS.Controls.Add(Me.TextBox4)
+        Me.DATOS.Controls.Add(Me.Label4)
+        Me.DATOS.Controls.Add(Me.TextBox3)
+        Me.DATOS.Controls.Add(Me.Label3)
+        Me.DATOS.Controls.Add(Me.TextBox2)
+        Me.DATOS.Controls.Add(Me.Label2)
+        Me.DATOS.Controls.Add(Me.TextBox1)
+        Me.DATOS.Controls.Add(Me.Label1)
+        Me.DATOS.Location = New System.Drawing.Point(0, 3)
+        Me.DATOS.Name = "DATOS"
+        Me.DATOS.Size = New System.Drawing.Size(806, 496)
+        Me.DATOS.TabIndex = 0
+        Me.DATOS.TabStop = False
+        Me.DATOS.Text = "DATOS"
+        '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
@@ -316,6 +184,99 @@ Partial Class FRM_INSERTAR_GASTOS
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.Size = New System.Drawing.Size(788, 212)
         Me.DataGridView1.TabIndex = 10
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(245, 242)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(407, 22)
+        Me.TextBox5.TabIndex = 9
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(130, 247)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(59, 17)
+        Me.Label5.TabIndex = 8
+        Me.Label5.Text = "PRECIO"
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(245, 198)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(407, 22)
+        Me.TextBox4.TabIndex = 7
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(130, 201)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(77, 17)
+        Me.Label4.TabIndex = 6
+        Me.Label4.Text = "CANTIDAD"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(245, 109)
+        Me.TextBox3.Multiline = True
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(407, 73)
+        Me.TextBox3.TabIndex = 5
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(130, 109)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(100, 17)
+        Me.Label3.TabIndex = 4
+        Me.Label3.Text = "DESCRIPCIÓN"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(245, 66)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(407, 22)
+        Me.TextBox2.TabIndex = 3
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(130, 71)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(68, 17)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "NOMBRE"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(245, 29)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(407, 22)
+        Me.TextBox1.TabIndex = 1
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(130, 34)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(63, 17)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "CÓDIGO"
+        '
+        'TabPage2
+        '
+        Me.TabPage2.Controls.Add(Me.GroupBox1)
+        Me.TabPage2.Controls.Add(Me.GroupBox2)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(812, 597)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "RECIBOS"
+        Me.TabPage2.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
@@ -375,6 +336,20 @@ Partial Class FRM_INSERTAR_GASTOS
         Me.GroupBox2.TabIndex = 12
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "DATOS"
+        '
+        'DateTimePicker2
+        '
+        Me.DateTimePicker2.Location = New System.Drawing.Point(254, 204)
+        Me.DateTimePicker2.Name = "DateTimePicker2"
+        Me.DateTimePicker2.Size = New System.Drawing.Size(407, 22)
+        Me.DateTimePicker2.TabIndex = 12
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(254, 160)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(407, 22)
+        Me.DateTimePicker1.TabIndex = 11
         '
         'DataGridView2
         '
@@ -451,6 +426,17 @@ Partial Class FRM_INSERTAR_GASTOS
         Me.Label10.TabIndex = 0
         Me.Label10.Text = "CÓDIGO"
         '
+        'TabPage3
+        '
+        Me.TabPage3.Controls.Add(Me.GroupBox3)
+        Me.TabPage3.Controls.Add(Me.GroupBox4)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Size = New System.Drawing.Size(812, 597)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "PAGOS ADICIONALES"
+        Me.TabPage3.UseVisualStyleBackColor = True
+        '
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.TextBox13)
@@ -501,9 +487,9 @@ Partial Class FRM_INSERTAR_GASTOS
         Me.GroupBox4.Controls.Add(Me.Label14)
         Me.GroupBox4.Controls.Add(Me.TextBox18)
         Me.GroupBox4.Controls.Add(Me.Label15)
-        Me.GroupBox4.Location = New System.Drawing.Point(6, 6)
+        Me.GroupBox4.Location = New System.Drawing.Point(6, 3)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(800, 493)
+        Me.GroupBox4.Size = New System.Drawing.Size(800, 496)
         Me.GroupBox4.TabIndex = 12
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "DATOS"
@@ -582,19 +568,45 @@ Partial Class FRM_INSERTAR_GASTOS
         Me.Label15.TabIndex = 0
         Me.Label15.Text = "CÓDIGO"
         '
-        'DateTimePicker1
+        'OPCIONES
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(254, 160)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(407, 22)
-        Me.DateTimePicker1.TabIndex = 11
+        Me.OPCIONES.BackColor = System.Drawing.Color.Transparent
+        Me.OPCIONES.Controls.Add(Me.BTN_SALIR)
+        Me.OPCIONES.Controls.Add(Me.BTN_NUEVO)
+        Me.OPCIONES.Location = New System.Drawing.Point(12, 13)
+        Me.OPCIONES.Name = "OPCIONES"
+        Me.OPCIONES.Size = New System.Drawing.Size(116, 626)
+        Me.OPCIONES.TabIndex = 3
+        Me.OPCIONES.TabStop = False
+        Me.OPCIONES.Text = "OPCIONES"
         '
-        'DateTimePicker2
+        'BTN_SALIR
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(254, 204)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(407, 22)
-        Me.DateTimePicker2.TabIndex = 12
+        Me.BTN_SALIR.FlatAppearance.BorderSize = 0
+        Me.BTN_SALIR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.BTN_SALIR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.BTN_SALIR.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_SALIR.Image = Global.LAVANDERIA.My.Resources.Resources._1470052726_delete_16
+        Me.BTN_SALIR.Location = New System.Drawing.Point(6, 505)
+        Me.BTN_SALIR.Name = "BTN_SALIR"
+        Me.BTN_SALIR.Size = New System.Drawing.Size(100, 111)
+        Me.BTN_SALIR.TabIndex = 4
+        Me.ToolTip1.SetToolTip(Me.BTN_SALIR, "CANCELAR")
+        Me.BTN_SALIR.UseVisualStyleBackColor = True
+        '
+        'BTN_NUEVO
+        '
+        Me.BTN_NUEVO.FlatAppearance.BorderSize = 0
+        Me.BTN_NUEVO.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.BTN_NUEVO.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.BTN_NUEVO.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_NUEVO.Image = Global.LAVANDERIA.My.Resources.Resources._1470052718_tick_16
+        Me.BTN_NUEVO.Location = New System.Drawing.Point(6, 21)
+        Me.BTN_NUEVO.Name = "BTN_NUEVO"
+        Me.BTN_NUEVO.Size = New System.Drawing.Size(100, 115)
+        Me.BTN_NUEVO.TabIndex = 0
+        Me.ToolTip1.SetToolTip(Me.BTN_NUEVO, "ACEPTAR")
+        Me.BTN_NUEVO.UseVisualStyleBackColor = True
         '
         'FRM_INSERTAR_GASTOS
         '
@@ -608,24 +620,24 @@ Partial Class FRM_INSERTAR_GASTOS
         Me.Text = "INGRESAR GASTOS"
         Me.TAB_CONTROL1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
-        Me.DATOS.ResumeLayout(False)
-        Me.DATOS.PerformLayout()
-        Me.TabPage2.ResumeLayout(False)
-        Me.TabPage3.ResumeLayout(False)
-        Me.OPCIONES.ResumeLayout(False)
         Me.BUSCAR.ResumeLayout(False)
         Me.BUSCAR.PerformLayout()
+        Me.DATOS.ResumeLayout(False)
+        Me.DATOS.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage2.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage3.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.OPCIONES.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -683,4 +695,5 @@ Partial Class FRM_INSERTAR_GASTOS
     Friend WithEvents Label15 As Label
     Friend WithEvents DateTimePicker2 As DateTimePicker
     Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents ToolTip1 As ToolTip
 End Class

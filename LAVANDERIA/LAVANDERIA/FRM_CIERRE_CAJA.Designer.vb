@@ -26,29 +26,30 @@ Partial Class FRM_CIERRE_CAJA
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox2
         '
+        Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Location = New System.Drawing.Point(12, 297)
@@ -60,6 +61,11 @@ Partial Class FRM_CIERRE_CAJA
         '
         'Button2
         '
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Image = Global.LAVANDERIA.My.Resources.Resources._1470052726_delete_16
         Me.Button2.Location = New System.Drawing.Point(275, 21)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(100, 115)
@@ -70,6 +76,11 @@ Partial Class FRM_CIERRE_CAJA
         '
         'Button1
         '
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Image = Global.LAVANDERIA.My.Resources.Resources._1470052718_tick_16
         Me.Button1.Location = New System.Drawing.Point(105, 21)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(100, 115)
@@ -80,6 +91,7 @@ Partial Class FRM_CIERRE_CAJA
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.Label15)
         Me.GroupBox1.Controls.Add(Me.Label16)
         Me.GroupBox1.Controls.Add(Me.Label17)
@@ -103,132 +115,6 @@ Partial Class FRM_CIERRE_CAJA
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "APERTURA DE CAJA"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(220, 76)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(24, 17)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "$$"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(102, 76)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(47, 17)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "INICIO"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(102, 30)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(53, 17)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "FECHA"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(250, 76)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(125, 17)
-        Me.Label5.TabIndex = 5
-        Me.Label5.Text = "APERTURA_CAJA"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(250, 116)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(106, 17)
-        Me.Label6.TabIndex = 8
-        Me.Label6.Text = "VENTA_DIARIA"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(220, 116)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(24, 17)
-        Me.Label7.TabIndex = 7
-        Me.Label7.Text = "$$"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(102, 116)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(72, 17)
-        Me.Label8.TabIndex = 6
-        Me.Label8.Text = "BOLETAS"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(250, 155)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(120, 17)
-        Me.Label9.TabIndex = 11
-        Me.Label9.Text = "PAGOS_DIARIOS"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(220, 155)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(24, 17)
-        Me.Label10.TabIndex = 10
-        Me.Label10.Text = "$$"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(102, 155)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(66, 17)
-        Me.Label11.TabIndex = 9
-        Me.Label11.Text = "GASTOS"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(250, 190)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(111, 17)
-        Me.Label12.TabIndex = 14
-        Me.Label12.Text = "PAGOS_EXTRA"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(220, 190)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(24, 17)
-        Me.Label13.TabIndex = 13
-        Me.Label13.Text = "$$"
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(102, 190)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(107, 17)
-        Me.Label14.TabIndex = 12
-        Me.Label14.Text = "PAGOS EXTRA"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(220, 30)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(120, 17)
-        Me.Label3.TabIndex = 4
-        Me.Label3.Text = "FECHA_SISTEMA"
         '
         'Label15
         '
@@ -257,10 +143,137 @@ Partial Class FRM_CIERRE_CAJA
         Me.Label17.TabIndex = 15
         Me.Label17.Text = "TOTAL "
         '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(250, 190)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(111, 17)
+        Me.Label12.TabIndex = 14
+        Me.Label12.Text = "PAGOS_EXTRA"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(220, 190)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(24, 17)
+        Me.Label13.TabIndex = 13
+        Me.Label13.Text = "$$"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(102, 190)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(107, 17)
+        Me.Label14.TabIndex = 12
+        Me.Label14.Text = "PAGOS EXTRA"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(250, 155)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(120, 17)
+        Me.Label9.TabIndex = 11
+        Me.Label9.Text = "PAGOS_DIARIOS"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(220, 155)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(24, 17)
+        Me.Label10.TabIndex = 10
+        Me.Label10.Text = "$$"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(102, 155)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(66, 17)
+        Me.Label11.TabIndex = 9
+        Me.Label11.Text = "GASTOS"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(250, 116)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(106, 17)
+        Me.Label6.TabIndex = 8
+        Me.Label6.Text = "VENTA_DIARIA"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(220, 116)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(24, 17)
+        Me.Label7.TabIndex = 7
+        Me.Label7.Text = "$$"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(102, 116)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(72, 17)
+        Me.Label8.TabIndex = 6
+        Me.Label8.Text = "BOLETAS"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(250, 76)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(125, 17)
+        Me.Label5.TabIndex = 5
+        Me.Label5.Text = "APERTURA_CAJA"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(220, 30)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(120, 17)
+        Me.Label3.TabIndex = 4
+        Me.Label3.Text = "FECHA_SISTEMA"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(102, 30)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(53, 17)
+        Me.Label4.TabIndex = 3
+        Me.Label4.Text = "FECHA"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(220, 76)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(24, 17)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "$$"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(102, 76)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(47, 17)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "INICIO"
+        '
         'FRM_CIERRE_CAJA
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(482, 453)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)

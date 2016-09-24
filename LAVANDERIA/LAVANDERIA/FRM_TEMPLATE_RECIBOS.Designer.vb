@@ -192,7 +192,6 @@ Partial Class FRM_TEMPLATE_RECIBOS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.LAVANDERIA.My.Resources.Resources.DASDAD
         Me.ClientSize = New System.Drawing.Size(982, 653)
         Me.Controls.Add(Me.BUSCAR)
         Me.Controls.Add(Me.CLIENTES)

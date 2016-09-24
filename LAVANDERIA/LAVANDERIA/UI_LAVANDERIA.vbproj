@@ -392,6 +392,12 @@
   <ItemGroup>
     <None Include="Resources\1470052729_print_16.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ventas_lavanderia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apertura_cierre.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

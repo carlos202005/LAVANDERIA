@@ -53,8 +53,8 @@ Partial Class FRM_VENTAS
         Me.Button3 = New System.Windows.Forms.Button()
         Me.DataGridView3 = New System.Windows.Forms.DataGridView()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Button9 = New System.Windows.Forms.Button()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
@@ -409,8 +409,8 @@ Partial Class FRM_VENTAS
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox2.Controls.Add(Me.Button9)
         Me.GroupBox2.Controls.Add(Me.Label16)
-        Me.GroupBox2.Controls.Add(Me.Button5)
         Me.GroupBox2.Controls.Add(Me.TextBox7)
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.TextBox2)
@@ -424,6 +424,20 @@ Partial Class FRM_VENTAS
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "BUSCAR SERVICIO"
         '
+        'Button9
+        '
+        Me.Button9.FlatAppearance.BorderSize = 0
+        Me.Button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button9.Location = New System.Drawing.Point(606, 371)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(116, 35)
+        Me.Button9.TabIndex = 13
+        Me.Button9.Text = "AGREGAR"
+        Me.ToolTip1.SetToolTip(Me.Button9, "GENERAR CÓDIGO DE BARRAS")
+        Me.Button9.UseVisualStyleBackColor = True
+        '
         'Label16
         '
         Me.Label16.AutoSize = True
@@ -432,15 +446,6 @@ Partial Class FRM_VENTAS
         Me.Label16.Size = New System.Drawing.Size(56, 17)
         Me.Label16.TabIndex = 12
         Me.Label16.Text = "PIEZAS"
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(617, 371)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(116, 35)
-        Me.Button5.TabIndex = 5
-        Me.Button5.Text = "AGREGAR"
-        Me.Button5.UseVisualStyleBackColor = True
         '
         'TextBox7
         '
@@ -623,7 +628,7 @@ Partial Class FRM_VENTAS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.LAVANDERIA.My.Resources.Resources.smooth_ice1
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1682, 953)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "FRM_VENTAS"
@@ -696,7 +701,6 @@ Partial Class FRM_VENTAS
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label16 As Label
-    Friend WithEvents Button5 As Button
     Friend WithEvents TextBox7 As TextBox
     Friend WithEvents Button8 As Button
     Friend WithEvents Button7 As Button
@@ -704,4 +708,5 @@ Partial Class FRM_VENTAS
     Friend WithEvents GroupBox7 As GroupBox
     Friend WithEvents Label17 As Label
     Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents Button9 As Button
 End Class

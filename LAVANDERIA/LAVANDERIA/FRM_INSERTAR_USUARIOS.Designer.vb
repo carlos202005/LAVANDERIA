@@ -22,24 +22,15 @@ Partial Class FRM_INSERTAR_USUARIOS
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.OPCIONES = New System.Windows.Forms.GroupBox()
         Me.BTN_SALIR = New System.Windows.Forms.Button()
         Me.BTN_NUEVO = New System.Windows.Forms.Button()
         Me.TAB_CONTROL1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.DATOS = New System.Windows.Forms.GroupBox()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
-        Me.label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
@@ -48,29 +39,41 @@ Partial Class FRM_INSERTAR_USUARIOS
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.label1 = New System.Windows.Forms.Label()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.TextBox16 = New System.Windows.Forms.TextBox()
-        Me.Label16 = New System.Windows.Forms.Label()
+        Me.TextBox18 = New System.Windows.Forms.TextBox()
+        Me.TextBox19 = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TextBox17 = New System.Windows.Forms.TextBox()
         Me.Label17 = New System.Windows.Forms.Label()
-        Me.TextBox18 = New System.Windows.Forms.TextBox()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.TextBox19 = New System.Windows.Forms.TextBox()
-        Me.Label19 = New System.Windows.Forms.Label()
+        Me.TextBox16 = New System.Windows.Forms.TextBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.TextBox14 = New System.Windows.Forms.TextBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.TextBox20 = New System.Windows.Forms.TextBox()
+        Me.Label20 = New System.Windows.Forms.Label()
         Me.TextBox23 = New System.Windows.Forms.TextBox()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.TextBox24 = New System.Windows.Forms.TextBox()
@@ -83,21 +86,21 @@ Partial Class FRM_INSERTAR_USUARIOS
         Me.Label27 = New System.Windows.Forms.Label()
         Me.TextBox28 = New System.Windows.Forms.TextBox()
         Me.Label28 = New System.Windows.Forms.Label()
-        Me.TextBox20 = New System.Windows.Forms.TextBox()
-        Me.Label20 = New System.Windows.Forms.Label()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.OPCIONES.SuspendLayout()
         Me.TAB_CONTROL1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.DATOS.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
         'OPCIONES
         '
+        Me.OPCIONES.BackColor = System.Drawing.Color.Transparent
         Me.OPCIONES.Controls.Add(Me.BTN_SALIR)
         Me.OPCIONES.Controls.Add(Me.BTN_NUEVO)
         Me.OPCIONES.Location = New System.Drawing.Point(12, 15)
@@ -109,22 +112,30 @@ Partial Class FRM_INSERTAR_USUARIOS
         '
         'BTN_SALIR
         '
+        Me.BTN_SALIR.FlatAppearance.BorderSize = 0
+        Me.BTN_SALIR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.BTN_SALIR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.BTN_SALIR.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_SALIR.Image = Global.LAVANDERIA.My.Resources.Resources._1470052726_delete_16
         Me.BTN_SALIR.Location = New System.Drawing.Point(6, 505)
         Me.BTN_SALIR.Name = "BTN_SALIR"
         Me.BTN_SALIR.Size = New System.Drawing.Size(100, 111)
         Me.BTN_SALIR.TabIndex = 4
-        Me.BTN_SALIR.Text = "CANCELAR"
-        Me.BTN_SALIR.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ToolTip1.SetToolTip(Me.BTN_SALIR, "CANCELAR")
         Me.BTN_SALIR.UseVisualStyleBackColor = True
         '
         'BTN_NUEVO
         '
+        Me.BTN_NUEVO.FlatAppearance.BorderSize = 0
+        Me.BTN_NUEVO.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.BTN_NUEVO.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.BTN_NUEVO.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_NUEVO.Image = Global.LAVANDERIA.My.Resources.Resources._1470052718_tick_16
         Me.BTN_NUEVO.Location = New System.Drawing.Point(6, 21)
         Me.BTN_NUEVO.Name = "BTN_NUEVO"
         Me.BTN_NUEVO.Size = New System.Drawing.Size(100, 115)
         Me.BTN_NUEVO.TabIndex = 0
-        Me.BTN_NUEVO.Text = "ACEPTAR"
-        Me.BTN_NUEVO.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ToolTip1.SetToolTip(Me.BTN_NUEVO, "ACEPTAR")
         Me.BTN_NUEVO.UseVisualStyleBackColor = True
         '
         'TAB_CONTROL1
@@ -169,146 +180,28 @@ Partial Class FRM_INSERTAR_USUARIOS
         Me.DATOS.Controls.Add(Me.Label2)
         Me.DATOS.Controls.Add(Me.TextBox1)
         Me.DATOS.Controls.Add(Me.label1)
-        Me.DATOS.Location = New System.Drawing.Point(6, 6)
+        Me.DATOS.Location = New System.Drawing.Point(6, 0)
         Me.DATOS.Name = "DATOS"
-        Me.DATOS.Size = New System.Drawing.Size(800, 585)
+        Me.DATOS.Size = New System.Drawing.Size(800, 591)
         Me.DATOS.TabIndex = 0
         Me.DATOS.TabStop = False
         Me.DATOS.Text = "DATOS"
         '
-        'TabPage2
+        'TextBox9
         '
-        Me.TabPage2.Controls.Add(Me.GroupBox4)
-        Me.TabPage2.Controls.Add(Me.GroupBox1)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(812, 597)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "USUARIOS"
-        Me.TabPage2.UseVisualStyleBackColor = True
+        Me.TextBox9.Location = New System.Drawing.Point(223, 513)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(443, 22)
+        Me.TextBox9.TabIndex = 17
         '
-        'GroupBox1
+        'Label9
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox17)
-        Me.GroupBox1.Controls.Add(Me.Label17)
-        Me.GroupBox1.Controls.Add(Me.TextBox16)
-        Me.GroupBox1.Controls.Add(Me.Label16)
-        Me.GroupBox1.Controls.Add(Me.TextBox15)
-        Me.GroupBox1.Controls.Add(Me.Label15)
-        Me.GroupBox1.Controls.Add(Me.TextBox14)
-        Me.GroupBox1.Controls.Add(Me.Label14)
-        Me.GroupBox1.Controls.Add(Me.TextBox13)
-        Me.GroupBox1.Controls.Add(Me.Label13)
-        Me.GroupBox1.Controls.Add(Me.TextBox12)
-        Me.GroupBox1.Controls.Add(Me.Label12)
-        Me.GroupBox1.Controls.Add(Me.TextBox11)
-        Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Controls.Add(Me.TextBox10)
-        Me.GroupBox1.Controls.Add(Me.Label10)
-        Me.GroupBox1.Location = New System.Drawing.Point(6, 6)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(800, 429)
-        Me.GroupBox1.TabIndex = 1
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "DATOS"
-        '
-        'TabPage3
-        '
-        Me.TabPage3.Controls.Add(Me.GroupBox5)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(812, 597)
-        Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "PROVEEDORES"
-        Me.TabPage3.UseVisualStyleBackColor = True
-        '
-        'GroupBox5
-        '
-        Me.GroupBox5.Controls.Add(Me.TextBox20)
-        Me.GroupBox5.Controls.Add(Me.Label20)
-        Me.GroupBox5.Controls.Add(Me.TextBox23)
-        Me.GroupBox5.Controls.Add(Me.Label23)
-        Me.GroupBox5.Controls.Add(Me.TextBox24)
-        Me.GroupBox5.Controls.Add(Me.Label24)
-        Me.GroupBox5.Controls.Add(Me.TextBox25)
-        Me.GroupBox5.Controls.Add(Me.Label25)
-        Me.GroupBox5.Controls.Add(Me.TextBox26)
-        Me.GroupBox5.Controls.Add(Me.Label26)
-        Me.GroupBox5.Controls.Add(Me.TextBox27)
-        Me.GroupBox5.Controls.Add(Me.Label27)
-        Me.GroupBox5.Controls.Add(Me.TextBox28)
-        Me.GroupBox5.Controls.Add(Me.Label28)
-        Me.GroupBox5.Location = New System.Drawing.Point(6, 6)
-        Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(800, 585)
-        Me.GroupBox5.TabIndex = 2
-        Me.GroupBox5.TabStop = False
-        Me.GroupBox5.Text = "DATOS"
-        '
-        'label1
-        '
-        Me.label1.AutoSize = True
-        Me.label1.Location = New System.Drawing.Point(103, 46)
-        Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(63, 17)
-        Me.label1.TabIndex = 0
-        Me.label1.Text = "CÓDIGO"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(223, 43)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(443, 22)
-        Me.TextBox1.TabIndex = 1
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(223, 104)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(443, 22)
-        Me.TextBox2.TabIndex = 3
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(103, 107)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(87, 17)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "NOMBRE(S)"
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(223, 226)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(443, 22)
-        Me.TextBox3.TabIndex = 7
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(103, 229)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(112, 17)
-        Me.Label3.TabIndex = 6
-        Me.Label3.Text = "APELLIDO MAT."
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(223, 167)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(443, 22)
-        Me.TextBox4.TabIndex = 5
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(103, 170)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(110, 17)
-        Me.Label4.TabIndex = 4
-        Me.Label4.Text = "APELLIDO PAT."
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(103, 516)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(82, 17)
+        Me.Label9.TabIndex = 16
+        Me.Label9.Text = "DIRECCIÓN"
         '
         'TextBox5
         '
@@ -374,21 +267,81 @@ Partial Class FRM_INSERTAR_USUARIOS
         Me.Label8.TabIndex = 8
         Me.Label8.Text = "DNI"
         '
-        'TextBox9
+        'TextBox3
         '
-        Me.TextBox9.Location = New System.Drawing.Point(223, 513)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(443, 22)
-        Me.TextBox9.TabIndex = 17
+        Me.TextBox3.Location = New System.Drawing.Point(223, 226)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(443, 22)
+        Me.TextBox3.TabIndex = 7
         '
-        'Label9
+        'Label3
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(103, 516)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(82, 17)
-        Me.Label9.TabIndex = 16
-        Me.Label9.Text = "DIRECCIÓN"
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(103, 229)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(112, 17)
+        Me.Label3.TabIndex = 6
+        Me.Label3.Text = "APELLIDO MAT."
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(223, 167)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(443, 22)
+        Me.TextBox4.TabIndex = 5
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(103, 170)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(110, 17)
+        Me.Label4.TabIndex = 4
+        Me.Label4.Text = "APELLIDO PAT."
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(223, 104)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(443, 22)
+        Me.TextBox2.TabIndex = 3
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(103, 107)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(87, 17)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "NOMBRE(S)"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(223, 43)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(443, 22)
+        Me.TextBox1.TabIndex = 1
+        '
+        'label1
+        '
+        Me.label1.AutoSize = True
+        Me.label1.Location = New System.Drawing.Point(103, 46)
+        Me.label1.Name = "label1"
+        Me.label1.Size = New System.Drawing.Size(63, 17)
+        Me.label1.TabIndex = 0
+        Me.label1.Text = "CÓDIGO"
+        '
+        'TabPage2
+        '
+        Me.TabPage2.Controls.Add(Me.GroupBox4)
+        Me.TabPage2.Controls.Add(Me.GroupBox1)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(812, 597)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "USUARIOS"
+        Me.TabPage2.UseVisualStyleBackColor = True
         '
         'GroupBox4
         '
@@ -403,117 +356,63 @@ Partial Class FRM_INSERTAR_USUARIOS
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "OPCIONES"
         '
-        'Label10
+        'TextBox18
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(124, 23)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(63, 17)
-        Me.Label10.TabIndex = 0
-        Me.Label10.Text = "CÓDIGO"
+        Me.TextBox18.Location = New System.Drawing.Point(251, 94)
+        Me.TextBox18.Name = "TextBox18"
+        Me.TextBox18.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TextBox18.Size = New System.Drawing.Size(426, 22)
+        Me.TextBox18.TabIndex = 19
         '
-        'TextBox10
+        'TextBox19
         '
-        Me.TextBox10.Location = New System.Drawing.Point(251, 23)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(426, 22)
-        Me.TextBox10.TabIndex = 1
+        Me.TextBox19.Location = New System.Drawing.Point(251, 39)
+        Me.TextBox19.Name = "TextBox19"
+        Me.TextBox19.Size = New System.Drawing.Size(426, 22)
+        Me.TextBox19.TabIndex = 17
         '
-        'TextBox11
+        'Label18
         '
-        Me.TextBox11.Location = New System.Drawing.Point(251, 75)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(426, 22)
-        Me.TextBox11.TabIndex = 3
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(124, 94)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(103, 17)
+        Me.Label18.TabIndex = 18
+        Me.Label18.Text = "CONTRASEÑA"
         '
-        'Label11
+        'Label19
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(124, 75)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(68, 17)
-        Me.Label11.TabIndex = 2
-        Me.Label11.Text = "NOMBRE"
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(124, 39)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(70, 17)
+        Me.Label19.TabIndex = 16
+        Me.Label19.Text = "USUARIO"
         '
-        'TextBox12
+        'GroupBox1
         '
-        Me.TextBox12.Location = New System.Drawing.Point(251, 130)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(426, 22)
-        Me.TextBox12.TabIndex = 5
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(124, 130)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(110, 17)
-        Me.Label12.TabIndex = 4
-        Me.Label12.Text = "APELLIDO PAT."
-        '
-        'TextBox13
-        '
-        Me.TextBox13.Location = New System.Drawing.Point(251, 180)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(426, 22)
-        Me.TextBox13.TabIndex = 7
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(124, 180)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(112, 17)
-        Me.Label13.TabIndex = 6
-        Me.Label13.Text = "APELLIDO MAT."
-        '
-        'TextBox14
-        '
-        Me.TextBox14.Location = New System.Drawing.Point(251, 232)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(426, 22)
-        Me.TextBox14.TabIndex = 9
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(124, 232)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(31, 17)
-        Me.Label14.TabIndex = 8
-        Me.Label14.Text = "DNI"
-        '
-        'TextBox15
-        '
-        Me.TextBox15.Location = New System.Drawing.Point(251, 280)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(426, 22)
-        Me.TextBox15.TabIndex = 11
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(124, 280)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(68, 17)
-        Me.Label15.TabIndex = 10
-        Me.Label15.Text = "CORREO"
-        '
-        'TextBox16
-        '
-        Me.TextBox16.Location = New System.Drawing.Point(251, 330)
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(426, 22)
-        Me.TextBox16.TabIndex = 13
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(124, 330)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(82, 17)
-        Me.Label16.TabIndex = 12
-        Me.Label16.Text = "DIRECCIÓN"
+        Me.GroupBox1.Controls.Add(Me.TextBox17)
+        Me.GroupBox1.Controls.Add(Me.Label17)
+        Me.GroupBox1.Controls.Add(Me.TextBox16)
+        Me.GroupBox1.Controls.Add(Me.Label16)
+        Me.GroupBox1.Controls.Add(Me.TextBox15)
+        Me.GroupBox1.Controls.Add(Me.Label15)
+        Me.GroupBox1.Controls.Add(Me.TextBox14)
+        Me.GroupBox1.Controls.Add(Me.Label14)
+        Me.GroupBox1.Controls.Add(Me.TextBox13)
+        Me.GroupBox1.Controls.Add(Me.Label13)
+        Me.GroupBox1.Controls.Add(Me.TextBox12)
+        Me.GroupBox1.Controls.Add(Me.Label12)
+        Me.GroupBox1.Controls.Add(Me.TextBox11)
+        Me.GroupBox1.Controls.Add(Me.Label11)
+        Me.GroupBox1.Controls.Add(Me.TextBox10)
+        Me.GroupBox1.Controls.Add(Me.Label10)
+        Me.GroupBox1.Location = New System.Drawing.Point(6, 6)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(800, 429)
+        Me.GroupBox1.TabIndex = 1
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "DATOS"
         '
         'TextBox17
         '
@@ -531,38 +430,166 @@ Partial Class FRM_INSERTAR_USUARIOS
         Me.Label17.TabIndex = 14
         Me.Label17.Text = "CELULAR"
         '
-        'TextBox18
+        'TextBox16
         '
-        Me.TextBox18.Location = New System.Drawing.Point(251, 94)
-        Me.TextBox18.Name = "TextBox18"
-        Me.TextBox18.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox18.Size = New System.Drawing.Size(426, 22)
-        Me.TextBox18.TabIndex = 19
+        Me.TextBox16.Location = New System.Drawing.Point(251, 330)
+        Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.Size = New System.Drawing.Size(426, 22)
+        Me.TextBox16.TabIndex = 13
         '
-        'Label18
+        'Label16
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(124, 94)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(103, 17)
-        Me.Label18.TabIndex = 18
-        Me.Label18.Text = "CONTRASEÑA"
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(124, 330)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(82, 17)
+        Me.Label16.TabIndex = 12
+        Me.Label16.Text = "DIRECCIÓN"
         '
-        'TextBox19
+        'TextBox15
         '
-        Me.TextBox19.Location = New System.Drawing.Point(251, 39)
-        Me.TextBox19.Name = "TextBox19"
-        Me.TextBox19.Size = New System.Drawing.Size(426, 22)
-        Me.TextBox19.TabIndex = 17
+        Me.TextBox15.Location = New System.Drawing.Point(251, 280)
+        Me.TextBox15.Name = "TextBox15"
+        Me.TextBox15.Size = New System.Drawing.Size(426, 22)
+        Me.TextBox15.TabIndex = 11
         '
-        'Label19
+        'Label15
         '
-        Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(124, 39)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(70, 17)
-        Me.Label19.TabIndex = 16
-        Me.Label19.Text = "USUARIO"
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(124, 280)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(68, 17)
+        Me.Label15.TabIndex = 10
+        Me.Label15.Text = "CORREO"
+        '
+        'TextBox14
+        '
+        Me.TextBox14.Location = New System.Drawing.Point(251, 232)
+        Me.TextBox14.Name = "TextBox14"
+        Me.TextBox14.Size = New System.Drawing.Size(426, 22)
+        Me.TextBox14.TabIndex = 9
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(124, 232)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(31, 17)
+        Me.Label14.TabIndex = 8
+        Me.Label14.Text = "DNI"
+        '
+        'TextBox13
+        '
+        Me.TextBox13.Location = New System.Drawing.Point(251, 180)
+        Me.TextBox13.Name = "TextBox13"
+        Me.TextBox13.Size = New System.Drawing.Size(426, 22)
+        Me.TextBox13.TabIndex = 7
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(124, 180)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(112, 17)
+        Me.Label13.TabIndex = 6
+        Me.Label13.Text = "APELLIDO MAT."
+        '
+        'TextBox12
+        '
+        Me.TextBox12.Location = New System.Drawing.Point(251, 130)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.Size = New System.Drawing.Size(426, 22)
+        Me.TextBox12.TabIndex = 5
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(124, 130)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(110, 17)
+        Me.Label12.TabIndex = 4
+        Me.Label12.Text = "APELLIDO PAT."
+        '
+        'TextBox11
+        '
+        Me.TextBox11.Location = New System.Drawing.Point(251, 75)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(426, 22)
+        Me.TextBox11.TabIndex = 3
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(124, 75)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(68, 17)
+        Me.Label11.TabIndex = 2
+        Me.Label11.Text = "NOMBRE"
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Location = New System.Drawing.Point(251, 23)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(426, 22)
+        Me.TextBox10.TabIndex = 1
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(124, 23)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(63, 17)
+        Me.Label10.TabIndex = 0
+        Me.Label10.Text = "CÓDIGO"
+        '
+        'TabPage3
+        '
+        Me.TabPage3.Controls.Add(Me.GroupBox5)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Size = New System.Drawing.Size(812, 597)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "PROVEEDORES"
+        Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.Controls.Add(Me.TextBox20)
+        Me.GroupBox5.Controls.Add(Me.Label20)
+        Me.GroupBox5.Controls.Add(Me.TextBox23)
+        Me.GroupBox5.Controls.Add(Me.Label23)
+        Me.GroupBox5.Controls.Add(Me.TextBox24)
+        Me.GroupBox5.Controls.Add(Me.Label24)
+        Me.GroupBox5.Controls.Add(Me.TextBox25)
+        Me.GroupBox5.Controls.Add(Me.Label25)
+        Me.GroupBox5.Controls.Add(Me.TextBox26)
+        Me.GroupBox5.Controls.Add(Me.Label26)
+        Me.GroupBox5.Controls.Add(Me.TextBox27)
+        Me.GroupBox5.Controls.Add(Me.Label27)
+        Me.GroupBox5.Controls.Add(Me.TextBox28)
+        Me.GroupBox5.Controls.Add(Me.Label28)
+        Me.GroupBox5.Location = New System.Drawing.Point(6, 3)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(800, 588)
+        Me.GroupBox5.TabIndex = 2
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "DATOS"
+        '
+        'TextBox20
+        '
+        Me.TextBox20.Location = New System.Drawing.Point(233, 415)
+        Me.TextBox20.Name = "TextBox20"
+        Me.TextBox20.Size = New System.Drawing.Size(443, 22)
+        Me.TextBox20.TabIndex = 31
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(113, 418)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(82, 17)
+        Me.Label20.TabIndex = 30
+        Me.Label20.Text = "DIRECCIÓN"
         '
         'TextBox23
         '
@@ -660,22 +687,6 @@ Partial Class FRM_INSERTAR_USUARIOS
         Me.Label28.TabIndex = 18
         Me.Label28.Text = "CÓDIGO"
         '
-        'TextBox20
-        '
-        Me.TextBox20.Location = New System.Drawing.Point(233, 415)
-        Me.TextBox20.Name = "TextBox20"
-        Me.TextBox20.Size = New System.Drawing.Size(443, 22)
-        Me.TextBox20.TabIndex = 31
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(113, 418)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(82, 17)
-        Me.Label20.TabIndex = 30
-        Me.Label20.Text = "DIRECCIÓN"
-        '
         'FRM_INSERTAR_USUARIOS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -692,13 +703,13 @@ Partial Class FRM_INSERTAR_USUARIOS
         Me.DATOS.ResumeLayout(False)
         Me.DATOS.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
         Me.GroupBox5.ResumeLayout(False)
         Me.GroupBox5.PerformLayout()
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox4.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -765,4 +776,5 @@ Partial Class FRM_INSERTAR_USUARIOS
     Friend WithEvents Label27 As Label
     Friend WithEvents TextBox28 As TextBox
     Friend WithEvents Label28 As Label
+    Friend WithEvents ToolTip1 As ToolTip
 End Class

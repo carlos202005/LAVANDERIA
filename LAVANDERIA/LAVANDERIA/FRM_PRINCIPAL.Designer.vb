@@ -328,7 +328,6 @@ Partial Class FRM_PRINCIPAL
         Me.BTN_SALIR.FlatAppearance.BorderSize = 0
         Me.BTN_SALIR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.BTN_SALIR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.BTN_SALIR.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTN_SALIR.Image = Global.LAVANDERIA.My.Resources.Resources._1470052726_delete_16
         Me.BTN_SALIR.Location = New System.Drawing.Point(858, 7)
         Me.BTN_SALIR.Name = "BTN_SALIR"
@@ -343,7 +342,6 @@ Partial Class FRM_PRINCIPAL
         Me.BTN_PAGOS_EXTRA.FlatAppearance.BorderSize = 0
         Me.BTN_PAGOS_EXTRA.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.BTN_PAGOS_EXTRA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.BTN_PAGOS_EXTRA.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTN_PAGOS_EXTRA.Image = Global.LAVANDERIA.My.Resources.Resources._1470053407_credit_cards
         Me.BTN_PAGOS_EXTRA.Location = New System.Drawing.Point(710, 7)
         Me.BTN_PAGOS_EXTRA.Name = "BTN_PAGOS_EXTRA"
@@ -358,7 +356,6 @@ Partial Class FRM_PRINCIPAL
         Me.BNT_CLIENTES.FlatAppearance.BorderSize = 0
         Me.BNT_CLIENTES.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.BNT_CLIENTES.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.BNT_CLIENTES.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BNT_CLIENTES.Image = Global.LAVANDERIA.My.Resources.Resources._1470052684_user
         Me.BNT_CLIENTES.Location = New System.Drawing.Point(22, 7)
         Me.BNT_CLIENTES.Name = "BNT_CLIENTES"
@@ -373,7 +370,6 @@ Partial Class FRM_PRINCIPAL
         Me.BTN_INSUMOS.FlatAppearance.BorderSize = 0
         Me.BTN_INSUMOS.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.BTN_INSUMOS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.BTN_INSUMOS.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTN_INSUMOS.Image = Global.LAVANDERIA.My.Resources.Resources._1470053414_shopping_bag
         Me.BTN_INSUMOS.Location = New System.Drawing.Point(604, 7)
         Me.BTN_INSUMOS.Name = "BTN_INSUMOS"
@@ -388,7 +384,6 @@ Partial Class FRM_PRINCIPAL
         Me.BTN_VENTAS.FlatAppearance.BorderSize = 0
         Me.BTN_VENTAS.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.BTN_VENTAS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.BTN_VENTAS.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTN_VENTAS.Image = Global.LAVANDERIA.My.Resources.Resources._1470052756_buy_16
         Me.BTN_VENTAS.Location = New System.Drawing.Point(155, 7)
         Me.BTN_VENTAS.Name = "BTN_VENTAS"
@@ -403,7 +398,6 @@ Partial Class FRM_PRINCIPAL
         Me.BTN_FACTURA.FlatAppearance.BorderSize = 0
         Me.BTN_FACTURA.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.BTN_FACTURA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.BTN_FACTURA.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTN_FACTURA.Image = Global.LAVANDERIA.My.Resources.Resources._1470052693_report
         Me.BTN_FACTURA.Location = New System.Drawing.Point(498, 7)
         Me.BTN_FACTURA.Name = "BTN_FACTURA"
@@ -418,7 +412,6 @@ Partial Class FRM_PRINCIPAL
         Me.BTN_ORDEN.FlatAppearance.BorderSize = 0
         Me.BTN_ORDEN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.BTN_ORDEN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.BTN_ORDEN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTN_ORDEN.Image = Global.LAVANDERIA.My.Resources.Resources._1470053677_document_pencil
         Me.BTN_ORDEN.Location = New System.Drawing.Point(261, 7)
         Me.BTN_ORDEN.Name = "BTN_ORDEN"
@@ -433,7 +426,6 @@ Partial Class FRM_PRINCIPAL
         Me.BTN_ENTREGA.FlatAppearance.BorderSize = 0
         Me.BTN_ENTREGA.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.BTN_ENTREGA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.BTN_ENTREGA.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTN_ENTREGA.Image = Global.LAVANDERIA.My.Resources.Resources._1470053401_delivery
         Me.BTN_ENTREGA.Location = New System.Drawing.Point(367, 7)
         Me.BTN_ENTREGA.Name = "BTN_ENTREGA"
@@ -544,7 +536,6 @@ Partial Class FRM_PRINCIPAL
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.BackgroundImage = Global.LAVANDERIA.My.Resources.Resources.smooth_ice1
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1032, 853)
         Me.Controls.Add(Me.Panel4)
