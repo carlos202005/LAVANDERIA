@@ -189,6 +189,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="PROMOCIONES.Designer.vb">
+      <DependentUpon>PROMOCIONES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PROMOCIONES.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FRM_APERTURA_CAJA.resx">
@@ -246,6 +252,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PROMOCIONES.resx">
+      <DependentUpon>PROMOCIONES.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

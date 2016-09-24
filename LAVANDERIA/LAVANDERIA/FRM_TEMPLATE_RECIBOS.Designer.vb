@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FRM_TEMPLATE_RECIBOS
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,13 +20,12 @@ Partial Class FRM_TEMPLATE_RECIBOS
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.BUSCAR = New System.Windows.Forms.GroupBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.BTN_BUSCAR = New System.Windows.Forms.Button()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.CLIENTES = New System.Windows.Forms.GroupBox()
         Me.DGV_CLIENTES = New System.Windows.Forms.DataGridView()
         Me.OPCIONES = New System.Windows.Forms.GroupBox()
@@ -47,7 +46,6 @@ Partial Class FRM_TEMPLATE_RECIBOS
         Me.BUSCAR.BackColor = System.Drawing.Color.Transparent
         Me.BUSCAR.Controls.Add(Me.TextBox1)
         Me.BUSCAR.Controls.Add(Me.BTN_BUSCAR)
-        Me.BUSCAR.Controls.Add(Me.ComboBox1)
         Me.BUSCAR.Location = New System.Drawing.Point(134, 537)
         Me.BUSCAR.Name = "BUSCAR"
         Me.BUSCAR.Size = New System.Drawing.Size(836, 102)
@@ -58,30 +56,20 @@ Partial Class FRM_TEMPLATE_RECIBOS
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(225, 42)
+        Me.TextBox1.Location = New System.Drawing.Point(275, 42)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(475, 27)
+        Me.TextBox1.Size = New System.Drawing.Size(425, 27)
         Me.TextBox1.TabIndex = 2
         '
         'BTN_BUSCAR
         '
-        Me.BTN_BUSCAR.Location = New System.Drawing.Point(735, 36)
+        Me.BTN_BUSCAR.Location = New System.Drawing.Point(719, 25)
         Me.BTN_BUSCAR.Name = "BTN_BUSCAR"
-        Me.BTN_BUSCAR.Size = New System.Drawing.Size(95, 36)
+        Me.BTN_BUSCAR.Size = New System.Drawing.Size(94, 63)
         Me.BTN_BUSCAR.TabIndex = 1
         Me.BTN_BUSCAR.Text = "BUSCAR"
         Me.ToolTip1.SetToolTip(Me.BTN_BUSCAR, "BUSCAR")
         Me.BTN_BUSCAR.UseVisualStyleBackColor = True
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"NOMBRE", "APELLIDO", "SEXO", "COLOR", "DNI"})
-        Me.ComboBox1.Location = New System.Drawing.Point(27, 42)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(162, 28)
-        Me.ComboBox1.TabIndex = 0
         '
         'CLIENTES
         '
@@ -211,7 +199,6 @@ Partial Class FRM_TEMPLATE_RECIBOS
     Protected WithEvents BUSCAR As GroupBox
     Protected WithEvents TextBox1 As TextBox
     Protected WithEvents BTN_BUSCAR As Button
-    Protected WithEvents ComboBox1 As ComboBox
     Protected WithEvents CLIENTES As GroupBox
     Protected WithEvents DGV_CLIENTES As DataGridView
     Protected WithEvents OPCIONES As GroupBox

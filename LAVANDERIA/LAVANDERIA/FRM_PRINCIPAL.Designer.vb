@@ -56,16 +56,6 @@ Partial Class FRM_PRINCIPAL
         Me.PromocionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.BTN_SALIR = New System.Windows.Forms.Button()
-        Me.BTN_PAGOS_EXTRA = New System.Windows.Forms.Button()
-        Me.BNT_CLIENTES = New System.Windows.Forms.Button()
-        Me.BTN_INSUMOS = New System.Windows.Forms.Button()
-        Me.BTN_VENTAS = New System.Windows.Forms.Button()
-        Me.BTN_FACTURA = New System.Windows.Forms.Button()
-        Me.BTN_ORDEN = New System.Windows.Forms.Button()
-        Me.BTN_ENTREGA = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -75,11 +65,21 @@ Partial Class FRM_PRINCIPAL
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripButton5 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton6 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton7 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripButton8 = New System.Windows.Forms.ToolStripButton()
         Me.MenuStrip1.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
+        Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -298,144 +298,6 @@ Partial Class FRM_PRINCIPAL
         Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(150, 26)
         Me.AcercaDeToolStripMenuItem.Text = "Acerca de"
         '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.Transparent
-        Me.Panel1.Controls.Add(Me.Panel3)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 28)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1032, 135)
-        Me.Panel1.TabIndex = 1
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.Transparent
-        Me.Panel3.Controls.Add(Me.BTN_SALIR)
-        Me.Panel3.Controls.Add(Me.BTN_PAGOS_EXTRA)
-        Me.Panel3.Controls.Add(Me.BNT_CLIENTES)
-        Me.Panel3.Controls.Add(Me.BTN_INSUMOS)
-        Me.Panel3.Controls.Add(Me.BTN_VENTAS)
-        Me.Panel3.Controls.Add(Me.BTN_FACTURA)
-        Me.Panel3.Controls.Add(Me.BTN_ORDEN)
-        Me.Panel3.Controls.Add(Me.BTN_ENTREGA)
-        Me.Panel3.Location = New System.Drawing.Point(12, 0)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1008, 135)
-        Me.Panel3.TabIndex = 3
-        '
-        'BTN_SALIR
-        '
-        Me.BTN_SALIR.FlatAppearance.BorderSize = 0
-        Me.BTN_SALIR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.BTN_SALIR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.BTN_SALIR.Image = Global.LAVANDERIA.My.Resources.Resources._1470052726_delete_16
-        Me.BTN_SALIR.Location = New System.Drawing.Point(858, 7)
-        Me.BTN_SALIR.Name = "BTN_SALIR"
-        Me.BTN_SALIR.Size = New System.Drawing.Size(100, 120)
-        Me.BTN_SALIR.TabIndex = 7
-        Me.BTN_SALIR.Text = "SALIR"
-        Me.BTN_SALIR.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTN_SALIR.UseVisualStyleBackColor = True
-        '
-        'BTN_PAGOS_EXTRA
-        '
-        Me.BTN_PAGOS_EXTRA.FlatAppearance.BorderSize = 0
-        Me.BTN_PAGOS_EXTRA.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.BTN_PAGOS_EXTRA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.BTN_PAGOS_EXTRA.Image = Global.LAVANDERIA.My.Resources.Resources._1470053407_credit_cards
-        Me.BTN_PAGOS_EXTRA.Location = New System.Drawing.Point(710, 7)
-        Me.BTN_PAGOS_EXTRA.Name = "BTN_PAGOS_EXTRA"
-        Me.BTN_PAGOS_EXTRA.Size = New System.Drawing.Size(100, 120)
-        Me.BTN_PAGOS_EXTRA.TabIndex = 6
-        Me.BTN_PAGOS_EXTRA.Text = "PAGOS "
-        Me.BTN_PAGOS_EXTRA.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTN_PAGOS_EXTRA.UseVisualStyleBackColor = True
-        '
-        'BNT_CLIENTES
-        '
-        Me.BNT_CLIENTES.FlatAppearance.BorderSize = 0
-        Me.BNT_CLIENTES.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.BNT_CLIENTES.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.BNT_CLIENTES.Image = Global.LAVANDERIA.My.Resources.Resources._1470052684_user
-        Me.BNT_CLIENTES.Location = New System.Drawing.Point(22, 7)
-        Me.BNT_CLIENTES.Name = "BNT_CLIENTES"
-        Me.BNT_CLIENTES.Size = New System.Drawing.Size(100, 120)
-        Me.BNT_CLIENTES.TabIndex = 0
-        Me.BNT_CLIENTES.Text = "CLIENTES"
-        Me.BNT_CLIENTES.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BNT_CLIENTES.UseVisualStyleBackColor = True
-        '
-        'BTN_INSUMOS
-        '
-        Me.BTN_INSUMOS.FlatAppearance.BorderSize = 0
-        Me.BTN_INSUMOS.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.BTN_INSUMOS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.BTN_INSUMOS.Image = Global.LAVANDERIA.My.Resources.Resources._1470053414_shopping_bag
-        Me.BTN_INSUMOS.Location = New System.Drawing.Point(604, 7)
-        Me.BTN_INSUMOS.Name = "BTN_INSUMOS"
-        Me.BTN_INSUMOS.Size = New System.Drawing.Size(100, 120)
-        Me.BTN_INSUMOS.TabIndex = 5
-        Me.BTN_INSUMOS.Text = "INSUMOS"
-        Me.BTN_INSUMOS.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTN_INSUMOS.UseVisualStyleBackColor = True
-        '
-        'BTN_VENTAS
-        '
-        Me.BTN_VENTAS.FlatAppearance.BorderSize = 0
-        Me.BTN_VENTAS.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.BTN_VENTAS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.BTN_VENTAS.Image = Global.LAVANDERIA.My.Resources.Resources._1470052756_buy_16
-        Me.BTN_VENTAS.Location = New System.Drawing.Point(155, 7)
-        Me.BTN_VENTAS.Name = "BTN_VENTAS"
-        Me.BTN_VENTAS.Size = New System.Drawing.Size(100, 120)
-        Me.BTN_VENTAS.TabIndex = 1
-        Me.BTN_VENTAS.Text = "VENTAS"
-        Me.BTN_VENTAS.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTN_VENTAS.UseVisualStyleBackColor = True
-        '
-        'BTN_FACTURA
-        '
-        Me.BTN_FACTURA.FlatAppearance.BorderSize = 0
-        Me.BTN_FACTURA.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.BTN_FACTURA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.BTN_FACTURA.Image = Global.LAVANDERIA.My.Resources.Resources._1470052693_report
-        Me.BTN_FACTURA.Location = New System.Drawing.Point(498, 7)
-        Me.BTN_FACTURA.Name = "BTN_FACTURA"
-        Me.BTN_FACTURA.Size = New System.Drawing.Size(100, 120)
-        Me.BTN_FACTURA.TabIndex = 4
-        Me.BTN_FACTURA.Text = "RECIBOS"
-        Me.BTN_FACTURA.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTN_FACTURA.UseVisualStyleBackColor = True
-        '
-        'BTN_ORDEN
-        '
-        Me.BTN_ORDEN.FlatAppearance.BorderSize = 0
-        Me.BTN_ORDEN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.BTN_ORDEN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.BTN_ORDEN.Image = Global.LAVANDERIA.My.Resources.Resources._1470053677_document_pencil
-        Me.BTN_ORDEN.Location = New System.Drawing.Point(261, 7)
-        Me.BTN_ORDEN.Name = "BTN_ORDEN"
-        Me.BTN_ORDEN.Size = New System.Drawing.Size(100, 120)
-        Me.BTN_ORDEN.TabIndex = 2
-        Me.BTN_ORDEN.Text = "ORDEN"
-        Me.BTN_ORDEN.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTN_ORDEN.UseVisualStyleBackColor = True
-        '
-        'BTN_ENTREGA
-        '
-        Me.BTN_ENTREGA.FlatAppearance.BorderSize = 0
-        Me.BTN_ENTREGA.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.BTN_ENTREGA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.BTN_ENTREGA.Image = Global.LAVANDERIA.My.Resources.Resources._1470053401_delivery
-        Me.BTN_ENTREGA.Location = New System.Drawing.Point(367, 7)
-        Me.BTN_ENTREGA.Name = "BTN_ENTREGA"
-        Me.BTN_ENTREGA.Size = New System.Drawing.Size(100, 120)
-        Me.BTN_ENTREGA.TabIndex = 3
-        Me.BTN_ENTREGA.Text = "ENTREGA"
-        Me.BTN_ENTREGA.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTN_ENTREGA.UseVisualStyleBackColor = True
-        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.Transparent
@@ -532,19 +394,102 @@ Partial Class FRM_PRINCIPAL
         Me.Panel4.Size = New System.Drawing.Size(1008, 72)
         Me.Panel4.TabIndex = 4
         '
-        'Button1
+        'ToolStrip1
         '
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.Button1.Image = Global.LAVANDERIA.My.Resources.Resources._1470052726_delete_16
-        Me.Button1.Location = New System.Drawing.Point(249, 308)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(98, 110)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "SALIR"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(50, 50)
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.ToolStripSeparator1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripButton4, Me.ToolStripSeparator2, Me.ToolStripButton5, Me.ToolStripButton6, Me.ToolStripButton7, Me.ToolStripSeparator3, Me.ToolStripButton8})
+        Me.ToolStrip1.Location = New System.Drawing.Point(0, 28)
+        Me.ToolStrip1.Name = "ToolStrip1"
+        Me.ToolStrip1.Size = New System.Drawing.Size(1032, 57)
+        Me.ToolStrip1.TabIndex = 5
+        Me.ToolStrip1.Text = "ToolStrip1"
+        '
+        'ToolStripButton1
+        '
+        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton1.Image = Global.LAVANDERIA.My.Resources.Resources._1470052756_buy_16
+        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton1.Name = "ToolStripButton1"
+        Me.ToolStripButton1.Size = New System.Drawing.Size(54, 54)
+        Me.ToolStripButton1.Text = "ToolStripButton1"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 57)
+        '
+        'ToolStripButton2
+        '
+        Me.ToolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton2.Image = Global.LAVANDERIA.My.Resources.Resources._1470052684_user
+        Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton2.Name = "ToolStripButton2"
+        Me.ToolStripButton2.Size = New System.Drawing.Size(54, 54)
+        Me.ToolStripButton2.Text = "ToolStripButton2"
+        '
+        'ToolStripButton3
+        '
+        Me.ToolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton3.Image = Global.LAVANDERIA.My.Resources.Resources._1470053677_document_pencil
+        Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton3.Name = "ToolStripButton3"
+        Me.ToolStripButton3.Size = New System.Drawing.Size(54, 54)
+        Me.ToolStripButton3.Text = "ToolStripButton3"
+        '
+        'ToolStripButton4
+        '
+        Me.ToolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton4.Image = Global.LAVANDERIA.My.Resources.Resources._1470053401_delivery
+        Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton4.Name = "ToolStripButton4"
+        Me.ToolStripButton4.Size = New System.Drawing.Size(54, 54)
+        Me.ToolStripButton4.Text = "ToolStripButton4"
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 57)
+        '
+        'ToolStripButton5
+        '
+        Me.ToolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton5.Image = Global.LAVANDERIA.My.Resources.Resources._1470052693_report
+        Me.ToolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton5.Name = "ToolStripButton5"
+        Me.ToolStripButton5.Size = New System.Drawing.Size(54, 54)
+        Me.ToolStripButton5.Text = "ToolStripButton5"
+        '
+        'ToolStripButton6
+        '
+        Me.ToolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton6.Image = Global.LAVANDERIA.My.Resources.Resources._1470053414_shopping_bag
+        Me.ToolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton6.Name = "ToolStripButton6"
+        Me.ToolStripButton6.Size = New System.Drawing.Size(54, 54)
+        Me.ToolStripButton6.Text = "ToolStripButton6"
+        '
+        'ToolStripButton7
+        '
+        Me.ToolStripButton7.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton7.Image = Global.LAVANDERIA.My.Resources.Resources._1470053407_credit_cards
+        Me.ToolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton7.Name = "ToolStripButton7"
+        Me.ToolStripButton7.Size = New System.Drawing.Size(54, 54)
+        Me.ToolStripButton7.Text = "ToolStripButton7"
+        '
+        'ToolStripSeparator3
+        '
+        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 57)
+        '
+        'ToolStripButton8
+        '
+        Me.ToolStripButton8.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton8.Image = Global.LAVANDERIA.My.Resources.Resources._1470052726_delete_16
+        Me.ToolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton8.Name = "ToolStripButton8"
+        Me.ToolStripButton8.Size = New System.Drawing.Size(54, 54)
+        Me.ToolStripButton8.Text = "ToolStripButton8"
         '
         'FRM_PRINCIPAL
         '
@@ -553,10 +498,9 @@ Partial Class FRM_PRINCIPAL
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1032, 853)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.DoubleBuffered = True
         Me.MainMenuStrip = Me.MenuStrip1
@@ -568,17 +512,16 @@ Partial Class FRM_PRINCIPAL
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel3.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
+        Me.ToolStrip1.ResumeLayout(False)
+        Me.ToolStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents GlobalToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EmpresaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
@@ -611,14 +554,6 @@ Partial Class FRM_PRINCIPAL
     Friend WithEvents PromocionesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AyudaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AcercaDeToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents BTN_SALIR As Button
-    Friend WithEvents BTN_PAGOS_EXTRA As Button
-    Friend WithEvents BTN_INSUMOS As Button
-    Friend WithEvents BTN_FACTURA As Button
-    Friend WithEvents BTN_ENTREGA As Button
-    Friend WithEvents BTN_ORDEN As Button
-    Friend WithEvents BTN_VENTAS As Button
-    Friend WithEvents BNT_CLIENTES As Button
     Friend WithEvents ProveedoresToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Panel2 As Panel
     Friend WithEvents LinkLabel1 As LinkLabel
@@ -628,7 +563,17 @@ Partial Class FRM_PRINCIPAL
     Friend WithEvents Label4 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents Panel3 As Panel
     Friend WithEvents Panel4 As Panel
-    Friend WithEvents Button1 As Button
+    Friend WithEvents ToolStrip1 As ToolStrip
+    Friend WithEvents ToolStripButton1 As ToolStripButton
+    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
+    Friend WithEvents ToolStripButton2 As ToolStripButton
+    Friend WithEvents ToolStripButton3 As ToolStripButton
+    Friend WithEvents ToolStripButton4 As ToolStripButton
+    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
+    Friend WithEvents ToolStripButton5 As ToolStripButton
+    Friend WithEvents ToolStripButton6 As ToolStripButton
+    Friend WithEvents ToolStripButton7 As ToolStripButton
+    Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
+    Friend WithEvents ToolStripButton8 As ToolStripButton
 End Class

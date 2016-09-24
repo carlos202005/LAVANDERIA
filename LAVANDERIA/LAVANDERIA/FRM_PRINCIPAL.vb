@@ -26,11 +26,11 @@
 
     End Sub
 
-    Private Sub BTN_SALIR_Click(sender As Object, e As EventArgs) Handles BTN_SALIR.Click
+    Private Sub BTN_SALIR_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
 
-    Private Sub BNT_CLIENTES_Click(sender As Object, e As EventArgs) Handles BNT_CLIENTES.Click
+    Private Sub BNT_CLIENTES_Click(sender As Object, e As EventArgs)
         FRM_CLIENTE.Show()
     End Sub
 
@@ -58,7 +58,7 @@
         FRM_INSUMOS.Show()
     End Sub
 
-    Private Sub BTN_ENTREGA_Click(sender As Object, e As EventArgs) Handles BTN_ENTREGA.Click
+    Private Sub BTN_ENTREGA_Click(sender As Object, e As EventArgs)
         FRM_ENTREGA_SERVICIO.Show()
     End Sub
 
@@ -74,22 +74,22 @@
         FRM_VENTAS.Show()
     End Sub
 
-    Private Sub BTN_VENTAS_Click(sender As Object, e As EventArgs) Handles BTN_VENTAS.Click
+    Private Sub BTN_VENTAS_Click(sender As Object, e As EventArgs)
         FRM_VENTAS.Show()
     End Sub
 
-    Private Sub BTN_ORDEN_Click(sender As Object, e As EventArgs) Handles BTN_ORDEN.Click
+    Private Sub BTN_ORDEN_Click(sender As Object, e As EventArgs)
         FRM_ORDEN_PEDIDO.Show()
     End Sub
 
-    Private Sub BTN_INSUMOS_Click(sender As Object, e As EventArgs) Handles BTN_INSUMOS.Click
+    Private Sub BTN_INSUMOS_Click(sender As Object, e As EventArgs)
         Dim FRM As New FRM_INSERTAR_GASTOS
         FRM.TAB_CONTROL1.SelectedIndex = 0
         FRM.Show()
 
     End Sub
 
-    Private Sub BTN_PAGOS_EXTRA_Click(sender As Object, e As EventArgs) Handles BTN_PAGOS_EXTRA.Click
+    Private Sub BTN_PAGOS_EXTRA_Click(sender As Object, e As EventArgs)
         Dim FRM As New FRM_INSERTAR_GASTOS
         FRM.TAB_CONTROL1.SelectedIndex = 2
         FRM.Show()
@@ -105,7 +105,6 @@
 
     Private Sub PrendasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PrendasToolStripMenuItem.Click
         Dim FRM As New FRM_INSERTAR_SERVICIOS
-        FRM.TAB_CONTROL1.SelectedIndex = 1
         FRM.Show()
     End Sub
 
@@ -117,7 +116,7 @@
         Me.Close()
     End Sub
 
-    Private Sub BTN_FACTURA_Click(sender As Object, e As EventArgs) Handles BTN_FACTURA.Click
+    Private Sub BTN_FACTURA_Click(sender As Object, e As EventArgs)
         Dim FRM As New FRM_INSERTAR_GASTOS
         FRM.TAB_CONTROL1.SelectedIndex = 1
         FRM.Show()
@@ -125,9 +124,17 @@
 
     Private Sub FRM_PRINCIPAL_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim desktopSize As Size = System.Windows.Forms.SystemInformation.PrimaryMonitorSize 'Captura el Tamaño del Monitor
-        Panel4.Location = New Point((desktopSize.Width - Panel4.Width) / 2, (desktopSize.Height - Panel4.Height) / 2 + 355)
+        'Panel4.Location = New Point((desktopSize.Width - Panel4.Width) / 2, (desktopSize.Height - Panel4.Height) / 2 + 355)
         'Panel3.Location = New Point((desktopSize.Width - Panel3.Width) / 2, 0)
         'Panel4.Location = New Point((desktopSize.Width - Panel4.Width) / 2, (desktopSize.Height - Panel4.Height) / 2 + 300)
 
+    End Sub
+
+    Private Sub ToolStripButton8_Click(sender As Object, e As EventArgs) Handles ToolStripButton8.Click
+        Me.Close()
+    End Sub
+
+    Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
+        FRM_SERVICIOS.Show()
     End Sub
 End Class
