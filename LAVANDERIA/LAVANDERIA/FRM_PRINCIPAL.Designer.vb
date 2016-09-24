@@ -75,6 +75,7 @@ Partial Class FRM_PRINCIPAL
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -531,6 +532,20 @@ Partial Class FRM_PRINCIPAL
         Me.Panel4.Size = New System.Drawing.Size(1008, 72)
         Me.Panel4.TabIndex = 4
         '
+        'Button1
+        '
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.Button1.Image = Global.LAVANDERIA.My.Resources.Resources._1470052726_delete_16
+        Me.Button1.Location = New System.Drawing.Point(441, 265)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(100, 120)
+        Me.Button1.TabIndex = 8
+        Me.Button1.Text = "SALIR"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'FRM_PRINCIPAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -538,6 +553,7 @@ Partial Class FRM_PRINCIPAL
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1032, 853)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
@@ -614,4 +630,5 @@ Partial Class FRM_PRINCIPAL
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Panel4 As Panel
+    Friend WithEvents Button1 As Button
 End Class
