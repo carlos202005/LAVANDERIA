@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FRM_PRINCIPAL
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FRM_PRINCIPAL
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.GlobalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -538,7 +538,7 @@ Partial Class FRM_PRINCIPAL
         Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
         Me.Button1.Image = Global.LAVANDERIA.My.Resources.Resources._1470052726_delete_16
-        Me.Button1.Location = New System.Drawing.Point(441, 265)
+        Me.Button1.Location = New System.Drawing.Point(416, 322)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(100, 120)
         Me.Button1.TabIndex = 8
