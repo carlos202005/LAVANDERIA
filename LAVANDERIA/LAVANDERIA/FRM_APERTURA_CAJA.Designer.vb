@@ -101,7 +101,7 @@ Partial Class FRM_APERTURA_CAJA
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(191, 100)
+        Me.TextBox1.Location = New System.Drawing.Point(210, 100)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(183, 22)
         Me.TextBox1.TabIndex = 1
