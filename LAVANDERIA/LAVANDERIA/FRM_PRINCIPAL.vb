@@ -50,14 +50,6 @@
         FRM_RECIBOS.Show()
     End Sub
 
-    Private Sub PagosExtraToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PagosExtraToolStripMenuItem.Click
-        FRM_PAGOS_EXTRA.Show()
-    End Sub
-
-    Private Sub InsumosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InsumosToolStripMenuItem.Click
-        FRM_INSUMOS.Show()
-    End Sub
-
     Private Sub BTN_ENTREGA_Click(sender As Object, e As EventArgs)
         FRM_ENTREGA_SERVICIO.Show()
     End Sub
@@ -83,16 +75,12 @@
     End Sub
 
     Private Sub BTN_INSUMOS_Click(sender As Object, e As EventArgs)
-        Dim FRM As New FRM_INSERTAR_GASTOS
-        FRM.TAB_CONTROL1.SelectedIndex = 0
-        FRM.Show()
+
 
     End Sub
 
     Private Sub BTN_PAGOS_EXTRA_Click(sender As Object, e As EventArgs)
-        Dim FRM As New FRM_INSERTAR_GASTOS
-        FRM.TAB_CONTROL1.SelectedIndex = 2
-        FRM.Show()
+
     End Sub
 
     Private Sub AperturaDeCajaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AperturaDeCajaToolStripMenuItem.Click
@@ -103,7 +91,7 @@
         FRM_CIERRE_CAJA.Show()
     End Sub
 
-    Private Sub PrendasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PrendasToolStripMenuItem.Click
+    Private Sub PrendasToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Dim FRM As New FRM_INSERTAR_SERVICIOS
         FRM.Show()
     End Sub
@@ -117,13 +105,11 @@
     End Sub
 
     Private Sub BTN_FACTURA_Click(sender As Object, e As EventArgs)
-        Dim FRM As New FRM_INSERTAR_GASTOS
-        FRM.TAB_CONTROL1.SelectedIndex = 1
-        FRM.Show()
+
     End Sub
 
     Private Sub FRM_PRINCIPAL_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim desktopSize As Size = System.Windows.Forms.SystemInformation.PrimaryMonitorSize 'Captura el Tamaño del Monitor
+        'Dim desktopSize As Size = System.Windows.Forms.SystemInformation.PrimaryMonitorSize 'Captura el Tamaño del Monitor
         'Panel4.Location = New Point((desktopSize.Width - Panel4.Width) / 2, (desktopSize.Height - Panel4.Height) / 2 + 355)
         'Panel3.Location = New Point((desktopSize.Width - Panel3.Width) / 2, 0)
         'Panel4.Location = New Point((desktopSize.Width - Panel4.Width) / 2, (desktopSize.Height - Panel4.Height) / 2 + 300)
@@ -134,7 +120,27 @@
         Me.Close()
     End Sub
 
-    Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
+    Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles SERVICIOS.Click
         FRM_SERVICIOS.Show()
+    End Sub
+
+    Private Sub ToolStripButton2_Click(sender As Object, e As EventArgs) Handles CLIENTES.Click
+        FRM_CLIENTE.Show()
+    End Sub
+
+    Private Sub PromocionesToolStripMenuItem_Click(sender As Object, e As EventArgs)
+        FRM_PROMOCIONES.Show()
+    End Sub
+
+    Private Sub PromocionesToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles PromocionesToolStripMenuItem1.Click
+        FRM_PROMOCIONES.Show()
+    End Sub
+
+    Private Sub ToolStripButton3_Click(sender As Object, e As EventArgs) Handles ToolStripButton3.Click
+        FRM_RECIBOS.Show()
+    End Sub
+
+    Private Sub ToolStripButton4_Click(sender As Object, e As EventArgs) Handles ENTREGA_SERVICIOS.Click
+        FRM_ENTREGA_SERVICIO.Show()
     End Sub
 End Class

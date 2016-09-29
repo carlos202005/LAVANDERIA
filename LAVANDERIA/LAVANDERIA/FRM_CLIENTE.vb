@@ -1,7 +1,9 @@
 ﻿Public Class FRM_CLIENTE
     Private Sub BTN_NUEVO_Click(sender As Object, e As EventArgs) Handles BTN_NUEVO.Click
-        Dim FRM As New FRM_INSERTAR_USUARIOS
-        FRM.TAB_CONTROL1.SelectedIndex = 0
-        FRM.Show()
+        FRM_CLIENTE_CRUD.Show()
+    End Sub
+
+    Private Sub BTN_SALIR_Click(sender As Object, e As EventArgs) Handles BTN_SALIR.Click
+        Me.Close()
     End Sub
 End Class

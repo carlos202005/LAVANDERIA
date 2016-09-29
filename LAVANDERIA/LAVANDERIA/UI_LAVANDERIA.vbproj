@@ -90,16 +90,22 @@
     <Compile Include="FRM_CLIENTE.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FRM_CLIENTE_CRUD.Designer.vb">
+      <DependentUpon>FRM_CLIENTE_CRUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_CLIENTE_CRUD.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FRM_ENTREGA_SERVICIO.Designer.vb">
       <DependentUpon>FRM_ENTREGA_SERVICIO.vb</DependentUpon>
     </Compile>
     <Compile Include="FRM_ENTREGA_SERVICIO.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_INSERTAR_GASTOS.Designer.vb">
-      <DependentUpon>FRM_INSERTAR_GASTOS.vb</DependentUpon>
+    <Compile Include="FRM_GASTOS.Designer.vb">
+      <DependentUpon>FRM_GASTOS.vb</DependentUpon>
     </Compile>
-    <Compile Include="FRM_INSERTAR_GASTOS.vb">
+    <Compile Include="FRM_GASTOS.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRM_INSERTAR_SERVICIOS.Designer.vb">
@@ -108,28 +114,28 @@
     <Compile Include="FRM_INSERTAR_SERVICIOS.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_INSUMOS.Designer.vb">
-      <DependentUpon>FRM_INSUMOS.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FRM_INSUMOS.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FRM_ORDEN_PEDIDO.Designer.vb">
       <DependentUpon>FRM_ORDEN_PEDIDO.vb</DependentUpon>
     </Compile>
     <Compile Include="FRM_ORDEN_PEDIDO.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_PAGOS_EXTRA.Designer.vb">
-      <DependentUpon>FRM_PAGOS_EXTRA.vb</DependentUpon>
+    <Compile Include="FRM_PRODUCTO.Designer.vb">
+      <DependentUpon>FRM_PRODUCTO.vb</DependentUpon>
     </Compile>
-    <Compile Include="FRM_PAGOS_EXTRA.vb">
+    <Compile Include="FRM_PRODUCTO.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRM_PROVEEDORES.Designer.vb">
       <DependentUpon>FRM_PROVEEDORES.vb</DependentUpon>
     </Compile>
     <Compile Include="FRM_PROVEEDORES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PROVEEDORES_CRUD.Designer.vb">
+      <DependentUpon>FRM_PROVEEDORES_CRUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PROVEEDORES_CRUD.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRM_RECIBOS.Designer.vb">
@@ -150,12 +156,6 @@
     <Compile Include="FRM_TEMPLATE_RECIBOS.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_INSERTAR_USUARIOS.Designer.vb">
-      <DependentUpon>FRM_INSERTAR_USUARIOS.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FRM_INSERTAR_USUARIOS.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FRM_PRINCIPAL.Designer.vb">
       <DependentUpon>FRM_PRINCIPAL.vb</DependentUpon>
     </Compile>
@@ -166,6 +166,12 @@
       <DependentUpon>FRM_USUARIOS.vb</DependentUpon>
     </Compile>
     <Compile Include="FRM_USUARIOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_USUARIOS_CRUD.Designer.vb">
+      <DependentUpon>FRM_USUARIOS_CRUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_USUARIOS_CRUD.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRM_VENTAS.Designer.vb">
@@ -189,10 +195,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="PROMOCIONES.Designer.vb">
-      <DependentUpon>PROMOCIONES.vb</DependentUpon>
+    <Compile Include="FRM_PROMOCIONES.Designer.vb">
+      <DependentUpon>FRM_PROMOCIONES.vb</DependentUpon>
     </Compile>
-    <Compile Include="PROMOCIONES.vb">
+    <Compile Include="FRM_PROMOCIONES.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -206,26 +212,29 @@
     <EmbeddedResource Include="FRM_CLIENTE.resx">
       <DependentUpon>FRM_CLIENTE.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRM_CLIENTE_CRUD.resx">
+      <DependentUpon>FRM_CLIENTE_CRUD.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRM_ENTREGA_SERVICIO.resx">
       <DependentUpon>FRM_ENTREGA_SERVICIO.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRM_INSERTAR_GASTOS.resx">
-      <DependentUpon>FRM_INSERTAR_GASTOS.vb</DependentUpon>
+    <EmbeddedResource Include="FRM_GASTOS.resx">
+      <DependentUpon>FRM_GASTOS.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_INSERTAR_SERVICIOS.resx">
       <DependentUpon>FRM_INSERTAR_SERVICIOS.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRM_INSUMOS.resx">
-      <DependentUpon>FRM_INSUMOS.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FRM_ORDEN_PEDIDO.resx">
       <DependentUpon>FRM_ORDEN_PEDIDO.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRM_PAGOS_EXTRA.resx">
-      <DependentUpon>FRM_PAGOS_EXTRA.vb</DependentUpon>
+    <EmbeddedResource Include="FRM_PRODUCTO.resx">
+      <DependentUpon>FRM_PRODUCTO.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_PROVEEDORES.resx">
       <DependentUpon>FRM_PROVEEDORES.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PROVEEDORES_CRUD.resx">
+      <DependentUpon>FRM_PROVEEDORES_CRUD.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_RECIBOS.resx">
       <DependentUpon>FRM_RECIBOS.vb</DependentUpon>
@@ -236,14 +245,14 @@
     <EmbeddedResource Include="FRM_TEMPLATE_RECIBOS.resx">
       <DependentUpon>FRM_TEMPLATE_RECIBOS.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRM_INSERTAR_USUARIOS.resx">
-      <DependentUpon>FRM_INSERTAR_USUARIOS.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FRM_PRINCIPAL.resx">
       <DependentUpon>FRM_PRINCIPAL.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_USUARIOS.resx">
       <DependentUpon>FRM_USUARIOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_USUARIOS_CRUD.resx">
+      <DependentUpon>FRM_USUARIOS_CRUD.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_VENTAS.resx">
       <DependentUpon>FRM_VENTAS.vb</DependentUpon>
@@ -253,8 +262,8 @@
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="PROMOCIONES.resx">
-      <DependentUpon>PROMOCIONES.vb</DependentUpon>
+    <EmbeddedResource Include="FRM_PROMOCIONES.resx">
+      <DependentUpon>FRM_PROMOCIONES.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

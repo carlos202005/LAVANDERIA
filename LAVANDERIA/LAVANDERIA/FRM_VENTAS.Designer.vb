@@ -66,7 +66,6 @@ Partial Class FRM_VENTAS
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -97,7 +96,7 @@ Partial Class FRM_VENTAS
         Me.Panel1.Controls.Add(Me.GroupBox1)
         Me.Panel1.Location = New System.Drawing.Point(12, 12)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1558, 879)
+        Me.Panel1.Size = New System.Drawing.Size(1340, 780)
         Me.Panel1.TabIndex = 0
         '
         'GroupBox4
@@ -116,9 +115,9 @@ Partial Class FRM_VENTAS
         Me.GroupBox4.Controls.Add(Me.Button4)
         Me.GroupBox4.Controls.Add(Me.Label9)
         Me.GroupBox4.Controls.Add(Me.TextBox3)
-        Me.GroupBox4.Location = New System.Drawing.Point(794, 426)
+        Me.GroupBox4.Location = New System.Drawing.Point(680, 355)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(739, 412)
+        Me.GroupBox4.Size = New System.Drawing.Size(646, 412)
         Me.GroupBox4.TabIndex = 8
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "VENTA"
@@ -130,7 +129,7 @@ Partial Class FRM_VENTAS
         Me.GroupBox7.Controls.Add(Me.Button6)
         Me.GroupBox7.Location = New System.Drawing.Point(6, 237)
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(404, 169)
+        Me.GroupBox7.Size = New System.Drawing.Size(334, 169)
         Me.GroupBox7.TabIndex = 12
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "OPCIONES"
@@ -140,11 +139,10 @@ Partial Class FRM_VENTAS
         Me.Button8.FlatAppearance.BorderSize = 0
         Me.Button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.Image = Global.LAVANDERIA.My.Resources.Resources._1470052726_delete_16
-        Me.Button8.Location = New System.Drawing.Point(283, 37)
+        Me.Button8.Location = New System.Drawing.Point(223, 43)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(100, 115)
+        Me.Button8.Size = New System.Drawing.Size(77, 94)
         Me.Button8.TabIndex = 14
         Me.ToolTip1.SetToolTip(Me.Button8, "SALIR")
         Me.Button8.UseVisualStyleBackColor = True
@@ -154,11 +152,10 @@ Partial Class FRM_VENTAS
         Me.Button7.FlatAppearance.BorderSize = 0
         Me.Button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Image = Global.LAVANDERIA.My.Resources.Resources._1470053407_credit_cards
-        Me.Button7.Location = New System.Drawing.Point(150, 37)
+        Me.Button7.Location = New System.Drawing.Point(118, 43)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(100, 115)
+        Me.Button7.Size = New System.Drawing.Size(77, 94)
         Me.Button7.TabIndex = 13
         Me.ToolTip1.SetToolTip(Me.Button7, "COBRAR")
         Me.Button7.UseVisualStyleBackColor = True
@@ -168,11 +165,10 @@ Partial Class FRM_VENTAS
         Me.Button6.FlatAppearance.BorderSize = 0
         Me.Button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Image = Global.LAVANDERIA.My.Resources.Resources._1470052718_tick_16
-        Me.Button6.Location = New System.Drawing.Point(16, 37)
+        Me.Button6.Location = New System.Drawing.Point(17, 43)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(100, 115)
+        Me.Button6.Size = New System.Drawing.Size(77, 94)
         Me.Button6.TabIndex = 12
         Me.ToolTip1.SetToolTip(Me.Button6, "ACEPTAR")
         Me.Button6.UseVisualStyleBackColor = True
@@ -182,16 +178,16 @@ Partial Class FRM_VENTAS
         Me.Panel2.Controls.Add(Me.Label15)
         Me.Panel2.Controls.Add(Me.Label14)
         Me.Panel2.Controls.Add(Me.Label13)
-        Me.Panel2.Location = New System.Drawing.Point(433, 237)
+        Me.Panel2.Location = New System.Drawing.Point(374, 233)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(300, 169)
+        Me.Panel2.Size = New System.Drawing.Size(259, 169)
         Me.Panel2.TabIndex = 11
         '
         'Label15
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(94, 76)
+        Me.Label15.Location = New System.Drawing.Point(68, 68)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(191, 38)
         Me.Label15.TabIndex = 14
@@ -201,7 +197,7 @@ Partial Class FRM_VENTAS
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(31, 76)
+        Me.Label14.Location = New System.Drawing.Point(5, 68)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(55, 38)
         Me.Label14.TabIndex = 13
@@ -221,7 +217,7 @@ Partial Class FRM_VENTAS
         '
         Me.TextBox6.Location = New System.Drawing.Point(98, 200)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(190, 22)
+        Me.TextBox6.Size = New System.Drawing.Size(131, 22)
         Me.TextBox6.TabIndex = 10
         '
         'Label12
@@ -237,7 +233,7 @@ Partial Class FRM_VENTAS
         '
         Me.TextBox5.Location = New System.Drawing.Point(98, 152)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(190, 22)
+        Me.TextBox5.Size = New System.Drawing.Size(131, 22)
         Me.TextBox5.TabIndex = 8
         '
         'Label11
@@ -253,7 +249,7 @@ Partial Class FRM_VENTAS
         '
         Me.TextBox4.Location = New System.Drawing.Point(98, 106)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(190, 22)
+        Me.TextBox4.Size = New System.Drawing.Size(131, 22)
         Me.TextBox4.TabIndex = 6
         '
         'Label10
@@ -269,7 +265,7 @@ Partial Class FRM_VENTAS
         '
         Me.GroupBox6.Controls.Add(Me.RadioButton3)
         Me.GroupBox6.Controls.Add(Me.RadioButton4)
-        Me.GroupBox6.Location = New System.Drawing.Point(433, 125)
+        Me.GroupBox6.Location = New System.Drawing.Point(374, 130)
         Me.GroupBox6.Name = "GroupBox6"
         Me.GroupBox6.Size = New System.Drawing.Size(259, 97)
         Me.GroupBox6.TabIndex = 4
@@ -302,7 +298,7 @@ Partial Class FRM_VENTAS
         '
         Me.GroupBox5.Controls.Add(Me.RadioButton2)
         Me.GroupBox5.Controls.Add(Me.RadioButton1)
-        Me.GroupBox5.Location = New System.Drawing.Point(433, 21)
+        Me.GroupBox5.Location = New System.Drawing.Point(374, 26)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(259, 98)
         Me.GroupBox5.TabIndex = 3
@@ -337,7 +333,7 @@ Partial Class FRM_VENTAS
         Me.Button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button4.Location = New System.Drawing.Point(305, 29)
+        Me.Button4.Location = New System.Drawing.Point(235, 26)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(105, 73)
         Me.Button4.TabIndex = 2
@@ -358,7 +354,7 @@ Partial Class FRM_VENTAS
         '
         Me.TextBox3.Location = New System.Drawing.Point(98, 51)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(190, 22)
+        Me.TextBox3.Size = New System.Drawing.Size(131, 22)
         Me.TextBox3.TabIndex = 0
         '
         'GroupBox3
@@ -367,9 +363,9 @@ Partial Class FRM_VENTAS
         Me.GroupBox3.Controls.Add(Me.Label17)
         Me.GroupBox3.Controls.Add(Me.Button3)
         Me.GroupBox3.Controls.Add(Me.DataGridView3)
-        Me.GroupBox3.Location = New System.Drawing.Point(794, 10)
+        Me.GroupBox3.Location = New System.Drawing.Point(690, 10)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(739, 410)
+        Me.GroupBox3.Size = New System.Drawing.Size(636, 329)
         Me.GroupBox3.TabIndex = 7
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "CONSUMOS"
@@ -377,7 +373,7 @@ Partial Class FRM_VENTAS
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(191, 378)
+        Me.Label17.Location = New System.Drawing.Point(204, 295)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(92, 17)
         Me.Label17.TabIndex = 7
@@ -389,7 +385,7 @@ Partial Class FRM_VENTAS
         Me.Button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button3.Location = New System.Drawing.Point(289, 369)
+        Me.Button3.Location = New System.Drawing.Point(302, 286)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(191, 32)
         Me.Button3.TabIndex = 3
@@ -403,7 +399,7 @@ Partial Class FRM_VENTAS
         Me.DataGridView3.Location = New System.Drawing.Point(6, 46)
         Me.DataGridView3.Name = "DataGridView3"
         Me.DataGridView3.RowTemplate.Height = 24
-        Me.DataGridView3.Size = New System.Drawing.Size(727, 317)
+        Me.DataGridView3.Size = New System.Drawing.Size(617, 229)
         Me.DataGridView3.TabIndex = 1
         '
         'GroupBox2
@@ -417,9 +413,9 @@ Partial Class FRM_VENTAS
         Me.GroupBox2.Controls.Add(Me.DataGridView2)
         Me.GroupBox2.Controls.Add(Me.ComboBox2)
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.GroupBox2.Location = New System.Drawing.Point(16, 426)
+        Me.GroupBox2.Location = New System.Drawing.Point(16, 355)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(739, 412)
+        Me.GroupBox2.Size = New System.Drawing.Size(658, 412)
         Me.GroupBox2.TabIndex = 7
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "BUSCAR SERVICIO"
@@ -430,7 +426,7 @@ Partial Class FRM_VENTAS
         Me.Button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button9.Location = New System.Drawing.Point(606, 371)
+        Me.Button9.Location = New System.Drawing.Point(530, 371)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(116, 35)
         Me.Button9.TabIndex = 13
@@ -441,7 +437,7 @@ Partial Class FRM_VENTAS
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(390, 380)
+        Me.Label16.Location = New System.Drawing.Point(314, 380)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(56, 17)
         Me.Label16.TabIndex = 12
@@ -449,7 +445,7 @@ Partial Class FRM_VENTAS
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(452, 377)
+        Me.TextBox7.Location = New System.Drawing.Point(376, 377)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(132, 22)
         Me.TextBox7.TabIndex = 4
@@ -460,7 +456,7 @@ Partial Class FRM_VENTAS
         Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button2.Location = New System.Drawing.Point(617, 17)
+        Me.Button2.Location = New System.Drawing.Point(530, 17)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(116, 35)
         Me.Button2.TabIndex = 3
@@ -472,7 +468,7 @@ Partial Class FRM_VENTAS
         '
         Me.TextBox2.Location = New System.Drawing.Point(184, 23)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(427, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(344, 22)
         Me.TextBox2.TabIndex = 2
         '
         'DataGridView2
@@ -481,7 +477,7 @@ Partial Class FRM_VENTAS
         Me.DataGridView2.Location = New System.Drawing.Point(6, 58)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.RowTemplate.Height = 24
-        Me.DataGridView2.Size = New System.Drawing.Size(727, 307)
+        Me.DataGridView2.Size = New System.Drawing.Size(640, 307)
         Me.DataGridView2.TabIndex = 1
         '
         'ComboBox2
@@ -500,7 +496,6 @@ Partial Class FRM_VENTAS
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.Label2)
@@ -509,7 +504,7 @@ Partial Class FRM_VENTAS
         Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Location = New System.Drawing.Point(16, 10)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(739, 410)
+        Me.GroupBox1.Size = New System.Drawing.Size(658, 329)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "BUSCAR CLIENTE"
@@ -517,7 +512,7 @@ Partial Class FRM_VENTAS
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(652, 378)
+        Me.Label7.Location = New System.Drawing.Point(576, 293)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(70, 17)
         Me.Label7.TabIndex = 6
@@ -526,7 +521,7 @@ Partial Class FRM_VENTAS
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(571, 378)
+        Me.Label8.Location = New System.Drawing.Point(495, 293)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(75, 17)
         Me.Label8.TabIndex = 5
@@ -535,7 +530,7 @@ Partial Class FRM_VENTAS
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(469, 378)
+        Me.Label5.Location = New System.Drawing.Point(362, 293)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(59, 17)
         Me.Label5.TabIndex = 6
@@ -544,7 +539,7 @@ Partial Class FRM_VENTAS
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(420, 378)
+        Me.Label6.Location = New System.Drawing.Point(313, 293)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(43, 17)
         Me.Label6.TabIndex = 5
@@ -553,20 +548,11 @@ Partial Class FRM_VENTAS
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(319, 378)
+        Me.Label4.Location = New System.Drawing.Point(171, 293)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(63, 17)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "APE_CLI"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(224, 378)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(87, 17)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "APELLIDO  :"
         '
         'Button1
         '
@@ -574,9 +560,9 @@ Partial Class FRM_VENTAS
         Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Location = New System.Drawing.Point(617, 17)
+        Me.Button1.Location = New System.Drawing.Point(534, 17)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(116, 35)
+        Me.Button1.Size = New System.Drawing.Size(112, 35)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "BUSCAR"
         Me.ToolTip1.SetToolTip(Me.Button1, "BUSCAR CLIENTE")
@@ -584,15 +570,15 @@ Partial Class FRM_VENTAS
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(184, 23)
+        Me.TextBox1.Location = New System.Drawing.Point(146, 23)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(427, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(382, 22)
         Me.TextBox1.TabIndex = 2
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(113, 378)
+        Me.Label2.Location = New System.Drawing.Point(89, 294)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(68, 17)
         Me.Label2.TabIndex = 2
@@ -601,7 +587,7 @@ Partial Class FRM_VENTAS
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(14, 378)
+        Me.Label1.Location = New System.Drawing.Point(4, 294)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(77, 17)
         Me.Label1.TabIndex = 1
@@ -613,7 +599,7 @@ Partial Class FRM_VENTAS
         Me.DataGridView1.Location = New System.Drawing.Point(6, 58)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(727, 305)
+        Me.DataGridView1.Size = New System.Drawing.Size(640, 217)
         Me.DataGridView1.TabIndex = 1
         '
         'ComboBox1
@@ -621,7 +607,7 @@ Partial Class FRM_VENTAS
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(6, 21)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(161, 24)
+        Me.ComboBox1.Size = New System.Drawing.Size(134, 24)
         Me.ComboBox1.TabIndex = 0
         '
         'FRM_VENTAS
@@ -629,7 +615,7 @@ Partial Class FRM_VENTAS
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1682, 953)
+        Me.ClientSize = New System.Drawing.Size(1382, 828)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "FRM_VENTAS"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -695,7 +681,6 @@ Partial Class FRM_VENTAS
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label2 As Label
