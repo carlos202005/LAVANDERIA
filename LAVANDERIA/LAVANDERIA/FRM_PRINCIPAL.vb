@@ -143,4 +143,8 @@
     Private Sub ToolStripButton4_Click(sender As Object, e As EventArgs) Handles ENTREGA_SERVICIOS.Click
         FRM_ENTREGA_SERVICIO.Show()
     End Sub
+
+    Private Sub ToolStripButton1_Click_1(sender As Object, e As EventArgs)
+
+    End Sub
 End Class
