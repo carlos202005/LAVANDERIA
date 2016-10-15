@@ -22,243 +22,241 @@ Partial Class FRM_CLIENTE_CRUD
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TXT_TELEFONO = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.TXT_CELULAR = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.TXT_CORREO = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.TXT_DOCUMENTO = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TXT_APELLIDOS_MAT = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TXT_APELLIDOS_PAT = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TXT_NOMBRES = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.RB_NARUTAL = New System.Windows.Forms.RadioButton()
+        Me.RB_JURIDICA = New System.Windows.Forms.RadioButton()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'TextBox9
+        'TXT_TELEFONO
         '
-        Me.TextBox9.Location = New System.Drawing.Point(163, 294)
-        Me.TextBox9.Multiline = True
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(443, 96)
-        Me.TextBox9.TabIndex = 53
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(43, 297)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(82, 17)
-        Me.Label9.TabIndex = 52
-        Me.Label9.Text = "DIRECCIÓN"
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(163, 197)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(159, 22)
-        Me.TextBox5.TabIndex = 51
+        Me.TXT_TELEFONO.Location = New System.Drawing.Point(606, 180)
+        Me.TXT_TELEFONO.MaxLength = 11
+        Me.TXT_TELEFONO.Name = "TXT_TELEFONO"
+        Me.TXT_TELEFONO.Size = New System.Drawing.Size(159, 22)
+        Me.TXT_TELEFONO.TabIndex = 51
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(43, 200)
+        Me.Label5.Location = New System.Drawing.Point(486, 183)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(83, 17)
         Me.Label5.TabIndex = 50
         Me.Label5.Text = "TELEFONO"
         '
-        'TextBox6
+        'TXT_CELULAR
         '
-        Me.TextBox6.Location = New System.Drawing.Point(447, 157)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(159, 22)
-        Me.TextBox6.TabIndex = 49
+        Me.TXT_CELULAR.Location = New System.Drawing.Point(297, 182)
+        Me.TXT_CELULAR.MaxLength = 11
+        Me.TXT_CELULAR.Name = "TXT_CELULAR"
+        Me.TXT_CELULAR.Size = New System.Drawing.Size(175, 22)
+        Me.TXT_CELULAR.TabIndex = 49
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(328, 160)
+        Me.Label6.Location = New System.Drawing.Point(178, 185)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(71, 17)
         Me.Label6.TabIndex = 48
         Me.Label6.Text = "CELULAR"
         '
-        'TextBox7
+        'TXT_CORREO
         '
-        Me.TextBox7.Location = New System.Drawing.Point(163, 250)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(443, 22)
-        Me.TextBox7.TabIndex = 47
+        Me.TXT_CORREO.Location = New System.Drawing.Point(297, 226)
+        Me.TXT_CORREO.Name = "TXT_CORREO"
+        Me.TXT_CORREO.Size = New System.Drawing.Size(468, 22)
+        Me.TXT_CORREO.TabIndex = 47
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(43, 253)
+        Me.Label7.Location = New System.Drawing.Point(181, 229)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(68, 17)
         Me.Label7.TabIndex = 46
         Me.Label7.Text = "CORREO"
         '
-        'TextBox8
+        'TXT_DOCUMENTO
         '
-        Me.TextBox8.Location = New System.Drawing.Point(163, 157)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(159, 22)
-        Me.TextBox8.TabIndex = 45
+        Me.TXT_DOCUMENTO.Location = New System.Drawing.Point(297, 56)
+        Me.TXT_DOCUMENTO.Name = "TXT_DOCUMENTO"
+        Me.TXT_DOCUMENTO.Size = New System.Drawing.Size(175, 22)
+        Me.TXT_DOCUMENTO.TabIndex = 45
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(43, 160)
+        Me.Label8.Location = New System.Drawing.Point(177, 59)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(31, 17)
+        Me.Label8.Size = New System.Drawing.Size(98, 17)
         Me.Label8.TabIndex = 44
-        Me.Label8.Text = "DNI"
+        Me.Label8.Text = "DOCUMENTO"
         '
-        'TextBox3
+        'TXT_APELLIDOS_MAT
         '
-        Me.TextBox3.Location = New System.Drawing.Point(447, 112)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(159, 22)
-        Me.TextBox3.TabIndex = 43
+        Me.TXT_APELLIDOS_MAT.Location = New System.Drawing.Point(606, 137)
+        Me.TXT_APELLIDOS_MAT.Name = "TXT_APELLIDOS_MAT"
+        Me.TXT_APELLIDOS_MAT.Size = New System.Drawing.Size(159, 22)
+        Me.TXT_APELLIDOS_MAT.TabIndex = 43
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(327, 115)
+        Me.Label3.Location = New System.Drawing.Point(486, 140)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(112, 17)
         Me.Label3.TabIndex = 42
         Me.Label3.Text = "APELLIDO MAT."
         '
-        'TextBox4
+        'TXT_APELLIDOS_PAT
         '
-        Me.TextBox4.Location = New System.Drawing.Point(163, 112)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(159, 22)
-        Me.TextBox4.TabIndex = 41
+        Me.TXT_APELLIDOS_PAT.Location = New System.Drawing.Point(297, 139)
+        Me.TXT_APELLIDOS_PAT.Name = "TXT_APELLIDOS_PAT"
+        Me.TXT_APELLIDOS_PAT.Size = New System.Drawing.Size(175, 22)
+        Me.TXT_APELLIDOS_PAT.TabIndex = 41
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(43, 115)
+        Me.Label4.Location = New System.Drawing.Point(177, 142)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(110, 17)
         Me.Label4.TabIndex = 40
         Me.Label4.Text = "APELLIDO PAT."
         '
-        'TextBox2
+        'TXT_NOMBRES
         '
-        Me.TextBox2.Location = New System.Drawing.Point(163, 64)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(443, 22)
-        Me.TextBox2.TabIndex = 39
+        Me.TXT_NOMBRES.Location = New System.Drawing.Point(297, 97)
+        Me.TXT_NOMBRES.Name = "TXT_NOMBRES"
+        Me.TXT_NOMBRES.Size = New System.Drawing.Size(468, 22)
+        Me.TXT_NOMBRES.TabIndex = 39
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(43, 67)
+        Me.Label2.Location = New System.Drawing.Point(177, 100)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(87, 17)
         Me.Label2.TabIndex = 38
         Me.Label2.Text = "NOMBRE(S)"
         '
-        'TextBox1
-        '
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(163, 25)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(98, 22)
-        Me.TextBox1.TabIndex = 37
-        '
-        'label1
-        '
-        Me.label1.AutoSize = True
-        Me.label1.Location = New System.Drawing.Point(43, 28)
-        Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(63, 17)
-        Me.label1.TabIndex = 36
-        Me.label1.Text = "CÓDIGO"
-        '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(228, 396)
+        Me.Button1.Location = New System.Drawing.Point(27, 35)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(111, 68)
+        Me.Button1.Size = New System.Drawing.Size(111, 88)
         Me.Button1.TabIndex = 54
         Me.Button1.Text = "ACEPTAR"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(373, 396)
+        Me.Button2.Location = New System.Drawing.Point(27, 167)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(111, 68)
+        Me.Button2.Size = New System.Drawing.Size(111, 86)
         Me.Button2.TabIndex = 55
         Me.Button2.Text = "SALIR"
         Me.Button2.UseVisualStyleBackColor = True
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.RB_JURIDICA)
+        Me.GroupBox1.Controls.Add(Me.RB_NARUTAL)
+        Me.GroupBox1.Location = New System.Drawing.Point(478, 35)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(288, 52)
+        Me.GroupBox1.TabIndex = 56
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "TIPO DE CLIENTE"
+        '
+        'RB_NARUTAL
+        '
+        Me.RB_NARUTAL.AutoSize = True
+        Me.RB_NARUTAL.Checked = True
+        Me.RB_NARUTAL.Location = New System.Drawing.Point(23, 24)
+        Me.RB_NARUTAL.Name = "RB_NARUTAL"
+        Me.RB_NARUTAL.Size = New System.Drawing.Size(94, 21)
+        Me.RB_NARUTAL.TabIndex = 0
+        Me.RB_NARUTAL.TabStop = True
+        Me.RB_NARUTAL.Text = "NATURAL"
+        Me.RB_NARUTAL.UseVisualStyleBackColor = True
+        '
+        'RB_JURIDICA
+        '
+        Me.RB_JURIDICA.AutoSize = True
+        Me.RB_JURIDICA.Location = New System.Drawing.Point(154, 22)
+        Me.RB_JURIDICA.Name = "RB_JURIDICA"
+        Me.RB_JURIDICA.Size = New System.Drawing.Size(90, 21)
+        Me.RB_JURIDICA.TabIndex = 1
+        Me.RB_JURIDICA.Text = "JURIDICA"
+        Me.RB_JURIDICA.UseVisualStyleBackColor = True
         '
         'FRM_CLIENTE_CRUD
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(642, 488)
+        Me.ClientSize = New System.Drawing.Size(807, 307)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox9)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.TXT_TELEFONO)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox6)
+        Me.Controls.Add(Me.TXT_CELULAR)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox7)
+        Me.Controls.Add(Me.TXT_CORREO)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.TextBox8)
+        Me.Controls.Add(Me.TXT_DOCUMENTO)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.TXT_APELLIDOS_MAT)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.TXT_APELLIDOS_PAT)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TXT_NOMBRES)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.label1)
         Me.Name = "FRM_CLIENTE_CRUD"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "CLIENTES"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents Label9 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents TXT_TELEFONO As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents TXT_CELULAR As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents TXT_CORREO As TextBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox8 As TextBox
+    Friend WithEvents TXT_DOCUMENTO As TextBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TXT_APELLIDOS_MAT As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents TXT_APELLIDOS_PAT As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TXT_NOMBRES As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents label1 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents RB_JURIDICA As RadioButton
+    Friend WithEvents RB_NARUTAL As RadioButton
 End Class

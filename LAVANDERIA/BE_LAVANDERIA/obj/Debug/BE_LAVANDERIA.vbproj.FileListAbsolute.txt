@@ -1,0 +1,9 @@
+C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\BE_LAVANDERIA\bin\Debug\BE_LAVANDERIA.dll
+C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\BE_LAVANDERIA\bin\Debug\BE_LAVANDERIA.pdb
+C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\BE_LAVANDERIA\bin\Debug\BE_LAVANDERIA.xml
+C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\BE_LAVANDERIA\obj\Debug\BE_LAVANDERIA.vbprojResolveAssemblyReference.cache
+C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\BE_LAVANDERIA\obj\Debug\BE_LAVANDERIA.Resources.resources
+C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\BE_LAVANDERIA\obj\Debug\BE_LAVANDERIA.vbproj.GenerateResource.Cache
+C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\BE_LAVANDERIA\obj\Debug\BE_LAVANDERIA.dll
+C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\BE_LAVANDERIA\obj\Debug\BE_LAVANDERIA.xml
+C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\BE_LAVANDERIA\obj\Debug\BE_LAVANDERIA.pdb

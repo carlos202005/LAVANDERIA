@@ -44,7 +44,7 @@ Partial Class FRM_GASTOS
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(157, 243)
+        Me.TextBox5.Location = New System.Drawing.Point(330, 242)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(180, 22)
         Me.TextBox5.TabIndex = 19
@@ -52,7 +52,7 @@ Partial Class FRM_GASTOS
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(42, 248)
+        Me.Label5.Location = New System.Drawing.Point(215, 247)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(48, 17)
         Me.Label5.TabIndex = 18
@@ -60,7 +60,7 @@ Partial Class FRM_GASTOS
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(157, 203)
+        Me.TextBox4.Location = New System.Drawing.Point(330, 202)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(407, 22)
         Me.TextBox4.TabIndex = 17
@@ -68,7 +68,7 @@ Partial Class FRM_GASTOS
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(42, 206)
+        Me.Label4.Location = New System.Drawing.Point(215, 205)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(80, 17)
         Me.Label4.TabIndex = 16
@@ -76,7 +76,7 @@ Partial Class FRM_GASTOS
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(157, 62)
+        Me.TextBox3.Location = New System.Drawing.Point(330, 61)
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(407, 70)
@@ -85,7 +85,7 @@ Partial Class FRM_GASTOS
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(42, 62)
+        Me.Label3.Location = New System.Drawing.Point(215, 61)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(100, 17)
         Me.Label3.TabIndex = 14
@@ -93,7 +93,7 @@ Partial Class FRM_GASTOS
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(427, 245)
+        Me.TextBox2.Location = New System.Drawing.Point(600, 244)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(137, 22)
         Me.TextBox2.TabIndex = 13
@@ -101,7 +101,7 @@ Partial Class FRM_GASTOS
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(353, 248)
+        Me.Label2.Location = New System.Drawing.Point(526, 247)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(69, 17)
         Me.Label2.TabIndex = 12
@@ -109,7 +109,7 @@ Partial Class FRM_GASTOS
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(157, 24)
+        Me.TextBox1.Location = New System.Drawing.Point(330, 23)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(106, 22)
         Me.TextBox1.TabIndex = 11
@@ -117,7 +117,7 @@ Partial Class FRM_GASTOS
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(42, 29)
+        Me.Label1.Location = New System.Drawing.Point(215, 28)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(63, 17)
         Me.Label1.TabIndex = 10
@@ -126,7 +126,7 @@ Partial Class FRM_GASTOS
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(42, 159)
+        Me.Label6.Location = New System.Drawing.Point(215, 158)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(98, 17)
         Me.Label6.TabIndex = 20
@@ -134,14 +134,14 @@ Partial Class FRM_GASTOS
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(157, 154)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(330, 153)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(407, 22)
         Me.DateTimePicker1.TabIndex = 21
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(157, 292)
+        Me.TextBox6.Location = New System.Drawing.Point(330, 291)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(180, 22)
         Me.TextBox6.TabIndex = 23
@@ -149,7 +149,7 @@ Partial Class FRM_GASTOS
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(42, 295)
+        Me.Label7.Location = New System.Drawing.Point(215, 294)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(60, 17)
         Me.Label7.TabIndex = 22
@@ -157,7 +157,7 @@ Partial Class FRM_GASTOS
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(157, 332)
+        Me.TextBox7.Location = New System.Drawing.Point(330, 331)
         Me.TextBox7.Multiline = True
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(407, 70)
@@ -166,7 +166,7 @@ Partial Class FRM_GASTOS
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(42, 335)
+        Me.Label8.Location = New System.Drawing.Point(215, 334)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(107, 17)
         Me.Label8.TabIndex = 24
@@ -174,7 +174,7 @@ Partial Class FRM_GASTOS
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(228, 417)
+        Me.Button1.Location = New System.Drawing.Point(401, 416)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(109, 48)
         Me.Button1.TabIndex = 26
@@ -183,7 +183,7 @@ Partial Class FRM_GASTOS
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(356, 417)
+        Me.Button2.Location = New System.Drawing.Point(529, 416)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(109, 48)
         Me.Button2.TabIndex = 27
@@ -194,7 +194,7 @@ Partial Class FRM_GASTOS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(617, 488)
+        Me.ClientSize = New System.Drawing.Size(785, 488)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox7)

@@ -416,6 +416,16 @@
   <ItemGroup>
     <None Include="Resources\apertura_cierre.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BE_LAVANDERIA\BE_LAVANDERIA.vbproj">
+      <Project>{805479a3-a3dc-486f-bf27-65e60ec93f44}</Project>
+      <Name>BE_LAVANDERIA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA_LAVANDERIA\DA_LAVANDERIA.vbproj">
+      <Project>{960ae241-a3cd-433e-b9b2-5e959482be4b}</Project>
+      <Name>DA_LAVANDERIA</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

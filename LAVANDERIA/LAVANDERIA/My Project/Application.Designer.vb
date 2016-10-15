@@ -20,7 +20,7 @@ Namespace My
     ' Explorador de soluciones) y realice cambios en la pestaña Aplicación.
     '
     Partial Friend Class MyApplication
-
+        
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Public Sub New()
             MyBase.New(Global.Microsoft.VisualBasic.ApplicationServices.AuthenticationMode.Windows)
@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.LAVANDERIA.FRM_PRINCIPAL
+            Me.MainForm = Global.LAVANDERIA.FRM_CLIENTE_CRUD
         End Sub
     End Class
 End Namespace

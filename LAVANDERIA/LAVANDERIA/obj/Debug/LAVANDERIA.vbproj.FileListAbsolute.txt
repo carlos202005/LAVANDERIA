@@ -1,0 +1,11 @@
+C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\bin\Debug\LAVANDERIA.exe.config
+C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\bin\Debug\LAVANDERIA.exe
+C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\bin\Debug\LAVANDERIA.pdb
+C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\bin\Debug\LAVANDERIA.xml
+C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\obj\Debug\LAVANDERIA.vbprojResolveAssemblyReference.cache
+C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\obj\Debug\LAVANDERIA.Form1.resources
+C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\obj\Debug\LAVANDERIA.Resources.resources
+C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\obj\Debug\LAVANDERIA.vbproj.GenerateResource.Cache
+C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\obj\Debug\LAVANDERIA.exe
+C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\obj\Debug\LAVANDERIA.xml
+C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\obj\Debug\LAVANDERIA.pdb
