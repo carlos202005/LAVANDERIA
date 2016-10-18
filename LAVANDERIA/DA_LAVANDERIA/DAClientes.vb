@@ -21,7 +21,7 @@ Public Class DAClientes
             cmd.Parameters.AddWithValue("@fecha_nac", dts.gfec_nacimiento)
             cmd.Parameters.AddWithValue("@telefono", dts.gtelefono)
             cmd.Parameters.AddWithValue("@usu_reg", dts.gusu_reg)
-            cmd.Parameters.AddWithValue("@id_tipo ", dts.gid_tipo)
+            cmd.Parameters.AddWithValue("@id_tipo", dts.gid_tipo)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
@@ -85,5 +85,6 @@ Public Class DAClientes
             Desconectar()
         End Try
     End Function
+
 
 End Class

@@ -39,8 +39,10 @@ Partial Class FRM_CLIENTE_CRUD
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RB_NARUTAL = New System.Windows.Forms.RadioButton()
         Me.RB_JURIDICA = New System.Windows.Forms.RadioButton()
+        Me.RB_NARUTAL = New System.Windows.Forms.RadioButton()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -50,7 +52,7 @@ Partial Class FRM_CLIENTE_CRUD
         Me.TXT_TELEFONO.MaxLength = 11
         Me.TXT_TELEFONO.Name = "TXT_TELEFONO"
         Me.TXT_TELEFONO.Size = New System.Drawing.Size(159, 22)
-        Me.TXT_TELEFONO.TabIndex = 51
+        Me.TXT_TELEFONO.TabIndex = 7
         '
         'Label5
         '
@@ -67,7 +69,7 @@ Partial Class FRM_CLIENTE_CRUD
         Me.TXT_CELULAR.MaxLength = 11
         Me.TXT_CELULAR.Name = "TXT_CELULAR"
         Me.TXT_CELULAR.Size = New System.Drawing.Size(175, 22)
-        Me.TXT_CELULAR.TabIndex = 49
+        Me.TXT_CELULAR.TabIndex = 6
         '
         'Label6
         '
@@ -83,7 +85,7 @@ Partial Class FRM_CLIENTE_CRUD
         Me.TXT_CORREO.Location = New System.Drawing.Point(297, 226)
         Me.TXT_CORREO.Name = "TXT_CORREO"
         Me.TXT_CORREO.Size = New System.Drawing.Size(468, 22)
-        Me.TXT_CORREO.TabIndex = 47
+        Me.TXT_CORREO.TabIndex = 8
         '
         'Label7
         '
@@ -97,9 +99,10 @@ Partial Class FRM_CLIENTE_CRUD
         'TXT_DOCUMENTO
         '
         Me.TXT_DOCUMENTO.Location = New System.Drawing.Point(297, 56)
+        Me.TXT_DOCUMENTO.MaxLength = 11
         Me.TXT_DOCUMENTO.Name = "TXT_DOCUMENTO"
         Me.TXT_DOCUMENTO.Size = New System.Drawing.Size(175, 22)
-        Me.TXT_DOCUMENTO.TabIndex = 45
+        Me.TXT_DOCUMENTO.TabIndex = 1
         '
         'Label8
         '
@@ -115,7 +118,7 @@ Partial Class FRM_CLIENTE_CRUD
         Me.TXT_APELLIDOS_MAT.Location = New System.Drawing.Point(606, 137)
         Me.TXT_APELLIDOS_MAT.Name = "TXT_APELLIDOS_MAT"
         Me.TXT_APELLIDOS_MAT.Size = New System.Drawing.Size(159, 22)
-        Me.TXT_APELLIDOS_MAT.TabIndex = 43
+        Me.TXT_APELLIDOS_MAT.TabIndex = 5
         '
         'Label3
         '
@@ -131,7 +134,7 @@ Partial Class FRM_CLIENTE_CRUD
         Me.TXT_APELLIDOS_PAT.Location = New System.Drawing.Point(297, 139)
         Me.TXT_APELLIDOS_PAT.Name = "TXT_APELLIDOS_PAT"
         Me.TXT_APELLIDOS_PAT.Size = New System.Drawing.Size(175, 22)
-        Me.TXT_APELLIDOS_PAT.TabIndex = 41
+        Me.TXT_APELLIDOS_PAT.TabIndex = 4
         '
         'Label4
         '
@@ -147,7 +150,7 @@ Partial Class FRM_CLIENTE_CRUD
         Me.TXT_NOMBRES.Location = New System.Drawing.Point(297, 97)
         Me.TXT_NOMBRES.Name = "TXT_NOMBRES"
         Me.TXT_NOMBRES.Size = New System.Drawing.Size(468, 22)
-        Me.TXT_NOMBRES.TabIndex = 39
+        Me.TXT_NOMBRES.TabIndex = 3
         '
         'Label2
         '
@@ -163,7 +166,7 @@ Partial Class FRM_CLIENTE_CRUD
         Me.Button1.Location = New System.Drawing.Point(27, 35)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(111, 88)
-        Me.Button1.TabIndex = 54
+        Me.Button1.TabIndex = 10
         Me.Button1.Text = "ACEPTAR"
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -172,7 +175,7 @@ Partial Class FRM_CLIENTE_CRUD
         Me.Button2.Location = New System.Drawing.Point(27, 167)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(111, 86)
-        Me.Button2.TabIndex = 55
+        Me.Button2.TabIndex = 11
         Me.Button2.Text = "SALIR"
         Me.Button2.UseVisualStyleBackColor = True
         '
@@ -183,9 +186,19 @@ Partial Class FRM_CLIENTE_CRUD
         Me.GroupBox1.Location = New System.Drawing.Point(478, 35)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(288, 52)
-        Me.GroupBox1.TabIndex = 56
+        Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "TIPO DE CLIENTE"
+        '
+        'RB_JURIDICA
+        '
+        Me.RB_JURIDICA.AutoSize = True
+        Me.RB_JURIDICA.Location = New System.Drawing.Point(154, 22)
+        Me.RB_JURIDICA.Name = "RB_JURIDICA"
+        Me.RB_JURIDICA.Size = New System.Drawing.Size(90, 21)
+        Me.RB_JURIDICA.TabIndex = 1
+        Me.RB_JURIDICA.Text = "JURIDICA"
+        Me.RB_JURIDICA.UseVisualStyleBackColor = True
         '
         'RB_NARUTAL
         '
@@ -199,21 +212,30 @@ Partial Class FRM_CLIENTE_CRUD
         Me.RB_NARUTAL.Text = "NATURAL"
         Me.RB_NARUTAL.UseVisualStyleBackColor = True
         '
-        'RB_JURIDICA
+        'Label1
         '
-        Me.RB_JURIDICA.AutoSize = True
-        Me.RB_JURIDICA.Location = New System.Drawing.Point(154, 22)
-        Me.RB_JURIDICA.Name = "RB_JURIDICA"
-        Me.RB_JURIDICA.Size = New System.Drawing.Size(90, 21)
-        Me.RB_JURIDICA.TabIndex = 1
-        Me.RB_JURIDICA.Text = "JURIDICA"
-        Me.RB_JURIDICA.UseVisualStyleBackColor = True
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(181, 268)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(89, 17)
+        Me.Label1.TabIndex = 57
+        Me.Label1.Text = "FECHA NAC."
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(297, 263)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.DateTimePicker1.Size = New System.Drawing.Size(468, 22)
+        Me.DateTimePicker1.TabIndex = 9
         '
         'FRM_CLIENTE_CRUD
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(807, 307)
+        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -259,4 +281,6 @@ Partial Class FRM_CLIENTE_CRUD
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents RB_JURIDICA As RadioButton
     Friend WithEvents RB_NARUTAL As RadioButton
+    Friend WithEvents Label1 As Label
+    Friend WithEvents DateTimePicker1 As DateTimePicker
 End Class

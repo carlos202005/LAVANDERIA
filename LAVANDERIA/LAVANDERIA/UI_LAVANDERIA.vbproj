@@ -201,6 +201,7 @@
     <Compile Include="FRM_PROMOCIONES.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="VARIABLES_GLOBALES.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FRM_APERTURA_CAJA.resx">

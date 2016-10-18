@@ -1,9 +1,10 @@
 ﻿Public Class BEPromocion
     Dim id_promocion As Integer
     Dim cod_promo As String
+    Dim des_promo As String
     Dim id_suculsal As Integer
-    Dim fec_ini As String
-    Dim fec_fin As String
+    Dim fec_ini As DateTime
+    Dim fec_fin As DateTime
     Dim usu_reg As Integer
     Dim usu_mod As Integer
     Dim usu_eli As Integer
@@ -23,6 +24,15 @@
         End Get
         Set(value)
             cod_promo = value
+        End Set
+    End Property
+
+    Public Property gdes_promo
+        Get
+            Return des_promo
+        End Get
+        Set(value)
+            des_promo = value
         End Set
     End Property
 
@@ -87,9 +97,10 @@
     End Sub
 
 
-    Public Sub New(ByVal id_promocion As Integer, ByVal cod_promo As String, ByVal id_suculsal As Integer, ByVal fec_ini As String, ByVal fec_fin As String, ByVal usu_reg As Integer, ByVal usu_mod As Integer, ByVal usu_eli As Integer)
+    Public Sub New(ByVal id_promocion As Integer, ByVal cod_promo As String, ByVal des_promo As String, ByVal id_suculsal As Integer, ByVal fec_ini As DateTime, ByVal fec_fin As DateTime, ByVal usu_reg As Integer, ByVal usu_mod As Integer, ByVal usu_eli As Integer)
         gid_promocion = id_promocion
         gcod_promo = cod_promo
+        gdes_promo = des_promo
         gid_suculsal = id_suculsal
         gfec_ini = fec_ini
         gfec_fin = fec_fin

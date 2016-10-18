@@ -67,6 +67,13 @@
     <Compile Include="Conexion.vb" />
     <Compile Include="DACargar_Combobox.vb" />
     <Compile Include="DAClientes.vb" />
+    <Compile Include="DAConsultas_Base.vb" />
+    <Compile Include="DADocumento_Pago.vb" />
+    <Compile Include="DAPromociones.vb" />
+    <Compile Include="DAPromocion_Det.vb" />
+    <Compile Include="DAProveedores.vb" />
+    <Compile Include="DAServicios.vb" />
+    <Compile Include="DAVendedor.vb" />
     <Compile Include="DA_MDL_Conexion_Global.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
