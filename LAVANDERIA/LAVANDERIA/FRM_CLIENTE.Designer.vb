@@ -54,10 +54,15 @@ Partial Class FRM_CLIENTE
         '
         'DGV_CLIENTES
         '
+        Me.DGV_CLIENTES.AllowUserToAddRows = False
+        Me.DGV_CLIENTES.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DGV_CLIENTES.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGV_CLIENTES.Location = New System.Drawing.Point(6, 21)
+        Me.DGV_CLIENTES.MultiSelect = False
         Me.DGV_CLIENTES.Name = "DGV_CLIENTES"
+        Me.DGV_CLIENTES.ReadOnly = True
         Me.DGV_CLIENTES.RowTemplate.Height = 24
+        Me.DGV_CLIENTES.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGV_CLIENTES.Size = New System.Drawing.Size(824, 491)
         Me.DGV_CLIENTES.TabIndex = 0
         '

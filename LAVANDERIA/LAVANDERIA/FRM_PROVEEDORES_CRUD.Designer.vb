@@ -121,7 +121,7 @@ Partial Class FRM_PROVEEDORES_CRUD
         '
         'BTN_SALIR
         '
-        Me.BTN_SALIR.Location = New System.Drawing.Point(322, 195)
+        Me.BTN_SALIR.Location = New System.Drawing.Point(346, 198)
         Me.BTN_SALIR.Name = "BTN_SALIR"
         Me.BTN_SALIR.Size = New System.Drawing.Size(111, 89)
         Me.BTN_SALIR.TabIndex = 57
@@ -130,7 +130,7 @@ Partial Class FRM_PROVEEDORES_CRUD
         '
         'BTN_ACEPTAR
         '
-        Me.BTN_ACEPTAR.Location = New System.Drawing.Point(167, 195)
+        Me.BTN_ACEPTAR.Location = New System.Drawing.Point(191, 198)
         Me.BTN_ACEPTAR.Name = "BTN_ACEPTAR"
         Me.BTN_ACEPTAR.Size = New System.Drawing.Size(111, 89)
         Me.BTN_ACEPTAR.TabIndex = 56

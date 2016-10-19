@@ -28,7 +28,7 @@ Partial Class FRM_PROVEEDORES
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.BTN_BUSCAR = New System.Windows.Forms.Button()
         Me.CLIENTES = New System.Windows.Forms.GroupBox()
-        Me.DGV_CLIENTES = New System.Windows.Forms.DataGridView()
+        Me.DGV_PROVEEDORES = New System.Windows.Forms.DataGridView()
         Me.OPCIONES = New System.Windows.Forms.GroupBox()
         Me.BTN_SALIR = New System.Windows.Forms.Button()
         Me.BTN_VER = New System.Windows.Forms.Button()
@@ -37,7 +37,7 @@ Partial Class FRM_PROVEEDORES
         Me.BTN_NUEVO = New System.Windows.Forms.Button()
         Me.BUSCAR.SuspendLayout()
         Me.CLIENTES.SuspendLayout()
-        CType(Me.DGV_CLIENTES, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGV_PROVEEDORES, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.OPCIONES.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -97,7 +97,7 @@ Partial Class FRM_PROVEEDORES
         'CLIENTES
         '
         Me.CLIENTES.BackColor = System.Drawing.Color.Transparent
-        Me.CLIENTES.Controls.Add(Me.DGV_CLIENTES)
+        Me.CLIENTES.Controls.Add(Me.DGV_PROVEEDORES)
         Me.CLIENTES.Location = New System.Drawing.Point(134, 12)
         Me.CLIENTES.Name = "CLIENTES"
         Me.CLIENTES.Size = New System.Drawing.Size(836, 518)
@@ -105,14 +105,19 @@ Partial Class FRM_PROVEEDORES
         Me.CLIENTES.TabStop = False
         Me.CLIENTES.Text = "PROVEEDORES"
         '
-        'DGV_CLIENTES
+        'DGV_PROVEEDORES
         '
-        Me.DGV_CLIENTES.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGV_CLIENTES.Location = New System.Drawing.Point(6, 21)
-        Me.DGV_CLIENTES.Name = "DGV_CLIENTES"
-        Me.DGV_CLIENTES.RowTemplate.Height = 24
-        Me.DGV_CLIENTES.Size = New System.Drawing.Size(824, 491)
-        Me.DGV_CLIENTES.TabIndex = 0
+        Me.DGV_PROVEEDORES.AllowUserToAddRows = False
+        Me.DGV_PROVEEDORES.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DGV_PROVEEDORES.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGV_PROVEEDORES.Location = New System.Drawing.Point(6, 21)
+        Me.DGV_PROVEEDORES.MultiSelect = False
+        Me.DGV_PROVEEDORES.Name = "DGV_PROVEEDORES"
+        Me.DGV_PROVEEDORES.ReadOnly = True
+        Me.DGV_PROVEEDORES.RowTemplate.Height = 24
+        Me.DGV_PROVEEDORES.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DGV_PROVEEDORES.Size = New System.Drawing.Size(824, 491)
+        Me.DGV_PROVEEDORES.TabIndex = 0
         '
         'OPCIONES
         '
@@ -208,7 +213,7 @@ Partial Class FRM_PROVEEDORES
         Me.BUSCAR.ResumeLayout(False)
         Me.BUSCAR.PerformLayout()
         Me.CLIENTES.ResumeLayout(False)
-        CType(Me.DGV_CLIENTES, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGV_PROVEEDORES, System.ComponentModel.ISupportInitialize).EndInit()
         Me.OPCIONES.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -220,7 +225,7 @@ Partial Class FRM_PROVEEDORES
     Protected WithEvents TextBox1 As TextBox
     Protected WithEvents BTN_BUSCAR As Button
     Protected WithEvents CLIENTES As GroupBox
-    Protected WithEvents DGV_CLIENTES As DataGridView
+    Protected WithEvents DGV_PROVEEDORES As DataGridView
     Protected WithEvents OPCIONES As GroupBox
     Protected WithEvents BTN_SALIR As Button
     Protected WithEvents BTN_VER As Button

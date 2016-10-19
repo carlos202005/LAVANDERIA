@@ -12,7 +12,6 @@ C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\obj\Debug\LAV
 C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\obj\Debug\LAVANDERIA.FRM_USUARIOS.resources
 C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\obj\Debug\LAVANDERIA.FRM_PROVEEDORES.resources
 C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\obj\Debug\LAVANDERIA.FRM_CLIENTE.resources
-C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\obj\Debug\LAVANDERIA.FRM_TEMPLATE_RECIBOS.resources
 C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\obj\Debug\LAVANDERIA.FRM_RECIBOS.resources
 C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\obj\Debug\LAVANDERIA.FRM_ORDEN_PEDIDO.resources
 C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\obj\Debug\LAVANDERIA.FRM_VENTAS.resources
@@ -33,3 +32,4 @@ C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\bin\Debug\BE_
 C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\bin\Debug\BE_LAVANDERIA.xml
 C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\bin\Debug\DA_LAVANDERIA.pdb
 C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\bin\Debug\DA_LAVANDERIA.xml
+C:\Users\CristhianOliver\Source\Repos\oliver\LAVANDERIA\LAVANDERIA\obj\Debug\LAVANDERIA.FRM_PROMOCIONES_D.resources

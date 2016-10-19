@@ -23,21 +23,21 @@ Partial Class FRM_RECIBOS
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.BUSCAR = New System.Windows.Forms.GroupBox()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.BTN_BUSCAR = New System.Windows.Forms.Button()
         Me.CLIENTES = New System.Windows.Forms.GroupBox()
-        Me.DGV_CLIENTES = New System.Windows.Forms.DataGridView()
+        Me.DGV_RECIBOS = New System.Windows.Forms.DataGridView()
         Me.OPCIONES = New System.Windows.Forms.GroupBox()
         Me.BTN_SALIR = New System.Windows.Forms.Button()
         Me.BTN_VER = New System.Windows.Forms.Button()
         Me.BTN_ELIMINAR = New System.Windows.Forms.Button()
         Me.BTN_EDITAR = New System.Windows.Forms.Button()
         Me.BTN_NUEVO = New System.Windows.Forms.Button()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.BUSCAR.SuspendLayout()
         Me.CLIENTES.SuspendLayout()
-        CType(Me.DGV_CLIENTES, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGV_RECIBOS, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.OPCIONES.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -54,6 +54,28 @@ Partial Class FRM_RECIBOS
         Me.BUSCAR.TabIndex = 7
         Me.BUSCAR.TabStop = False
         Me.BUSCAR.Text = "BUSCAR"
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(29, 67)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(78, 21)
+        Me.RadioButton2.TabIndex = 4
+        Me.RadioButton2.Text = "FECHA "
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Checked = True
+        Me.RadioButton1.Location = New System.Drawing.Point(29, 27)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(159, 21)
+        Me.RadioButton1.TabIndex = 3
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "NOMBRE EMPRESA"
+        Me.RadioButton1.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
@@ -75,7 +97,7 @@ Partial Class FRM_RECIBOS
         'CLIENTES
         '
         Me.CLIENTES.BackColor = System.Drawing.Color.Transparent
-        Me.CLIENTES.Controls.Add(Me.DGV_CLIENTES)
+        Me.CLIENTES.Controls.Add(Me.DGV_RECIBOS)
         Me.CLIENTES.Location = New System.Drawing.Point(134, 13)
         Me.CLIENTES.Name = "CLIENTES"
         Me.CLIENTES.Size = New System.Drawing.Size(836, 518)
@@ -83,14 +105,19 @@ Partial Class FRM_RECIBOS
         Me.CLIENTES.TabStop = False
         Me.CLIENTES.Text = "RECIBOS"
         '
-        'DGV_CLIENTES
+        'DGV_RECIBOS
         '
-        Me.DGV_CLIENTES.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGV_CLIENTES.Location = New System.Drawing.Point(6, 21)
-        Me.DGV_CLIENTES.Name = "DGV_CLIENTES"
-        Me.DGV_CLIENTES.RowTemplate.Height = 24
-        Me.DGV_CLIENTES.Size = New System.Drawing.Size(824, 491)
-        Me.DGV_CLIENTES.TabIndex = 0
+        Me.DGV_RECIBOS.AllowUserToAddRows = False
+        Me.DGV_RECIBOS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DGV_RECIBOS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGV_RECIBOS.Location = New System.Drawing.Point(6, 21)
+        Me.DGV_RECIBOS.MultiSelect = False
+        Me.DGV_RECIBOS.Name = "DGV_RECIBOS"
+        Me.DGV_RECIBOS.ReadOnly = True
+        Me.DGV_RECIBOS.RowTemplate.Height = 24
+        Me.DGV_RECIBOS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DGV_RECIBOS.Size = New System.Drawing.Size(824, 491)
+        Me.DGV_RECIBOS.TabIndex = 0
         '
         'OPCIONES
         '
@@ -172,28 +199,6 @@ Partial Class FRM_RECIBOS
         Me.BTN_NUEVO.TabIndex = 0
         Me.BTN_NUEVO.UseVisualStyleBackColor = True
         '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Checked = True
-        Me.RadioButton1.Location = New System.Drawing.Point(29, 27)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(159, 21)
-        Me.RadioButton1.TabIndex = 3
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "NOMBRE EMPRESA"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(29, 67)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(78, 21)
-        Me.RadioButton2.TabIndex = 4
-        Me.RadioButton2.Text = "FECHA "
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
         'FRM_RECIBOS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -208,7 +213,7 @@ Partial Class FRM_RECIBOS
         Me.BUSCAR.ResumeLayout(False)
         Me.BUSCAR.PerformLayout()
         Me.CLIENTES.ResumeLayout(False)
-        CType(Me.DGV_CLIENTES, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGV_RECIBOS, System.ComponentModel.ISupportInitialize).EndInit()
         Me.OPCIONES.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -218,7 +223,7 @@ Partial Class FRM_RECIBOS
     Protected WithEvents TextBox1 As TextBox
     Protected WithEvents BTN_BUSCAR As Button
     Protected WithEvents CLIENTES As GroupBox
-    Protected WithEvents DGV_CLIENTES As DataGridView
+    Protected WithEvents DGV_RECIBOS As DataGridView
     Protected WithEvents OPCIONES As GroupBox
     Protected WithEvents BTN_SALIR As Button
     Protected WithEvents BTN_VER As Button

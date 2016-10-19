@@ -133,7 +133,7 @@
     End Sub
 
     Private Sub PromocionesToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles PromocionesToolStripMenuItem1.Click
-        FRM_PROMOCIONES.Show()
+        FRM_PROMOCIONES_D.Show()
     End Sub
 
     Private Sub ToolStripButton3_Click(sender As Object, e As EventArgs) Handles ToolStripButton3.Click

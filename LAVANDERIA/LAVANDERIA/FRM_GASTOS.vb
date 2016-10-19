@@ -2,6 +2,8 @@
 Imports DA_LAVANDERIA
 Public Class FRM_GASTOS
     Private Sub BTN_SALIR_Click(sender As Object, e As EventArgs) Handles BTN_SALIR.Click
+        VARIABLES_GLOBALES.ID_RECIBOS = Nothing
+        FRM_RECIBOS.Show()
         Me.Close()
     End Sub
 
@@ -45,14 +47,30 @@ Public Class FRM_GASTOS
                 MsgBox("ERROR AL ACTUALIZAR RECIBO...!!")
             End If
         End If
-
         VARIABLES_GLOBALES.ID_RECIBOS = Nothing
-        VARIABLES_GLOBALES.ID_USUARIO = Nothing
+        FRM_RECIBOS.Show()
+        Me.Close()
+    End Sub
+
+    Sub LIMPIAR()
+        CB_SUCURSAL.SelectedIndex = 0
+        TXT_CODIGO_DOC.Text = ""
+        TXT_SERIE.Text = ""
+        TXT_NUMERO.Text = ""
+        TXT_DESCRIPCION.Text = ""
+        DTP_FECHA_VENCIMIENTO.Value = Now
+        TXT_MONTO.Text = ""
+        CB_PROVEEDOR.SelectedIndex = 0
+        TXT_OBSERVACION.Text = ""
     End Sub
 
     Private Sub FRM_GASTOS_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim DACargar_Combobox As New DACargar_Combobox
         DACargar_Combobox.cargarProveedor(CB_PROVEEDOR)
         DACargar_Combobox.cargarSucursal(CB_SUCURSAL)
+        If VARIABLES_GLOBALES.ID_RECIBOS <> Nothing Then
+            Dim DAConsultas_Completas_Base As New DAConsultas_Completas_Base
+            DAConsultas_Completas_Base.cargarDocumento_Pago(VARIABLES_GLOBALES.ID_RECIBOS, TXT_DESCRIPCION, DTP_FECHA_VENCIMIENTO, TXT_CODIGO_DOC, TXT_SERIE, TXT_NUMERO, TXT_MONTO, TXT_OBSERVACION, CB_PROVEEDOR, CB_SUCURSAL)
+        End If
     End Sub
 End Class

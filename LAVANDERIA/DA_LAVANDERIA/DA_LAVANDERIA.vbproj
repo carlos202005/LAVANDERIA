@@ -65,9 +65,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.vb" />
+    <Compile Include="DACargarDataGridView.vb" />
     <Compile Include="DACargar_Combobox.vb" />
     <Compile Include="DAClientes.vb" />
     <Compile Include="DAConsultas_Base.vb" />
+    <Compile Include="DAConsultas_Completas_Base.vb" />
     <Compile Include="DADocumento_Pago.vb" />
     <Compile Include="DAPromociones.vb" />
     <Compile Include="DAPromocion_Det.vb" />

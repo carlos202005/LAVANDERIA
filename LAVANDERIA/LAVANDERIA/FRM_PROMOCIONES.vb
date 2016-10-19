@@ -1,12 +1,15 @@
 ﻿Imports BE_LAVANDERIA
 Imports DA_LAVANDERIA
 Public Class FRM_PROMOCIONES
+    Dim dts As New DataTable
     Private Sub PROMOCIONES_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim DAConsultas_Base As New DAConsultas_Base
         Dim DACargar_Combobox As New DACargar_Combobox
+        Dim DAConsultas_Completas_Base As New DAConsultas_Completas_Base
         DACargar_Combobox.cargarServicio(CB_SERVICIO)
         DACargar_Combobox.cargarServicio(CB_SERVICIO_BONO)
         DACargar_Combobox.cargarSucursal(CB_SUCURSAL)
+
         If VARIABLES_GLOBALES.ID_PROMOCION = Nothing Then
             Dim VARIABLE1 As String
             VARIABLE1 = DAConsultas_Base.mostrarCod_Promocion_Ultima()
@@ -17,12 +20,27 @@ Public Class FRM_PROMOCIONES
             VARIABLE1 = "P" & VARIABLE1
             TXT_CODIGO.Text = VARIABLE1
         Else
-            '################################## AQUI PONDREMOS CUANDO ACTUALICEMOS PAPÚ :D JAJAJAJ ######################
+            DAConsultas_Completas_Base.cargarPromocion(VARIABLES_GLOBALES.ID_PROMOCION, TXT_CODIGO, TXT_DESCRIPCION, CB_SUCURSAL, DTP_FECHA_INI, DTP_FECHA_FIN)
+            CARGARDATAGRIDVIEW()
         End If
+    End Sub
 
+    Sub CARGARDATAGRIDVIEW()
+        Try
+            Dim DACargarDataGridView As New DACargarDataGridView
+            dts = DACargarDataGridView.Mostrar_Promocion_Detalle(VARIABLES_GLOBALES.ID_PROMOCION)
+            If dts.Rows.Count <> 0 Then
+                DGVPROMOCIONES.DataSource = dts
+            Else
+                DGVPROMOCIONES.DataSource = Nothing
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 
     Private Sub BTN_SALIR_Click(sender As Object, e As EventArgs) Handles BTN_SALIR.Click
+        FRM_PROMOCIONES_D.Show()
         Me.Close()
     End Sub
 
@@ -48,11 +66,11 @@ Public Class FRM_PROMOCIONES
 
             Dim ID_PROMOCION_CONSULTA As Integer = DAConsultas_Base.mostrarId_Promocion_Ultima()
 
-            For n = 0 To DataGridView1.Rows.Count - 1
-                BEPromocion_Det.gid_serv = DataGridView1.Item(0, n).Value
-                BEPromocion_Det.gcantserv = DataGridView1.Item(2, n).Value
-                BEPromocion_Det.gid_servbono = DataGridView1.Item(3, n).Value
-                BEPromocion_Det.gcantbono = DataGridView1.Item(5, n).Value
+            For n = 0 To DGVPROMOCIONES.Rows.Count - 1
+                BEPromocion_Det.gid_serv = DGVPROMOCIONES.Item(0, n).Value
+                BEPromocion_Det.gcantserv = DGVPROMOCIONES.Item(2, n).Value
+                BEPromocion_Det.gid_servbono = DGVPROMOCIONES.Item(3, n).Value
+                BEPromocion_Det.gcantbono = DGVPROMOCIONES.Item(5, n).Value
                 BEPromocion_Det.gid_promocion = ID_PROMOCION_CONSULTA
                 If DAPromocion_Det.insertar_Promociones_Det(BEPromocion_Det) Then
                 Else
@@ -76,12 +94,11 @@ Public Class FRM_PROMOCIONES
                 MsgBox("ERROR AL ACTUALIZAR LA PROMOCION...")
             End If
 
-
-            For n = 0 To DataGridView1.Rows.Count - 1
-                BEPromocion_Det.gid_serv = DataGridView1.Item(0, n).Value
-                BEPromocion_Det.gcantserv = DataGridView1.Item(2, n).Value
-                BEPromocion_Det.gid_servbono = DataGridView1.Item(3, n).Value
-                BEPromocion_Det.gcantbono = DataGridView1.Item(5, n).Value
+            For n = 0 To DGVPROMOCIONES.Rows.Count - 1
+                BEPromocion_Det.gid_serv = DGVPROMOCIONES.Item(0, n).Value
+                BEPromocion_Det.gcantserv = DGVPROMOCIONES.Item(2, n).Value
+                BEPromocion_Det.gid_servbono = DGVPROMOCIONES.Item(3, n).Value
+                BEPromocion_Det.gcantbono = DGVPROMOCIONES.Item(5, n).Value
                 BEPromocion_Det.gid_promocion = VARIABLES_GLOBALES.ID_PROMOCION
                 If DAPromocion_Det.insertar_Promociones_Det(BEPromocion_Det) Then
                 Else
@@ -92,12 +109,12 @@ Public Class FRM_PROMOCIONES
         End If
 
         VARIABLES_GLOBALES.ID_PROMOCION = Nothing
-        VARIABLES_GLOBALES.ID_USUARIO = Nothing
-        LIMPIAR()
+        FRM_PROMOCIONES_D.Show()
+        Me.Close()
     End Sub
 
     Private Sub BTN_AGREGAR_Click(sender As Object, e As EventArgs) Handles BTN_AGREGAR.Click
-        DataGridView1.Rows.Add(CB_SERVICIO.SelectedValue, CB_SERVICIO.Text, NUD_CANTIDAD_SERVICIO.Value, CB_SERVICIO_BONO.SelectedValue, CB_SERVICIO_BONO.Text, NUD_CANTIDAD_SERVICIO_BONO.Value)
+        DGVPROMOCIONES.Rows.Add(CB_SERVICIO.SelectedValue, CB_SERVICIO.Text, NUD_CANTIDAD_SERVICIO.Value, CB_SERVICIO_BONO.SelectedValue, CB_SERVICIO_BONO.Text, NUD_CANTIDAD_SERVICIO_BONO.Value)
         CB_SERVICIO.SelectedIndex = 0
         CB_SERVICIO_BONO.SelectedIndex = 0
         NUD_CANTIDAD_SERVICIO.Value = 0
@@ -114,7 +131,7 @@ Public Class FRM_PROMOCIONES
         NUD_CANTIDAD_SERVICIO_BONO.Value = 0
         DTP_FECHA_INI.Value = Now
         DTP_FECHA_FIN.Value = Now
-        DataGridView1.Rows.Clear()
+        DGVPROMOCIONES.Rows.Clear()
     End Sub
 
 End Class

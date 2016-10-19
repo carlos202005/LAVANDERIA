@@ -2,6 +2,8 @@
 Imports DA_LAVANDERIA
 Public Class FRM_CLIENTE_CRUD
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        VARIABLES_GLOBALES.ID_CLIENTE = Nothing
+        FRM_CLIENTE.Show()
         Me.Close()
     End Sub
 
@@ -53,12 +55,15 @@ Public Class FRM_CLIENTE_CRUD
         End If
 
         VARIABLES_GLOBALES.ID_CLIENTE = Nothing
-        VARIABLES_GLOBALES.ID_USUARIO = Nothing
+        FRM_CLIENTE.Show()
+        Me.Close()
     End Sub
 
     Private Sub FRM_CLIENTE_CRUD_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If VARIABLES_GLOBALES.ID_CLIENTE <> Nothing Then
+        Dim DAConsultas_Completas_Base As New DAConsultas_Completas_Base
 
+        If VARIABLES_GLOBALES.ID_CLIENTE <> 0 Then
+            DAConsultas_Completas_Base.cargarClientes(VARIABLES_GLOBALES.ID_CLIENTE, TXT_NOMBRES, TXT_APELLIDOS_PAT, TXT_APELLIDOS_MAT, TXT_CORREO, TXT_DOCUMENTO, DateTimePicker1, RB_NARUTAL, RB_JURIDICA, TXT_CELULAR, TXT_TELEFONO)
         End If
     End Sub
 End Class

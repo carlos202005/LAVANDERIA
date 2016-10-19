@@ -33,7 +33,7 @@ Partial Class FRM_PROMOCIONES
         Me.Label7 = New System.Windows.Forms.Label()
         Me.CB_SERVICIO = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DGVPROMOCIONES = New System.Windows.Forms.DataGridView()
         Me.COD = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -55,7 +55,7 @@ Partial Class FRM_PROMOCIONES
         Me.GroupBox1.SuspendLayout()
         CType(Me.NUD_CANTIDAD_SERVICIO_BONO, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NUD_CANTIDAD_SERVICIO, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGVPROMOCIONES, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.OPCIONES.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -71,7 +71,7 @@ Partial Class FRM_PROMOCIONES
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.CB_SERVICIO)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.DataGridView1)
+        Me.GroupBox1.Controls.Add(Me.DGVPROMOCIONES)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.DTP_FECHA_FIN)
@@ -176,20 +176,20 @@ Partial Class FRM_PROMOCIONES
         Me.Label6.TabIndex = 31
         Me.Label6.Text = "SERVICIO:"
         '
-        'DataGridView1
+        'DGVPROMOCIONES
         '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.COD, Me.Column1, Me.Column5, Me.Column2, Me.Column3, Me.Column4})
-        Me.DataGridView1.Location = New System.Drawing.Point(16, 341)
-        Me.DataGridView1.MultiSelect = False
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(739, 188)
-        Me.DataGridView1.TabIndex = 30
+        Me.DGVPROMOCIONES.AllowUserToAddRows = False
+        Me.DGVPROMOCIONES.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DGVPROMOCIONES.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGVPROMOCIONES.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.COD, Me.Column1, Me.Column5, Me.Column2, Me.Column3, Me.Column4})
+        Me.DGVPROMOCIONES.Location = New System.Drawing.Point(16, 341)
+        Me.DGVPROMOCIONES.MultiSelect = False
+        Me.DGVPROMOCIONES.Name = "DGVPROMOCIONES"
+        Me.DGVPROMOCIONES.ReadOnly = True
+        Me.DGVPROMOCIONES.RowTemplate.Height = 24
+        Me.DGVPROMOCIONES.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DGVPROMOCIONES.Size = New System.Drawing.Size(739, 188)
+        Me.DGVPROMOCIONES.TabIndex = 30
         '
         'COD
         '
@@ -356,7 +356,7 @@ Partial Class FRM_PROMOCIONES
         Me.GroupBox1.PerformLayout()
         CType(Me.NUD_CANTIDAD_SERVICIO_BONO, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NUD_CANTIDAD_SERVICIO, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGVPROMOCIONES, System.ComponentModel.ISupportInitialize).EndInit()
         Me.OPCIONES.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -369,13 +369,11 @@ Partial Class FRM_PROMOCIONES
     Friend WithEvents TXT_CODIGO As TextBox
     Friend WithEvents Label1 As Label
     Protected WithEvents OPCIONES As GroupBox
-    Protected WithEvents BTN_SALIR As Button
-    Protected WithEvents BTN_ACEPTAR As Button
     Friend WithEvents Label5 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents DTP_FECHA_FIN As DateTimePicker
     Friend WithEvents DTP_FECHA_INI As DateTimePicker
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DGVPROMOCIONES As DataGridView
     Friend WithEvents NUD_CANTIDAD_SERVICIO As NumericUpDown
     Friend WithEvents Label7 As Label
     Friend WithEvents CB_SERVICIO As ComboBox
@@ -392,4 +390,6 @@ Partial Class FRM_PROMOCIONES
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents BTN_SALIR As Button
+    Friend WithEvents BTN_ACEPTAR As Button
 End Class
