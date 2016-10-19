@@ -28,7 +28,7 @@ Partial Class FRM_SERVICIOS
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.BTN_BUSCAR = New System.Windows.Forms.Button()
         Me.CLIENTES = New System.Windows.Forms.GroupBox()
-        Me.DGV_CLIENTES = New System.Windows.Forms.DataGridView()
+        Me.DGV_SERVICIOS = New System.Windows.Forms.DataGridView()
         Me.OPCIONES = New System.Windows.Forms.GroupBox()
         Me.BTN_SALIR = New System.Windows.Forms.Button()
         Me.BTN_VER = New System.Windows.Forms.Button()
@@ -37,7 +37,7 @@ Partial Class FRM_SERVICIOS
         Me.BTN_NUEVO = New System.Windows.Forms.Button()
         Me.BUSCAR.SuspendLayout()
         Me.CLIENTES.SuspendLayout()
-        CType(Me.DGV_CLIENTES, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGV_SERVICIOS, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.OPCIONES.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -97,7 +97,7 @@ Partial Class FRM_SERVICIOS
         'CLIENTES
         '
         Me.CLIENTES.BackColor = System.Drawing.Color.Transparent
-        Me.CLIENTES.Controls.Add(Me.DGV_CLIENTES)
+        Me.CLIENTES.Controls.Add(Me.DGV_SERVICIOS)
         Me.CLIENTES.Location = New System.Drawing.Point(134, 13)
         Me.CLIENTES.Name = "CLIENTES"
         Me.CLIENTES.Size = New System.Drawing.Size(836, 518)
@@ -105,14 +105,19 @@ Partial Class FRM_SERVICIOS
         Me.CLIENTES.TabStop = False
         Me.CLIENTES.Text = "SERVICIOS"
         '
-        'DGV_CLIENTES
+        'DGV_SERVICIOS
         '
-        Me.DGV_CLIENTES.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGV_CLIENTES.Location = New System.Drawing.Point(6, 21)
-        Me.DGV_CLIENTES.Name = "DGV_CLIENTES"
-        Me.DGV_CLIENTES.RowTemplate.Height = 24
-        Me.DGV_CLIENTES.Size = New System.Drawing.Size(824, 491)
-        Me.DGV_CLIENTES.TabIndex = 0
+        Me.DGV_SERVICIOS.AllowUserToAddRows = False
+        Me.DGV_SERVICIOS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DGV_SERVICIOS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGV_SERVICIOS.Location = New System.Drawing.Point(6, 21)
+        Me.DGV_SERVICIOS.MultiSelect = False
+        Me.DGV_SERVICIOS.Name = "DGV_SERVICIOS"
+        Me.DGV_SERVICIOS.ReadOnly = True
+        Me.DGV_SERVICIOS.RowTemplate.Height = 24
+        Me.DGV_SERVICIOS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DGV_SERVICIOS.Size = New System.Drawing.Size(824, 491)
+        Me.DGV_SERVICIOS.TabIndex = 0
         '
         'OPCIONES
         '
@@ -208,7 +213,7 @@ Partial Class FRM_SERVICIOS
         Me.BUSCAR.ResumeLayout(False)
         Me.BUSCAR.PerformLayout()
         Me.CLIENTES.ResumeLayout(False)
-        CType(Me.DGV_CLIENTES, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGV_SERVICIOS, System.ComponentModel.ISupportInitialize).EndInit()
         Me.OPCIONES.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -218,7 +223,7 @@ Partial Class FRM_SERVICIOS
     Protected WithEvents TextBox1 As TextBox
     Protected WithEvents BTN_BUSCAR As Button
     Protected WithEvents CLIENTES As GroupBox
-    Protected WithEvents DGV_CLIENTES As DataGridView
+    Protected WithEvents DGV_SERVICIOS As DataGridView
     Protected WithEvents OPCIONES As GroupBox
     Protected WithEvents BTN_SALIR As Button
     Protected WithEvents BTN_VER As Button

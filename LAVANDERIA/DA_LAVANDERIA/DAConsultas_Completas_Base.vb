@@ -104,4 +104,25 @@ Public Class DAConsultas_Completas_Base
         cmd.Close()
     End Sub
 
+    Public Sub cargarServicios(ByVal id_serv As Integer, ByVal TXT_CODIGO As TextBox, ByVal TXT_NOMBRE As TextBox, ByVal TXT_PRECIO1 As TextBox, ByVal TXT_PRECIO2 As TextBox, ByVal CB_MEDIDA As ComboBox, ByVal CB_TIPO As ComboBox)
+
+        Dim consulta As String = "select cod_serv,des_ser,precio1,precio2,id_unimed,id_tipo from servicio where id_serv =" & id_serv
+        Dim comando As New SqlCommand(consulta, cmd)
+        Dim tabla As SqlDataReader
+
+        cmd.Open()
+        tabla = comando.ExecuteReader()
+
+        If tabla.Read() Then
+            TXT_CODIGO.Text = tabla.Item("cod_serv").ToString()
+            TXT_NOMBRE.Text = tabla.Item("des_ser").ToString()
+            TXT_PRECIO1.Text = tabla.Item("precio1").ToString
+            TXT_PRECIO2.Text = tabla.Item("precio2").ToString()
+            CB_MEDIDA.SelectedValue = tabla.Item("id_unimed").ToString
+            CB_TIPO.SelectedValue = tabla.Item("id_tipo").ToString
+        End If
+
+        tabla.Close()
+        cmd.Close()
+    End Sub
 End Class

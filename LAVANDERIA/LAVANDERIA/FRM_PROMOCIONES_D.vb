@@ -15,6 +15,7 @@ Public Class FRM_PROMOCIONES_D
     End Sub
 
     Private Sub BTN_NUEVO_Click(sender As Object, e As EventArgs) Handles BTN_NUEVO.Click
+        VARIABLES_GLOBALES.ID_PROMOCION = Nothing
         FRM_PROMOCIONES.Show()
         Me.Close()
     End Sub
@@ -57,7 +58,7 @@ Public Class FRM_PROMOCIONES_D
                 Dim BEPromocion As New BEPromocion
                 Dim DAPromociones As New DAPromociones
 
-                BEPromocion.gid_promocion = VARIABLES_GLOBALES.ID_PROMOCION
+                BEPromocion.gid_promocion = CODIGO
                 BEPromocion.gusu_eli = VARIABLES_GLOBALES.ID_USUARIO
                 DAPromociones.eliminar_Promociones(BEPromocion)
                 MsgBox("PROMOCION ELIMINADO CORRECTAMENTE..!!")

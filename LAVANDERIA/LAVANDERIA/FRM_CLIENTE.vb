@@ -5,6 +5,7 @@ Public Class FRM_CLIENTE
     Dim dts As New DataTable
     Private Sub BTN_NUEVO_Click(sender As Object, e As EventArgs) Handles BTN_NUEVO.Click
         FRM_CLIENTE_CRUD.Show()
+        Me.Close()
     End Sub
 
     Private Sub BTN_SALIR_Click(sender As Object, e As EventArgs) Handles BTN_SALIR.Click

@@ -27,6 +27,32 @@ Public Class DACargarDataGridView
         Return Nothing
     End Function
 
+    Public Function Mostrar_Servicios() As DataTable
+        Try
+            Conectar()
+            cmd = New SqlCommand("SELECT cod_serv as 'CODIGO',des_ser as 'DESCRIPCION',precio1 as 'PRECIO 1',precio2 as 'PRECIO 2' FROM Servicio where flg_estado='A';")
+            cmd.CommandType = CommandType.Text
+            cmd.Connection = cnn
+
+            If cmd.ExecuteNonQuery Then
+                Dim dts As New DataTable
+                Dim da As New SqlDataAdapter(cmd)
+                da.Fill(dts)
+                Return dts
+
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            Desconectar()
+
+        End Try
+        Return Nothing
+    End Function
+
+
+
     Public Function Mostrar_Promociones() As DataTable
         Try
             Conectar()
@@ -103,7 +129,7 @@ Public Class DACargarDataGridView
     Public Function Mostrar_Promocion_Detalle(ByVal id_promocion As Integer) As DataTable
         Try
             Conectar()
-            cmd = New SqlCommand("select id_serv,cantserv,id_servbono,cantbono from Promocion_det where id_promocio=" & id_promocion)
+            cmd = New SqlCommand("select pd.id_serv as 'COD. SERV.',(select s.des_ser from Servicio as s where s.id_serv=pd.id_serv) as 'SERVICIO',cantserv,id_servbono AS 'COD. BONO.',(select s.des_ser from Servicio as s where s.id_serv=pd.id_servbono) as 'SERV. BONO.',cantbono from Promocion_det as pd where id_promocio=" & id_promocion)
             cmd.CommandType = CommandType.Text
             cmd.Connection = cnn
 

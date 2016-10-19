@@ -21,6 +21,26 @@ Public Class DAConsultas_Base
         End Try
     End Function
 
+    Public Function mostrar_Id_Servicio(ByVal cod_ser As String) As Integer
+        Try
+            Conectar()
+            cmd = New SqlCommand("select id_serv from servicio where cod_serv ='" & cod_ser & "' ")
+            cmd.CommandType = CommandType.Text
+            cmd.Connection = cnn
+
+            Dim da As Integer
+            da = cmd.ExecuteScalar()
+            Return da
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            Desconectar()
+        End Try
+    End Function
+
+
+
     Public Function mostrarCod_Promocion_Ultima() As String
         Try
             Conectar()

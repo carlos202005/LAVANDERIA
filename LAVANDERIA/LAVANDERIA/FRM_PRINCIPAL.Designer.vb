@@ -73,7 +73,7 @@ Partial Class FRM_PRINCIPAL
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GlobalToolStripMenuItem, Me.ArchivosToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.CajaToolStripMenuItem, Me.ServiciosToolStripMenuItem, Me.VentasToolStripMenuItem, Me.InformesToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1032, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(732, 28)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -100,25 +100,25 @@ Partial Class FRM_PRINCIPAL
         '
         Me.ArchivosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuariosToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.ProveedoresToolStripMenuItem})
         Me.ArchivosToolStripMenuItem.Name = "ArchivosToolStripMenuItem"
-        Me.ArchivosToolStripMenuItem.Size = New System.Drawing.Size(77, 24)
-        Me.ArchivosToolStripMenuItem.Text = "Archivos"
+        Me.ArchivosToolStripMenuItem.Size = New System.Drawing.Size(72, 24)
+        Me.ArchivosToolStripMenuItem.Text = "General"
         '
         'UsuariosToolStripMenuItem
         '
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(166, 26)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'ClientesToolStripMenuItem
         '
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(166, 26)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
         Me.ClientesToolStripMenuItem.Text = "Clientes"
         '
         'ProveedoresToolStripMenuItem
         '
         Me.ProveedoresToolStripMenuItem.Name = "ProveedoresToolStripMenuItem"
-        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(166, 26)
+        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
         Me.ProveedoresToolStripMenuItem.Text = "Proveedores"
         '
         'ComprasToolStripMenuItem
@@ -131,7 +131,7 @@ Partial Class FRM_PRINCIPAL
         'RecibosToolStripMenuItem
         '
         Me.RecibosToolStripMenuItem.Name = "RecibosToolStripMenuItem"
-        Me.RecibosToolStripMenuItem.Size = New System.Drawing.Size(136, 26)
+        Me.RecibosToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
         Me.RecibosToolStripMenuItem.Text = "Recibos"
         '
         'CajaToolStripMenuItem
@@ -258,7 +258,7 @@ Partial Class FRM_PRINCIPAL
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SERVICIOS, Me.ToolStripSeparator1, Me.CLIENTES, Me.ToolStripButton3, Me.ENTREGA_SERVICIOS, Me.ToolStripSeparator2, Me.ToolStripButton5, Me.ToolStripButton6, Me.ToolStripButton7, Me.ToolStripSeparator3, Me.ToolStripButton8})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 28)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(1032, 79)
+        Me.ToolStrip1.Size = New System.Drawing.Size(732, 79)
         Me.ToolStrip1.TabIndex = 5
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -355,7 +355,7 @@ Partial Class FRM_PRINCIPAL
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1032, 853)
+        Me.ClientSize = New System.Drawing.Size(732, 503)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.DoubleBuffered = True

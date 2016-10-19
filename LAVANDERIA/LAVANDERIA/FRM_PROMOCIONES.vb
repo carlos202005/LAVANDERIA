@@ -20,6 +20,7 @@ Public Class FRM_PROMOCIONES
             VARIABLE1 = "P" & VARIABLE1
             TXT_CODIGO.Text = VARIABLE1
         Else
+            DGVPROMOCIONES.Columns.Clear()
             DAConsultas_Completas_Base.cargarPromocion(VARIABLES_GLOBALES.ID_PROMOCION, TXT_CODIGO, TXT_DESCRIPCION, CB_SUCURSAL, DTP_FECHA_INI, DTP_FECHA_FIN)
             CARGARDATAGRIDVIEW()
         End If
@@ -40,6 +41,7 @@ Public Class FRM_PROMOCIONES
     End Sub
 
     Private Sub BTN_SALIR_Click(sender As Object, e As EventArgs) Handles BTN_SALIR.Click
+        VARIABLES_GLOBALES.ID_PROMOCION = Nothing
         FRM_PROMOCIONES_D.Show()
         Me.Close()
     End Sub

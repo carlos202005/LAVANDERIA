@@ -110,6 +110,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         '
         'TXT_CODIGO
         '
+        Me.TXT_CODIGO.Enabled = False
         Me.TXT_CODIGO.Location = New System.Drawing.Point(124, 19)
         Me.TXT_CODIGO.MaxLength = 4
         Me.TXT_CODIGO.Name = "TXT_CODIGO"
@@ -187,8 +188,6 @@ Partial Class FRM_INSERTAR_SERVICIOS
         Me.PerformLayout()
 
     End Sub
-    Protected WithEvents BTN_SALIR As Button
-    Protected WithEvents BTN_NUEVO As Button
     Friend WithEvents TXT_PRECIO2 As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents TXT_PRECIO1 As TextBox
@@ -201,4 +200,6 @@ Partial Class FRM_INSERTAR_SERVICIOS
     Friend WithEvents CB_MEDIDA As ComboBox
     Friend WithEvents CB_TIPO As ComboBox
     Friend WithEvents Label7 As Label
+    Friend WithEvents BTN_SALIR As Button
+    Friend WithEvents BTN_NUEVO As Button
 End Class
