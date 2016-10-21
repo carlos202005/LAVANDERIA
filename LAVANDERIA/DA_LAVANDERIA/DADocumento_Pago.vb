@@ -4,7 +4,6 @@ Imports BE_LAVANDERIA
 Public Class DADocumento_Pago
     Inherits Conexion
     Dim cmd As SqlCommand
-    Dim BEDocumento_Pago As New BEDocumento_Pago
 
     Public Function insertar_Documento_Pago(ByVal dts As BEDocumento_Pago) As Boolean
         Try

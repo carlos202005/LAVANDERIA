@@ -20,6 +20,75 @@ Public Class DAConsultas_Base
             Desconectar()
         End Try
     End Function
+    Public Function mostrarId_Usuario(ByVal numero As Integer) As Integer
+        Try
+            Conectar()
+            cmd = New SqlCommand("select top 1 id_usu from Usuario where id_emp=" & numero)
+            cmd.CommandType = CommandType.Text
+            cmd.Connection = cnn
+
+            Dim da As Integer
+            da = cmd.ExecuteScalar()
+            Return da
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            Desconectar()
+        End Try
+    End Function
+    Public Function mostrarIdPerfil(ByVal numero As Integer) As Integer
+        Try
+            Conectar()
+            cmd = New SqlCommand("select top 1 id_perfil from Usuario where id_emp=" & numero)
+            cmd.CommandType = CommandType.Text
+            cmd.Connection = cnn
+
+            Dim da As Integer
+            da = cmd.ExecuteScalar()
+            Return da
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            Desconectar()
+        End Try
+    End Function
+    Public Function mostrar_Ultimo_Id_Empleado() As Integer
+        Try
+            Conectar()
+            cmd = New SqlCommand("select top 1 id_emp from Empleado order by id_emp desc ")
+            cmd.CommandType = CommandType.Text
+            cmd.Connection = cnn
+
+            Dim da As Integer
+            da = cmd.ExecuteScalar()
+            Return da
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            Desconectar()
+        End Try
+    End Function
+
+    Public Function mostrar_Ultimo_Id_Perfil() As Integer
+        Try
+            Conectar()
+            cmd = New SqlCommand("select top 1 id_perfil from Perfil order by id_perfil desc")
+            cmd.CommandType = CommandType.Text
+            cmd.Connection = cnn
+
+            Dim da As Integer
+            da = cmd.ExecuteScalar()
+            Return da
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            Desconectar()
+        End Try
+    End Function
 
     Public Function mostrar_Id_Servicio(ByVal cod_ser As String) As Integer
         Try

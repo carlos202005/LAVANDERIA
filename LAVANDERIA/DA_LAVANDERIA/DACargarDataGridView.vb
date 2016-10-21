@@ -148,4 +148,27 @@ Public Class DACargarDataGridView
         Return Nothing
     End Function
 
+
+    Public Function Mostrar_Empleados() As DataTable
+        Try
+            Conectar()
+            cmd = New SqlCommand("select e.id_emp as 'CODIGO',e.nom_emp +' ' + e.apepat_emp +' ' + e.apemat_emp as 'EMPLEADO',e.celular as 'CELULAR',U.nom_usu as 'USUARIO' from Empleado as e inner join Usuario as u on e.id_emp=u.id_emp WHERE e.flg_estado='A'")
+            cmd.CommandType = CommandType.Text
+            cmd.Connection = cnn
+
+            If cmd.ExecuteNonQuery Then
+                Dim dts As New DataTable
+                Dim da As New SqlDataAdapter(cmd)
+                da.Fill(dts)
+                Return dts
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            Desconectar()
+        End Try
+        Return Nothing
+    End Function
+
 End Class

@@ -3,7 +3,6 @@ Imports BE_LAVANDERIA
 Public Class DAProveedores
     Inherits Conexion
     Dim cmd As SqlCommand
-    Dim BEProveedores As New BEProveedores
 
     Public Function insertar_Proveedores(ByVal dts As BEProveedores) As Boolean
         Try

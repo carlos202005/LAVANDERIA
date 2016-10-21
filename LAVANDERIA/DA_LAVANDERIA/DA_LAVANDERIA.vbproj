@@ -71,11 +71,13 @@
     <Compile Include="DAConsultas_Base.vb" />
     <Compile Include="DAConsultas_Completas_Base.vb" />
     <Compile Include="DADocumento_Pago.vb" />
+    <Compile Include="DAPerfil.vb" />
     <Compile Include="DAPromociones.vb" />
     <Compile Include="DAPromocion_Det.vb" />
     <Compile Include="DAProveedores.vb" />
     <Compile Include="DAServicios.vb" />
-    <Compile Include="DAVendedor.vb" />
+    <Compile Include="DAEmpleado.vb" />
+    <Compile Include="DAUsuarios.vb" />
     <Compile Include="DA_MDL_Conexion_Global.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

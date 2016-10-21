@@ -3,7 +3,6 @@ Imports BE_LAVANDERIA
 Public Class DAServicios
     Inherits Conexion
     Dim cmd As SqlCommand
-    Dim BEServicios As New BEServicios
 
     Public Function insertar_Servicios(ByVal dts As BEServicios) As Boolean
         Try

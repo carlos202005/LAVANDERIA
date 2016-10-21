@@ -66,7 +66,7 @@
     <Compile Include="BEClientes.vb" />
     <Compile Include="BEDocumento_Pago.vb" />
     <Compile Include="BEEmpleado.vb" />
-    <Compile Include="BEPerfiles.vb" />
+    <Compile Include="BEPerfil.vb" />
     <Compile Include="BEPromocion.vb" />
     <Compile Include="BEPromocion_Det.vb" />
     <Compile Include="BEProveedores.vb" />

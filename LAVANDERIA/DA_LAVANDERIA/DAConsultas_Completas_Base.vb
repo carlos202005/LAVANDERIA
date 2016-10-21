@@ -125,4 +125,31 @@ Public Class DAConsultas_Completas_Base
         tabla.Close()
         cmd.Close()
     End Sub
+
+    Public Sub cargarEmpleados(ByVal id_emp As Integer, ByVal TXT_CODIGO As TextBox, ByVal TXT_NOMBRE As TextBox, ByVal TXT_APE_PAT As TextBox, ByVal TXT_APE_MAT As TextBox, ByVal TXT_DNI As TextBox, ByVal TXT_CELULAR As TextBox, ByVal DTP_FECHA_NAC As DateTimePicker, ByVal TXT_PERFIL As TextBox, ByVal TXT_USUARIO As TextBox, ByVal TXT_CONTRASENA As TextBox)
+
+        Dim consulta As String = "SELECT e.id_emp,e.nom_emp,e.apepat_emp,e.apemat_emp,e.dni,e.fecha_nac,e.celular,u.nom_usu,u.clave_usu,p.nom_per FROM Empleado as e inner join Usuario as u on e.id_emp=u.id_emp inner join Perfil as p on u.id_perfil=p.id_perfil where e.id_emp=" & id_emp
+        Dim comando As New SqlCommand(consulta, cmd)
+        Dim tabla As SqlDataReader
+
+        cmd.Open()
+        tabla = comando.ExecuteReader()
+
+        If tabla.Read() Then
+            TXT_CODIGO.Text = tabla.Item("id_emp").ToString()
+            TXT_NOMBRE.Text = tabla.Item("nom_emp").ToString()
+            TXT_APE_PAT.Text = tabla.Item("apepat_emp").ToString
+            TXT_APE_MAT.Text = tabla.Item("apemat_emp").ToString()
+            TXT_DNI.Text = tabla.Item("dni").ToString
+            DTP_FECHA_NAC.Value = tabla.Item("fecha_nac").ToString
+            TXT_CELULAR.Text = tabla.Item("celular").ToString()
+            TXT_PERFIL.Text = tabla.Item("nom_per").ToString
+            TXT_USUARIO.Text = tabla.Item("nom_usu").ToString
+            TXT_CONTRASENA.Text = tabla.Item("clave_usu").ToString
+        End If
+
+        tabla.Close()
+        cmd.Close()
+    End Sub
+
 End Class
