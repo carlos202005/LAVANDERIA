@@ -66,7 +66,7 @@ Public Class DAServicios
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
-            cmd.Parameters.AddWithValue("@id_serv", dts.gid_serv)
+            cmd.Parameters.AddWithValue("@cod_ser", dts.gcod_serv)
             cmd.Parameters.AddWithValue("@usu_eli", dts.gusu_eli)
 
             If cmd.ExecuteNonQuery Then

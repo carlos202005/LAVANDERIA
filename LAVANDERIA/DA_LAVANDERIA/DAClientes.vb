@@ -4,6 +4,7 @@ Public Class DAClientes
     Inherits Conexion
     Dim cmd As SqlCommand
 
+
     Public Function insertar_Clientes(ByVal dts As BEClientes) As Boolean
         Try
             Conectar()

@@ -69,4 +69,45 @@ Public Class FRM_PROVEEDORES
     Private Sub FRM_PROVEEDORES_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CARGARDATAGRIDVIEW()
     End Sub
+
+    Private Sub BTN_BUSCAR_Click(sender As Object, e As EventArgs) Handles BTN_BUSCAR.Click
+
+        If RB_RAZON_SOCIAL.Checked = True Then
+            CARGAR_BUSQUEDA_RAZON_SOCIAL()
+        End If
+
+        If RB_RUC.Checked = True Then
+            CARGAR_BUSQUEDA_RUC()
+        End If
+    End Sub
+
+
+    Sub CARGAR_BUSQUEDA_RAZON_SOCIAL()
+        Try
+            Dim DACargarDataGridView As New DACargarDataGridView
+            dts = DACargarDataGridView.Mostrar_Proveedores_Busqueda(TXT_NOMBRES.Text)
+            If dts.Rows.Count <> 0 Then
+                DGV_PROVEEDORES.DataSource = dts
+            Else
+                DGV_PROVEEDORES.DataSource = Nothing
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+
+    Sub CARGAR_BUSQUEDA_RUC()
+        Try
+            Dim DACargarDataGridView As New DACargarDataGridView
+            dts = DACargarDataGridView.Mostrar_Proveedores_RUC_Busqueda(TXT_NOMBRES.Text)
+            If dts.Rows.Count <> 0 Then
+                DGV_PROVEEDORES.DataSource = dts
+            Else
+                DGV_PROVEEDORES.DataSource = Nothing
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
 End Class

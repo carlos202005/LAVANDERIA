@@ -73,4 +73,44 @@ Public Class FRM_CLIENTE
         End If
 
     End Sub
+
+    Private Sub BTN_BUSCAR_Click(sender As Object, e As EventArgs) Handles BTN_BUSCAR.Click
+        If RB_NOMBRES.Checked = True Then
+            CARGARBUSQUEDANOMBRE()
+        End If
+
+        If RB_DNI.Checked = True Then
+            CARGARBUSQUEDADNI()
+        End If
+
+    End Sub
+
+    Sub CARGARBUSQUEDANOMBRE()
+        Try
+            Dim DACargarDataGridView As New DACargarDataGridView
+            dts = DACargarDataGridView.Mostrar_Clientes_Busqueda(TXT_BUSQUEDA.Text)
+            If dts.Rows.Count <> 0 Then
+                DGV_CLIENTES.DataSource = dts
+            Else
+                DGV_CLIENTES.DataSource = Nothing
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Sub CARGARBUSQUEDADNI()
+        Try
+            Dim DACargarDataGridView As New DACargarDataGridView
+            dts = DACargarDataGridView.Mostrar_Clientes_DNI_Busqueda(TXT_BUSQUEDA.Text)
+            If dts.Rows.Count <> 0 Then
+                DGV_CLIENTES.DataSource = dts
+            Else
+                DGV_CLIENTES.DataSource = Nothing
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
 End Class

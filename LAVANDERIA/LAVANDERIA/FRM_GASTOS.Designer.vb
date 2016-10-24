@@ -63,8 +63,9 @@ Partial Class FRM_GASTOS
         '
         'TXT_CODIGO_DOC
         '
+        Me.TXT_CODIGO_DOC.Enabled = False
         Me.TXT_CODIGO_DOC.Location = New System.Drawing.Point(144, 64)
-        Me.TXT_CODIGO_DOC.MaxLength = 15
+        Me.TXT_CODIGO_DOC.MaxLength = 30
         Me.TXT_CODIGO_DOC.Name = "TXT_CODIGO_DOC"
         Me.TXT_CODIGO_DOC.Size = New System.Drawing.Size(407, 22)
         Me.TXT_CODIGO_DOC.TabIndex = 2

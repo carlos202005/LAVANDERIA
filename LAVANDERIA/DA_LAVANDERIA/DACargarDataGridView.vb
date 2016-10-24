@@ -6,9 +6,61 @@ Public Class DACargarDataGridView
     Public Function Mostrar_Clientes() As DataTable
         Try
             Conectar()
-            cmd = New SqlCommand("select id_cli as 'CODIGO',nom_cli as 'NOMBRE(S)',apepat_cli + ' ' + apemat_cli as 'APELLIDOS',celular as 'CELULAR' from cliente where flg_estadi='A';")
-            cmd.CommandType = CommandType.Text
+            cmd = New SqlCommand("mostrarClientes")
+            cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
+
+            If cmd.ExecuteNonQuery Then
+                Dim dts As New DataTable
+                Dim da As New SqlDataAdapter(cmd)
+                da.Fill(dts)
+                Return dts
+
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            Desconectar()
+
+        End Try
+        Return Nothing
+    End Function
+
+    Public Function Mostrar_Clientes_Busqueda(ByVal nom_cli As String) As DataTable
+        Try
+            Conectar()
+            cmd = New SqlCommand("buscarClienteNombre")
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = cnn
+
+            cmd.Parameters.AddWithValue("@nom_cli", nom_cli)
+
+            If cmd.ExecuteNonQuery Then
+                Dim dts As New DataTable
+                Dim da As New SqlDataAdapter(cmd)
+                da.Fill(dts)
+                Return dts
+
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            Desconectar()
+
+        End Try
+        Return Nothing
+    End Function
+
+    Public Function Mostrar_Clientes_DNI_Busqueda(ByVal dni_cli As String) As DataTable
+        Try
+            Conectar()
+            cmd = New SqlCommand("buscarClienteDNI")
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = cnn
+
+            cmd.Parameters.AddWithValue("@DNI", dni_cli)
 
             If cmd.ExecuteNonQuery Then
                 Dim dts As New DataTable
@@ -30,8 +82,8 @@ Public Class DACargarDataGridView
     Public Function Mostrar_Servicios() As DataTable
         Try
             Conectar()
-            cmd = New SqlCommand("SELECT cod_serv as 'CODIGO',des_ser as 'DESCRIPCION',precio1 as 'PRECIO 1',precio2 as 'PRECIO 2' FROM Servicio where flg_estado='A';")
-            cmd.CommandType = CommandType.Text
+            cmd = New SqlCommand("mostrarServicios")
+            cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
             If cmd.ExecuteNonQuery Then
@@ -51,13 +103,63 @@ Public Class DACargarDataGridView
         Return Nothing
     End Function
 
+    Public Function Mostrar_Servicios_Busqueda(ByVal des_ser As String) As DataTable
+        Try
+            Conectar()
+            cmd = New SqlCommand("buscarServicioNombre")
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = cnn
 
+            cmd.Parameters.AddWithValue("@des_ser", des_ser)
+
+            If cmd.ExecuteNonQuery Then
+                Dim dts As New DataTable
+                Dim da As New SqlDataAdapter(cmd)
+                da.Fill(dts)
+                Return dts
+
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            Desconectar()
+
+        End Try
+        Return Nothing
+    End Function
+
+    Public Function Mostrar_Servicios_CODIGO_Busqueda(ByVal cod_serv As String) As DataTable
+        Try
+            Conectar()
+            cmd = New SqlCommand("buscarServicioCODIGO")
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = cnn
+
+            cmd.Parameters.AddWithValue("@cod_serv", cod_serv)
+
+            If cmd.ExecuteNonQuery Then
+                Dim dts As New DataTable
+                Dim da As New SqlDataAdapter(cmd)
+                da.Fill(dts)
+                Return dts
+
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            Desconectar()
+
+        End Try
+        Return Nothing
+    End Function
 
     Public Function Mostrar_Promociones() As DataTable
         Try
             Conectar()
-            cmd = New SqlCommand("SELECT id_promocio as CODIGO,cod_promo as 'ID_PROMOCION',des_promo as 'DESCRIPCION',fec_ini,fec_fin FROM Promocion WHERE flg_estado='A';")
-            cmd.CommandType = CommandType.Text
+            cmd = New SqlCommand("mostrarPromociones")
+            cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
             If cmd.ExecuteNonQuery Then
@@ -80,7 +182,7 @@ Public Class DACargarDataGridView
     Public Function Mostrar_Proveedores() As DataTable
         Try
             Conectar()
-            cmd = New SqlCommand("select id_proveedor as CODIGO,razon_social as 'RAZON SOCIAL',ruc as 'RUC',telefono as 'TELEFONO',celular as 'CELULAR',correo as 'EMAIL' from Proveedor where flg_estado='A'; ")
+            cmd = New SqlCommand("mostrarProveedores")
             cmd.CommandType = CommandType.Text
             cmd.Connection = cnn
 
@@ -97,6 +199,56 @@ Public Class DACargarDataGridView
         Finally
             Desconectar()
 
+        End Try
+        Return Nothing
+    End Function
+
+    Public Function Mostrar_Proveedores_Busqueda(ByVal razon_social As String) As DataTable
+        Try
+            Conectar()
+            cmd = New SqlCommand("buscarProveedorNombre")
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = cnn
+
+            cmd.Parameters.AddWithValue("@razon_social", razon_social)
+
+            If cmd.ExecuteNonQuery Then
+                Dim dts As New DataTable
+                Dim da As New SqlDataAdapter(cmd)
+                da.Fill(dts)
+                Return dts
+
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            Desconectar()
+        End Try
+        Return Nothing
+    End Function
+
+    Public Function Mostrar_Proveedores_RUC_Busqueda(ByVal ruc_prov As String) As DataTable
+        Try
+            Conectar()
+            cmd = New SqlCommand("buscarProveedorRUC")
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = cnn
+
+            cmd.Parameters.AddWithValue("@ruc_prov", ruc_prov)
+
+            If cmd.ExecuteNonQuery Then
+                Dim dts As New DataTable
+                Dim da As New SqlDataAdapter(cmd)
+                da.Fill(dts)
+                Return dts
+
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            Desconectar()
         End Try
         Return Nothing
     End Function
@@ -104,7 +256,7 @@ Public Class DACargarDataGridView
     Public Function Mostrar_Documentos_Pago() As DataTable
         Try
             Conectar()
-            cmd = New SqlCommand("select id_docu as CODIGO,descripcion as DSCRIPCION,fecha_venc as 'FECHA LIMITE',mto_total as 'TOTAL' from Documento_pago where flg_estado='A';")
+            cmd = New SqlCommand("mostrarDocumentos_Pago")
             cmd.CommandType = CommandType.Text
             cmd.Connection = cnn
 
@@ -124,13 +276,36 @@ Public Class DACargarDataGridView
         End Try
         Return Nothing
     End Function
-
 
     Public Function Mostrar_Promocion_Detalle(ByVal id_promocion As Integer) As DataTable
         Try
             Conectar()
-            cmd = New SqlCommand("select pd.id_serv as 'COD. SERV.',(select s.des_ser from Servicio as s where s.id_serv=pd.id_serv) as 'SERVICIO',cantserv,id_servbono AS 'COD. BONO.',(select s.des_ser from Servicio as s where s.id_serv=pd.id_servbono) as 'SERV. BONO.',cantbono from Promocion_det as pd where id_promocio=" & id_promocion)
-            cmd.CommandType = CommandType.Text
+            cmd = New SqlCommand("mostrarPromocion_Detalle")
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = cnn
+
+            cmd.Parameters.AddWithValue("@id_promo", id_promocion)
+
+            If cmd.ExecuteNonQuery Then
+                Dim dts As New DataTable
+                Dim da As New SqlDataAdapter(cmd)
+                da.Fill(dts)
+                Return dts
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            Desconectar()
+        End Try
+        Return Nothing
+    End Function
+
+    Public Function Mostrar_Empleados() As DataTable
+        Try
+            Conectar()
+            cmd = New SqlCommand("mostrarEmpleados")
+            cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
             If cmd.ExecuteNonQuery Then
@@ -148,13 +323,38 @@ Public Class DACargarDataGridView
         Return Nothing
     End Function
 
-
-    Public Function Mostrar_Empleados() As DataTable
+    Public Function Mostrar_Empleados_Busqueda(ByVal nom_emp As String) As DataTable
         Try
             Conectar()
-            cmd = New SqlCommand("select e.id_emp as 'CODIGO',e.nom_emp +' ' + e.apepat_emp +' ' + e.apemat_emp as 'EMPLEADO',e.celular as 'CELULAR',U.nom_usu as 'USUARIO' from Empleado as e inner join Usuario as u on e.id_emp=u.id_emp WHERE e.flg_estado='A'")
-            cmd.CommandType = CommandType.Text
+            cmd = New SqlCommand("buscarEmpleadoNombre")
+            cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
+
+            cmd.Parameters.AddWithValue("@nom_emp", nom_emp)
+
+            If cmd.ExecuteNonQuery Then
+                Dim dts As New DataTable
+                Dim da As New SqlDataAdapter(cmd)
+                da.Fill(dts)
+                Return dts
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            Desconectar()
+        End Try
+        Return Nothing
+    End Function
+
+    Public Function Mostrar_Empleados_DNI_Busqueda(ByVal dni_emp As String) As DataTable
+        Try
+            Conectar()
+            cmd = New SqlCommand("buscarEmpleadoDNI")
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = cnn
+
+            cmd.Parameters.AddWithValue("@dni_emp", dni_emp)
 
             If cmd.ExecuteNonQuery Then
                 Dim dts As New DataTable

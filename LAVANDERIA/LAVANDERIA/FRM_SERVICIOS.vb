@@ -59,12 +59,53 @@ Public Class FRM_SERVICIOS
                 Dim BEServicios As New BEServicios
                 Dim DAServicios As New DAServicios
 
-                BEServicios.gid_serv = CODIGO
+                BEServicios.gcod_serv = CODIGO
                 BEServicios.gusu_eli = VARIABLES_GLOBALES.ID_USUARIO
 
                 DAServicios.eliminar_Servicios(BEServicios)
                 MsgBox("SERVICIO ELIMINADO CORRECTAMENTE...!")
+                CARGARDATAGRIDVIEW()
             End If
+        End If
+    End Sub
+
+
+    Sub CARGAR_SERVICIOS_NOMBRE()
+        Try
+            Dim DACargarDataGridView As New DACargarDataGridView
+            dts = DACargarDataGridView.Mostrar_Servicios_Busqueda(TXT_NOMBRE.Text)
+            If dts.Rows.Count <> 0 Then
+                DGV_SERVICIOS.DataSource = dts
+            Else
+                DGV_SERVICIOS.DataSource = Nothing
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Sub CARGAR_SERVICIOS_CODIGO()
+        Try
+            Dim DACargarDataGridView As New DACargarDataGridView
+            dts = DACargarDataGridView.Mostrar_Servicios_CODIGO_Busqueda(TXT_NOMBRE.Text)
+            If dts.Rows.Count <> 0 Then
+                DGV_SERVICIOS.DataSource = dts
+            Else
+                DGV_SERVICIOS.DataSource = Nothing
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub BTN_BUSCAR_Click(sender As Object, e As EventArgs) Handles BTN_BUSCAR.Click
+
+        If RB_CODIGO.Checked = True Then
+            CARGAR_SERVICIOS_CODIGO()
+        End If
+
+        If RB_NOMBRE.Checked = True Then
+            CARGAR_SERVICIOS_NOMBRE()
         End If
     End Sub
 End Class

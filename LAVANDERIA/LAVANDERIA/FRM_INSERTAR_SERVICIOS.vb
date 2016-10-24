@@ -10,12 +10,21 @@ Public Class FRM_INSERTAR_SERVICIOS
     Private Sub FRM_INSERTAR_SERVICIOS_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim DAConsultas_Base As New DAConsultas_Base
         Dim DACargar_Combobox As New DACargar_Combobox
+        Dim DAConsultas_Completas_Base As New DAConsultas_Completas_Base
+
         DACargar_Combobox.cargarTipo_Medida(CB_MEDIDA)
         DACargar_Combobox.cargarTipo_Sevicio(CB_TIPO)
 
-
-        If VARIABLES_GLOBALES.ID_SERVICIO <> Nothing Then
-            Dim DAConsultas_Completas_Base As New DAConsultas_Completas_Base
+        If VARIABLES_GLOBALES.ID_SERVICIO = Nothing Then
+            Dim VARIABLE1 As String
+            VARIABLE1 = DAConsultas_Base.mostrarId_Servicio_Ultima()
+            VARIABLE1 = Microsoft.VisualBasic.Right(VARIABLE1, 3)
+            VARIABLE1 = Integer.Parse(VARIABLE1) + 1
+            If VARIABLE1.Length = 1 Then VARIABLE1 = "00" & VARIABLE1
+            If VARIABLE1.Length = 2 Then VARIABLE1 = "0" & VARIABLE1
+            VARIABLE1 = "S" & VARIABLE1
+            TXT_CODIGO.Text = VARIABLE1
+        Else
             DAConsultas_Completas_Base.cargarServicios(DAConsultas_Base.mostrar_Id_Servicio(VARIABLES_GLOBALES.ID_SERVICIO), TXT_CODIGO, TXT_NOMBRE, TXT_PRECIO1, TXT_PRECIO2, CB_MEDIDA, CB_TIPO)
         End If
 

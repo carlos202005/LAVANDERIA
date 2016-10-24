@@ -23,9 +23,9 @@ Partial Class FRM_USUARIOS
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.BUSCAR = New System.Windows.Forms.GroupBox()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.RB_DNI = New System.Windows.Forms.RadioButton()
+        Me.RB_NOMBRES = New System.Windows.Forms.RadioButton()
+        Me.TXT_NOMBRE = New System.Windows.Forms.TextBox()
         Me.BTN_BUSCAR = New System.Windows.Forms.Button()
         Me.CLIENTES = New System.Windows.Forms.GroupBox()
         Me.DGV_USUARIOS = New System.Windows.Forms.DataGridView()
@@ -44,9 +44,9 @@ Partial Class FRM_USUARIOS
         'BUSCAR
         '
         Me.BUSCAR.BackColor = System.Drawing.Color.Transparent
-        Me.BUSCAR.Controls.Add(Me.RadioButton2)
-        Me.BUSCAR.Controls.Add(Me.RadioButton1)
-        Me.BUSCAR.Controls.Add(Me.TextBox1)
+        Me.BUSCAR.Controls.Add(Me.RB_DNI)
+        Me.BUSCAR.Controls.Add(Me.RB_NOMBRES)
+        Me.BUSCAR.Controls.Add(Me.TXT_NOMBRE)
         Me.BUSCAR.Controls.Add(Me.BTN_BUSCAR)
         Me.BUSCAR.Location = New System.Drawing.Point(134, 538)
         Me.BUSCAR.Name = "BUSCAR"
@@ -55,35 +55,35 @@ Partial Class FRM_USUARIOS
         Me.BUSCAR.TabStop = False
         Me.BUSCAR.Text = "BUSCAR"
         '
-        'RadioButton2
+        'RB_DNI
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(29, 67)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(52, 21)
-        Me.RadioButton2.TabIndex = 4
-        Me.RadioButton2.Text = "DNI"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.RB_DNI.AutoSize = True
+        Me.RB_DNI.Location = New System.Drawing.Point(29, 67)
+        Me.RB_DNI.Name = "RB_DNI"
+        Me.RB_DNI.Size = New System.Drawing.Size(52, 21)
+        Me.RB_DNI.TabIndex = 4
+        Me.RB_DNI.Text = "DNI"
+        Me.RB_DNI.UseVisualStyleBackColor = True
         '
-        'RadioButton1
+        'RB_NOMBRES
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Checked = True
-        Me.RadioButton1.Location = New System.Drawing.Point(29, 26)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(158, 21)
-        Me.RadioButton1.TabIndex = 3
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Nombres y Apellidos"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.RB_NOMBRES.AutoSize = True
+        Me.RB_NOMBRES.Checked = True
+        Me.RB_NOMBRES.Location = New System.Drawing.Point(29, 26)
+        Me.RB_NOMBRES.Name = "RB_NOMBRES"
+        Me.RB_NOMBRES.Size = New System.Drawing.Size(158, 21)
+        Me.RB_NOMBRES.TabIndex = 3
+        Me.RB_NOMBRES.TabStop = True
+        Me.RB_NOMBRES.Text = "Nombres y Apellidos"
+        Me.RB_NOMBRES.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'TXT_NOMBRE
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(275, 42)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(425, 27)
-        Me.TextBox1.TabIndex = 2
+        Me.TXT_NOMBRE.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXT_NOMBRE.Location = New System.Drawing.Point(275, 42)
+        Me.TXT_NOMBRE.Name = "TXT_NOMBRE"
+        Me.TXT_NOMBRE.Size = New System.Drawing.Size(425, 27)
+        Me.TXT_NOMBRE.TabIndex = 2
         '
         'BTN_BUSCAR
         '
@@ -107,10 +107,15 @@ Partial Class FRM_USUARIOS
         '
         'DGV_USUARIOS
         '
+        Me.DGV_USUARIOS.AllowUserToAddRows = False
+        Me.DGV_USUARIOS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DGV_USUARIOS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGV_USUARIOS.Location = New System.Drawing.Point(6, 21)
+        Me.DGV_USUARIOS.MultiSelect = False
         Me.DGV_USUARIOS.Name = "DGV_USUARIOS"
+        Me.DGV_USUARIOS.ReadOnly = True
         Me.DGV_USUARIOS.RowTemplate.Height = 24
+        Me.DGV_USUARIOS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGV_USUARIOS.Size = New System.Drawing.Size(824, 491)
         Me.DGV_USUARIOS.TabIndex = 0
         '
@@ -215,9 +220,9 @@ Partial Class FRM_USUARIOS
     End Sub
 
     Protected WithEvents BUSCAR As GroupBox
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
-    Protected WithEvents TextBox1 As TextBox
+    Friend WithEvents RB_DNI As RadioButton
+    Friend WithEvents RB_NOMBRES As RadioButton
+    Protected WithEvents TXT_NOMBRE As TextBox
     Protected WithEvents BTN_BUSCAR As Button
     Protected WithEvents CLIENTES As GroupBox
     Protected WithEvents DGV_USUARIOS As DataGridView

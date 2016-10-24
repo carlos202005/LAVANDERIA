@@ -31,9 +31,9 @@ Partial Class FRM_CLIENTE
         Me.BTN_EDITAR = New System.Windows.Forms.Button()
         Me.BTN_NUEVO = New System.Windows.Forms.Button()
         Me.BUSCAR = New System.Windows.Forms.GroupBox()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.RB_DNI = New System.Windows.Forms.RadioButton()
+        Me.RB_NOMBRES = New System.Windows.Forms.RadioButton()
+        Me.TXT_BUSQUEDA = New System.Windows.Forms.TextBox()
         Me.BTN_BUSCAR = New System.Windows.Forms.Button()
         Me.CLIENTES.SuspendLayout()
         CType(Me.DGV_CLIENTES, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -149,9 +149,9 @@ Partial Class FRM_CLIENTE
         'BUSCAR
         '
         Me.BUSCAR.BackColor = System.Drawing.Color.Transparent
-        Me.BUSCAR.Controls.Add(Me.RadioButton2)
-        Me.BUSCAR.Controls.Add(Me.RadioButton1)
-        Me.BUSCAR.Controls.Add(Me.TextBox1)
+        Me.BUSCAR.Controls.Add(Me.RB_DNI)
+        Me.BUSCAR.Controls.Add(Me.RB_NOMBRES)
+        Me.BUSCAR.Controls.Add(Me.TXT_BUSQUEDA)
         Me.BUSCAR.Controls.Add(Me.BTN_BUSCAR)
         Me.BUSCAR.Location = New System.Drawing.Point(134, 539)
         Me.BUSCAR.Name = "BUSCAR"
@@ -160,35 +160,35 @@ Partial Class FRM_CLIENTE
         Me.BUSCAR.TabStop = False
         Me.BUSCAR.Text = "BUSCAR"
         '
-        'RadioButton2
+        'RB_DNI
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(29, 67)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(52, 21)
-        Me.RadioButton2.TabIndex = 4
-        Me.RadioButton2.Text = "DNI"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.RB_DNI.AutoSize = True
+        Me.RB_DNI.Location = New System.Drawing.Point(29, 67)
+        Me.RB_DNI.Name = "RB_DNI"
+        Me.RB_DNI.Size = New System.Drawing.Size(52, 21)
+        Me.RB_DNI.TabIndex = 4
+        Me.RB_DNI.Text = "DNI"
+        Me.RB_DNI.UseVisualStyleBackColor = True
         '
-        'RadioButton1
+        'RB_NOMBRES
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Checked = True
-        Me.RadioButton1.Location = New System.Drawing.Point(29, 26)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(158, 21)
-        Me.RadioButton1.TabIndex = 3
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Nombres y Apellidos"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.RB_NOMBRES.AutoSize = True
+        Me.RB_NOMBRES.Checked = True
+        Me.RB_NOMBRES.Location = New System.Drawing.Point(29, 26)
+        Me.RB_NOMBRES.Name = "RB_NOMBRES"
+        Me.RB_NOMBRES.Size = New System.Drawing.Size(158, 21)
+        Me.RB_NOMBRES.TabIndex = 3
+        Me.RB_NOMBRES.TabStop = True
+        Me.RB_NOMBRES.Text = "Nombres y Apellidos"
+        Me.RB_NOMBRES.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'TXT_BUSQUEDA
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(275, 42)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(425, 27)
-        Me.TextBox1.TabIndex = 2
+        Me.TXT_BUSQUEDA.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXT_BUSQUEDA.Location = New System.Drawing.Point(275, 42)
+        Me.TXT_BUSQUEDA.Name = "TXT_BUSQUEDA"
+        Me.TXT_BUSQUEDA.Size = New System.Drawing.Size(425, 27)
+        Me.TXT_BUSQUEDA.TabIndex = 2
         '
         'BTN_BUSCAR
         '
@@ -228,8 +228,8 @@ Partial Class FRM_CLIENTE
     Protected WithEvents BTN_EDITAR As Button
     Protected WithEvents BTN_NUEVO As Button
     Protected WithEvents BUSCAR As GroupBox
-    Protected WithEvents TextBox1 As TextBox
+    Protected WithEvents TXT_BUSQUEDA As TextBox
     Protected WithEvents BTN_BUSCAR As Button
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents RB_DNI As RadioButton
+    Friend WithEvents RB_NOMBRES As RadioButton
 End Class

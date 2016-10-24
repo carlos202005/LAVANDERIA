@@ -20,6 +20,25 @@ Public Class DAConsultas_Base
             Desconectar()
         End Try
     End Function
+
+    Public Function mostrarId_Servicio_Ultima() As String
+        Try
+            Conectar()
+            cmd = New SqlCommand("select top 1 cod_serv from Servicio order by cod_serv desc")
+            cmd.CommandType = CommandType.Text
+            cmd.Connection = cnn
+
+            Dim da As String
+            da = cmd.ExecuteScalar()
+            Return da
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            Desconectar()
+        End Try
+    End Function
+
     Public Function mostrarId_Usuario(ByVal numero As Integer) As Integer
         Try
             Conectar()

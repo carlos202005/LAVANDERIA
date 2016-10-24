@@ -23,9 +23,9 @@ Partial Class FRM_SERVICIOS
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.BUSCAR = New System.Windows.Forms.GroupBox()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.RB_NOMBRE = New System.Windows.Forms.RadioButton()
+        Me.RB_CODIGO = New System.Windows.Forms.RadioButton()
+        Me.TXT_NOMBRE = New System.Windows.Forms.TextBox()
         Me.BTN_BUSCAR = New System.Windows.Forms.Button()
         Me.CLIENTES = New System.Windows.Forms.GroupBox()
         Me.DGV_SERVICIOS = New System.Windows.Forms.DataGridView()
@@ -44,9 +44,9 @@ Partial Class FRM_SERVICIOS
         'BUSCAR
         '
         Me.BUSCAR.BackColor = System.Drawing.Color.Transparent
-        Me.BUSCAR.Controls.Add(Me.RadioButton2)
-        Me.BUSCAR.Controls.Add(Me.RadioButton1)
-        Me.BUSCAR.Controls.Add(Me.TextBox1)
+        Me.BUSCAR.Controls.Add(Me.RB_NOMBRE)
+        Me.BUSCAR.Controls.Add(Me.RB_CODIGO)
+        Me.BUSCAR.Controls.Add(Me.TXT_NOMBRE)
         Me.BUSCAR.Controls.Add(Me.BTN_BUSCAR)
         Me.BUSCAR.Location = New System.Drawing.Point(134, 537)
         Me.BUSCAR.Name = "BUSCAR"
@@ -55,35 +55,35 @@ Partial Class FRM_SERVICIOS
         Me.BUSCAR.TabStop = False
         Me.BUSCAR.Text = "BUSCAR"
         '
-        'RadioButton2
+        'RB_NOMBRE
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(132, 46)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(89, 21)
-        Me.RadioButton2.TabIndex = 4
-        Me.RadioButton2.Text = "NOMBRE"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.RB_NOMBRE.AutoSize = True
+        Me.RB_NOMBRE.Location = New System.Drawing.Point(132, 46)
+        Me.RB_NOMBRE.Name = "RB_NOMBRE"
+        Me.RB_NOMBRE.Size = New System.Drawing.Size(89, 21)
+        Me.RB_NOMBRE.TabIndex = 4
+        Me.RB_NOMBRE.Text = "NOMBRE"
+        Me.RB_NOMBRE.UseVisualStyleBackColor = True
         '
-        'RadioButton1
+        'RB_CODIGO
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Checked = True
-        Me.RadioButton1.Location = New System.Drawing.Point(20, 46)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(84, 21)
-        Me.RadioButton1.TabIndex = 3
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "CODIGO"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.RB_CODIGO.AutoSize = True
+        Me.RB_CODIGO.Checked = True
+        Me.RB_CODIGO.Location = New System.Drawing.Point(20, 46)
+        Me.RB_CODIGO.Name = "RB_CODIGO"
+        Me.RB_CODIGO.Size = New System.Drawing.Size(84, 21)
+        Me.RB_CODIGO.TabIndex = 3
+        Me.RB_CODIGO.TabStop = True
+        Me.RB_CODIGO.Text = "CODIGO"
+        Me.RB_CODIGO.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'TXT_NOMBRE
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(275, 42)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(425, 27)
-        Me.TextBox1.TabIndex = 2
+        Me.TXT_NOMBRE.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXT_NOMBRE.Location = New System.Drawing.Point(275, 42)
+        Me.TXT_NOMBRE.Name = "TXT_NOMBRE"
+        Me.TXT_NOMBRE.Size = New System.Drawing.Size(425, 27)
+        Me.TXT_NOMBRE.TabIndex = 2
         '
         'BTN_BUSCAR
         '
@@ -220,7 +220,7 @@ Partial Class FRM_SERVICIOS
     End Sub
 
     Protected WithEvents BUSCAR As GroupBox
-    Protected WithEvents TextBox1 As TextBox
+    Protected WithEvents TXT_NOMBRE As TextBox
     Protected WithEvents BTN_BUSCAR As Button
     Protected WithEvents CLIENTES As GroupBox
     Protected WithEvents DGV_SERVICIOS As DataGridView
@@ -230,6 +230,6 @@ Partial Class FRM_SERVICIOS
     Protected WithEvents BTN_ELIMINAR As Button
     Protected WithEvents BTN_EDITAR As Button
     Protected WithEvents BTN_NUEVO As Button
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents RB_NOMBRE As RadioButton
+    Friend WithEvents RB_CODIGO As RadioButton
 End Class

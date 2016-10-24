@@ -23,7 +23,12 @@ Public Class DAConsultas_Completas_Base
             TXT_CELULAR.Text = tabla.Item("celular").ToString
             TXT_TELEFONO.Text = tabla.Item("telefono").ToString
             TXT_DNI.Text = tabla.Item("dni").ToString()
-            DTP_FECHA_NAC.Value = tabla.Item("fecha_nac").ToString
+            If tabla.Item("fecha_nac").ToString = "" Then
+                DTP_FECHA_NAC.Value = DateTime.Now
+            Else
+                DTP_FECHA_NAC.Value = tabla.Item("fecha_nac").ToString
+            End If
+
             If tabla.Item("id_tipo").ToString = 5 Then
                 RB_JURIDICA.Checked = False
                 RB_NATURAL.Checked = True
@@ -141,7 +146,11 @@ Public Class DAConsultas_Completas_Base
             TXT_APE_PAT.Text = tabla.Item("apepat_emp").ToString
             TXT_APE_MAT.Text = tabla.Item("apemat_emp").ToString()
             TXT_DNI.Text = tabla.Item("dni").ToString
-            DTP_FECHA_NAC.Value = tabla.Item("fecha_nac").ToString
+            If tabla.Item("fecha_nac").ToString = "" Then
+                DTP_FECHA_NAC.Value = DateTime.Now
+            Else
+                DTP_FECHA_NAC.Value = tabla.Item("fecha_nac").ToString
+            End If
             TXT_CELULAR.Text = tabla.Item("celular").ToString()
             TXT_PERFIL.Text = tabla.Item("nom_per").ToString
             TXT_USUARIO.Text = tabla.Item("nom_usu").ToString

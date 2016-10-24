@@ -41,7 +41,9 @@ Public Class FRM_USUARIOS
 
                 BEEmpleado.gid_emp = CODIGO
                 BEEmpleado.gusu_eli = VARIABLES_GLOBALES.ID_USUARIO
+
                 DAEmpleado.eliminar_Empleados(BEEmpleado)
+
                 MsgBox("USUARIO ELIMINADO CORRECTAMENTE..!!")
                 CARGARDATAGRIDVIEW()
             End If
@@ -56,6 +58,45 @@ Public Class FRM_USUARIOS
         Try
             Dim DACargarDataGridView As New DACargarDataGridView
             dts = DACargarDataGridView.Mostrar_Empleados()
+            If dts.Rows.Count <> 0 Then
+                DGV_USUARIOS.DataSource = dts
+            Else
+                DGV_USUARIOS.DataSource = Nothing
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub BTN_BUSCAR_Click(sender As Object, e As EventArgs) Handles BTN_BUSCAR.Click
+        If RB_NOMBRES.Checked = True Then
+            CARGARBUSQUEDANOMBRES()
+        End If
+        If RB_DNI.Checked = True Then
+            CARGARBUSQUEDADNI()
+        End If
+    End Sub
+
+
+    Sub CARGARBUSQUEDANOMBRES()
+        Try
+            Dim DACargarDataGridView As New DACargarDataGridView
+            dts = DACargarDataGridView.Mostrar_Empleados_Busqueda(TXT_NOMBRE.Text)
+            If dts.Rows.Count <> 0 Then
+                DGV_USUARIOS.DataSource = dts
+            Else
+                DGV_USUARIOS.DataSource = Nothing
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+
+    Sub CARGARBUSQUEDADNI()
+        Try
+            Dim DACargarDataGridView As New DACargarDataGridView
+            dts = DACargarDataGridView.Mostrar_Empleados_DNI_Busqueda(TXT_NOMBRE.Text)
             If dts.Rows.Count <> 0 Then
                 DGV_USUARIOS.DataSource = dts
             Else
