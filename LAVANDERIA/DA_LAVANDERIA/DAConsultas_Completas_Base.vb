@@ -5,9 +5,9 @@ Public Class DAConsultas_Completas_Base
     Dim cmd As New SqlConnection(DA_MDL_Conexion_Global.conexion_base)
     Dim dts As New DataTable
 
-    Public Sub cargarClientes(ByVal id_cli As Integer, ByVal TXT_NOMBRE As TextBox, ByVal TXT_APE_PAT As TextBox, ByVal TXT_APE_MAT As TextBox, ByVal TXT_CORREO As TextBox, ByVal TXT_DNI As TextBox, ByVal DTP_FECHA_NAC As DateTimePicker, ByVal RB_NATURAL As RadioButton, ByVal RB_JURIDICA As RadioButton, ByVal TXT_CELULAR As TextBox, ByVal TXT_TELEFONO As TextBox)
+    Public Sub cargarClientes(ByVal id_cli As Integer, ByVal TXT_NOMBRE As TextBox, ByVal TXT_APE_PAT As TextBox, ByVal TXT_APE_MAT As TextBox, ByVal TXT_CORREO As TextBox, ByVal TXT_DNI As TextBox, ByVal DTP_FECHA_NAC As DateTimePicker, ByVal RB_NATURAL As RadioButton, ByVal RB_JURIDICA As RadioButton, ByVal TXT_CELULAR As TextBox, ByVal TXT_TELEFONO As TextBox, ByVal CB_TIPO_DOCUMENTO As ComboBox)
 
-        Dim consulta As String = "SELECT id_cli,nom_cli,apepat_cli,apemat_cli,correo,dni,celular,telefono,fecha_nac,id_tipo FROM cliente WHERE id_cli=" & id_cli
+        Dim consulta As String = "SELECT id_cli,nom_cli,apepat_cli,apemat_cli,correo,documento,celular,telefono,fecha_nac,id_tipo,id_tipdocumento FROM cliente WHERE id_cli=" & id_cli
         Dim comando As New SqlCommand(consulta, cmd)
         Dim tabla As SqlDataReader
 
@@ -22,7 +22,8 @@ Public Class DAConsultas_Completas_Base
             TXT_CORREO.Text = tabla.Item("correo").ToString
             TXT_CELULAR.Text = tabla.Item("celular").ToString
             TXT_TELEFONO.Text = tabla.Item("telefono").ToString
-            TXT_DNI.Text = tabla.Item("dni").ToString()
+            TXT_DNI.Text = tabla.Item("documento").ToString()
+            CB_TIPO_DOCUMENTO.SelectedValue = tabla.Item("id_tipdocumento").ToString()
             If tabla.Item("fecha_nac").ToString = "" Then
                 DTP_FECHA_NAC.Value = DateTime.Now
             Else

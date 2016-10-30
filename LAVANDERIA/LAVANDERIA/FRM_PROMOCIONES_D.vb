@@ -3,6 +3,7 @@ Imports DA_LAVANDERIA
 Public Class FRM_PROMOCIONES_D
     Private Sub FRM_PROMOCIONES_D_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CARGARDATAGRIDVIEW()
+        DGV_PROMOCIONES.Columns.Item(0).Visible = False
     End Sub
     Dim CODIGO As Integer = Nothing
     Dim dts As New DataTable

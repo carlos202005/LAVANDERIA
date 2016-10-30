@@ -38,6 +38,7 @@ Partial Class FRM_PROVEEDORES_CRUD
         '
         'TXT_CORREO
         '
+        Me.TXT_CORREO.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_CORREO.Location = New System.Drawing.Point(150, 157)
         Me.TXT_CORREO.Name = "TXT_CORREO"
         Me.TXT_CORREO.Size = New System.Drawing.Size(443, 22)
@@ -54,8 +55,9 @@ Partial Class FRM_PROVEEDORES_CRUD
         '
         'TXT_TELEFONO
         '
+        Me.TXT_TELEFONO.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_TELEFONO.Location = New System.Drawing.Point(150, 112)
-        Me.TXT_TELEFONO.MaxLength = 11
+        Me.TXT_TELEFONO.MaxLength = 9
         Me.TXT_TELEFONO.Name = "TXT_TELEFONO"
         Me.TXT_TELEFONO.Size = New System.Drawing.Size(192, 22)
         Me.TXT_TELEFONO.TabIndex = 41
@@ -71,8 +73,9 @@ Partial Class FRM_PROVEEDORES_CRUD
         '
         'TXT_CELULAR
         '
+        Me.TXT_CELULAR.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_CELULAR.Location = New System.Drawing.Point(439, 71)
-        Me.TXT_CELULAR.MaxLength = 11
+        Me.TXT_CELULAR.MaxLength = 9
         Me.TXT_CELULAR.Name = "TXT_CELULAR"
         Me.TXT_CELULAR.Size = New System.Drawing.Size(154, 22)
         Me.TXT_CELULAR.TabIndex = 39
@@ -88,6 +91,7 @@ Partial Class FRM_PROVEEDORES_CRUD
         '
         'TXT_RUC
         '
+        Me.TXT_RUC.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_RUC.Location = New System.Drawing.Point(150, 71)
         Me.TXT_RUC.MaxLength = 11
         Me.TXT_RUC.Name = "TXT_RUC"
@@ -105,6 +109,7 @@ Partial Class FRM_PROVEEDORES_CRUD
         '
         'TXT_RAZON_SOCIAL
         '
+        Me.TXT_RAZON_SOCIAL.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_RAZON_SOCIAL.Location = New System.Drawing.Point(150, 30)
         Me.TXT_RAZON_SOCIAL.Name = "TXT_RAZON_SOCIAL"
         Me.TXT_RAZON_SOCIAL.Size = New System.Drawing.Size(443, 22)

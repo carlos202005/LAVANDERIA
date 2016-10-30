@@ -28,6 +28,16 @@ Public Class FRM_USUARIOS
             Dim FRM_USUARIOS_CRUD As New FRM_USUARIOS_CRUD
             FRM_USUARIOS_CRUD.BTN_ACEPTAR.Enabled = False
             FRM_USUARIOS_CRUD.BTN_ACEPTAR.Visible = False
+            FRM_USUARIOS_CRUD.TXT_APE_MAT.Enabled = False
+            FRM_USUARIOS_CRUD.TXT_APE_PAT.Enabled = False
+            FRM_USUARIOS_CRUD.TXT_CELULAR.Enabled = False
+            FRM_USUARIOS_CRUD.TXT_CODIGO.Enabled = False
+            FRM_USUARIOS_CRUD.TXT_CONTRASENA.Enabled = False
+            FRM_USUARIOS_CRUD.TXT_DNI.Enabled = False
+            FRM_USUARIOS_CRUD.TXT_NOMBRE.Enabled = False
+            FRM_USUARIOS_CRUD.TXT_PERFIL.Enabled = False
+            FRM_USUARIOS_CRUD.TXT_USUARIO.Enabled = False
+            FRM_USUARIOS_CRUD.DTP_FECHA_NAC.Enabled = False
             FRM_USUARIOS_CRUD.Show()
             Me.Close()
         End If
@@ -52,6 +62,7 @@ Public Class FRM_USUARIOS
 
     Private Sub FRM_USUARIOS_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CARGARDATAGRIDVIEW()
+        DGV_USUARIOS.Columns.Item(0).Visible = False
     End Sub
 
     Sub CARGARDATAGRIDVIEW()

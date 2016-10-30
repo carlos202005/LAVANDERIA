@@ -61,6 +61,11 @@ Public Class FRM_PROVEEDORES
             VARIABLES_GLOBALES.ID_PROVEEDOR = CODIGO
             FRM_PROVEEDORES_CRUD.BTN_ACEPTAR.Enabled = False
             FRM_PROVEEDORES_CRUD.BTN_ACEPTAR.Visible = False
+            FRM_PROVEEDORES_CRUD.TXT_CELULAR.Enabled = False
+            FRM_PROVEEDORES_CRUD.TXT_CORREO.Enabled = False
+            FRM_PROVEEDORES_CRUD.TXT_RAZON_SOCIAL.Enabled = False
+            FRM_PROVEEDORES_CRUD.TXT_RUC.Enabled = False
+            FRM_PROVEEDORES_CRUD.TXT_TELEFONO.Enabled = False
             FRM_PROVEEDORES_CRUD.Show()
             Me.Close()
         End If
@@ -68,6 +73,7 @@ Public Class FRM_PROVEEDORES
 
     Private Sub FRM_PROVEEDORES_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CARGARDATAGRIDVIEW()
+        DGV_PROVEEDORES.Columns.Item(0).Visible = False
     End Sub
 
     Private Sub BTN_BUSCAR_Click(sender As Object, e As EventArgs) Handles BTN_BUSCAR.Click

@@ -23,10 +23,18 @@ Partial Class FRM_PROMOCIONES
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.DGVPROMOCIONES2 = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BTN_AGREGAR = New System.Windows.Forms.Button()
         Me.CB_SUCURSAL = New System.Windows.Forms.ComboBox()
         Me.CB_SERVICIO_BONO = New System.Windows.Forms.ComboBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.BTN_AGREGAR = New System.Windows.Forms.Button()
+        Me.BTN_ELIMINAR = New System.Windows.Forms.Button()
         Me.NUD_CANTIDAD_SERVICIO_BONO = New System.Windows.Forms.NumericUpDown()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.NUD_CANTIDAD_SERVICIO = New System.Windows.Forms.NumericUpDown()
@@ -53,6 +61,7 @@ Partial Class FRM_PROMOCIONES
         Me.BTN_SALIR = New System.Windows.Forms.Button()
         Me.BTN_ACEPTAR = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.DGVPROMOCIONES2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NUD_CANTIDAD_SERVICIO_BONO, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NUD_CANTIDAD_SERVICIO, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DGVPROMOCIONES, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,10 +70,12 @@ Partial Class FRM_PROMOCIONES
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.DGVPROMOCIONES2)
+        Me.GroupBox1.Controls.Add(Me.BTN_AGREGAR)
         Me.GroupBox1.Controls.Add(Me.CB_SUCURSAL)
         Me.GroupBox1.Controls.Add(Me.CB_SERVICIO_BONO)
         Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Controls.Add(Me.BTN_AGREGAR)
+        Me.GroupBox1.Controls.Add(Me.BTN_ELIMINAR)
         Me.GroupBox1.Controls.Add(Me.NUD_CANTIDAD_SERVICIO_BONO)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.NUD_CANTIDAD_SERVICIO)
@@ -87,6 +98,74 @@ Partial Class FRM_PROMOCIONES
         Me.GroupBox1.TabIndex = 6
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "PROMOCIONES"
+        '
+        'DGVPROMOCIONES2
+        '
+        Me.DGVPROMOCIONES2.AllowUserToAddRows = False
+        Me.DGVPROMOCIONES2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DGVPROMOCIONES2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGVPROMOCIONES2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
+        Me.DGVPROMOCIONES2.Enabled = False
+        Me.DGVPROMOCIONES2.Location = New System.Drawing.Point(16, 341)
+        Me.DGVPROMOCIONES2.MultiSelect = False
+        Me.DGVPROMOCIONES2.Name = "DGVPROMOCIONES2"
+        Me.DGVPROMOCIONES2.ReadOnly = True
+        Me.DGVPROMOCIONES2.RowTemplate.Height = 24
+        Me.DGVPROMOCIONES2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DGVPROMOCIONES2.Size = New System.Drawing.Size(739, 188)
+        Me.DGVPROMOCIONES2.TabIndex = 39
+        Me.DGVPROMOCIONES2.Visible = False
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.FillWeight = 30.0!
+        Me.DataGridViewTextBoxColumn1.HeaderText = "COD"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.FillWeight = 120.0!
+        Me.DataGridViewTextBoxColumn2.HeaderText = "SERVICIO"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.FillWeight = 60.0!
+        Me.DataGridViewTextBoxColumn3.HeaderText = "CANTIDAD"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.FillWeight = 60.0!
+        Me.DataGridViewTextBoxColumn4.HeaderText = "COD. 2"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.FillWeight = 120.0!
+        Me.DataGridViewTextBoxColumn5.HeaderText = "SERVICIO BONO"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.FillWeight = 50.0!
+        Me.DataGridViewTextBoxColumn6.HeaderText = "CANT. BONO"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.ReadOnly = True
+        '
+        'BTN_AGREGAR
+        '
+        Me.BTN_AGREGAR.Location = New System.Drawing.Point(654, 205)
+        Me.BTN_AGREGAR.Name = "BTN_AGREGAR"
+        Me.BTN_AGREGAR.Size = New System.Drawing.Size(77, 60)
+        Me.BTN_AGREGAR.TabIndex = 10
+        Me.BTN_AGREGAR.Text = "Agregar"
+        Me.BTN_AGREGAR.UseVisualStyleBackColor = True
         '
         'CB_SUCURSAL
         '
@@ -115,14 +194,14 @@ Partial Class FRM_PROMOCIONES
         Me.Label9.TabIndex = 38
         Me.Label9.Text = "SERVICIO BONO:"
         '
-        'BTN_AGREGAR
+        'BTN_ELIMINAR
         '
-        Me.BTN_AGREGAR.Location = New System.Drawing.Point(640, 274)
-        Me.BTN_AGREGAR.Name = "BTN_AGREGAR"
-        Me.BTN_AGREGAR.Size = New System.Drawing.Size(77, 60)
-        Me.BTN_AGREGAR.TabIndex = 10
-        Me.BTN_AGREGAR.Text = "Agregar"
-        Me.BTN_AGREGAR.UseVisualStyleBackColor = True
+        Me.BTN_ELIMINAR.Location = New System.Drawing.Point(654, 274)
+        Me.BTN_ELIMINAR.Name = "BTN_ELIMINAR"
+        Me.BTN_ELIMINAR.Size = New System.Drawing.Size(77, 60)
+        Me.BTN_ELIMINAR.TabIndex = 11
+        Me.BTN_ELIMINAR.Text = "Eliminar"
+        Me.BTN_ELIMINAR.UseVisualStyleBackColor = True
         '
         'NUD_CANTIDAD_SERVICIO_BONO
         '
@@ -327,7 +406,7 @@ Partial Class FRM_PROMOCIONES
         Me.BTN_SALIR.Location = New System.Drawing.Point(6, 430)
         Me.BTN_SALIR.Name = "BTN_SALIR"
         Me.BTN_SALIR.Size = New System.Drawing.Size(100, 99)
-        Me.BTN_SALIR.TabIndex = 12
+        Me.BTN_SALIR.TabIndex = 13
         Me.BTN_SALIR.Text = "CANCELAR"
         Me.BTN_SALIR.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.BTN_SALIR.UseVisualStyleBackColor = True
@@ -337,7 +416,7 @@ Partial Class FRM_PROMOCIONES
         Me.BTN_ACEPTAR.Location = New System.Drawing.Point(6, 21)
         Me.BTN_ACEPTAR.Name = "BTN_ACEPTAR"
         Me.BTN_ACEPTAR.Size = New System.Drawing.Size(100, 92)
-        Me.BTN_ACEPTAR.TabIndex = 11
+        Me.BTN_ACEPTAR.TabIndex = 12
         Me.BTN_ACEPTAR.Text = "ACEPTAR"
         Me.BTN_ACEPTAR.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.BTN_ACEPTAR.UseVisualStyleBackColor = True
@@ -354,6 +433,7 @@ Partial Class FRM_PROMOCIONES
         Me.Text = "PROMOCIONES"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.DGVPROMOCIONES2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NUD_CANTIDAD_SERVICIO_BONO, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NUD_CANTIDAD_SERVICIO, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DGVPROMOCIONES, System.ComponentModel.ISupportInitialize).EndInit()
@@ -380,7 +460,7 @@ Partial Class FRM_PROMOCIONES
     Friend WithEvents Label6 As Label
     Friend WithEvents NUD_CANTIDAD_SERVICIO_BONO As NumericUpDown
     Friend WithEvents Label8 As Label
-    Friend WithEvents BTN_AGREGAR As Button
+    Friend WithEvents BTN_ELIMINAR As Button
     Friend WithEvents CB_SERVICIO_BONO As ComboBox
     Friend WithEvents Label9 As Label
     Friend WithEvents CB_SUCURSAL As ComboBox
@@ -392,4 +472,12 @@ Partial Class FRM_PROMOCIONES
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents BTN_SALIR As Button
     Friend WithEvents BTN_ACEPTAR As Button
+    Friend WithEvents BTN_AGREGAR As Button
+    Friend WithEvents DGVPROMOCIONES2 As DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
 End Class

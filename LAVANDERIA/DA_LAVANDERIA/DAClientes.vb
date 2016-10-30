@@ -22,6 +22,7 @@ Public Class DAClientes
             cmd.Parameters.AddWithValue("@telefono", dts.gtelefono)
             cmd.Parameters.AddWithValue("@usu_reg", dts.gusu_reg)
             cmd.Parameters.AddWithValue("@id_tipo", dts.gid_tipo)
+            cmd.Parameters.AddWithValue("@id_tipdocumento", dts.gid_tipdocumento)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
@@ -52,6 +53,7 @@ Public Class DAClientes
             cmd.Parameters.AddWithValue("@telefono", dts.gtelefono)
             cmd.Parameters.AddWithValue("@usu_mod", dts.gusu_mod)
             cmd.Parameters.AddWithValue("@id_tipo ", dts.gid_tipo)
+            cmd.Parameters.AddWithValue("@id_tipdocumento", dts.gid_tipdocumento)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else

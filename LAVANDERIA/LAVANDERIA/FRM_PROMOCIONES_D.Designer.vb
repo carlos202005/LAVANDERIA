@@ -41,23 +41,23 @@ Partial Class FRM_PROMOCIONES_D
         Me.CLIENTES.Controls.Add(Me.DGV_PROMOCIONES)
         Me.CLIENTES.Location = New System.Drawing.Point(134, 13)
         Me.CLIENTES.Name = "CLIENTES"
-        Me.CLIENTES.Size = New System.Drawing.Size(836, 518)
+        Me.CLIENTES.Size = New System.Drawing.Size(836, 628)
         Me.CLIENTES.TabIndex = 5
         Me.CLIENTES.TabStop = False
-        Me.CLIENTES.Text = "RECIBOS"
+        Me.CLIENTES.Text = "PROMOCIONES"
         '
         'DGV_PROMOCIONES
         '
         Me.DGV_PROMOCIONES.AllowUserToAddRows = False
         Me.DGV_PROMOCIONES.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DGV_PROMOCIONES.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGV_PROMOCIONES.Location = New System.Drawing.Point(6, 21)
+        Me.DGV_PROMOCIONES.Location = New System.Drawing.Point(6, 15)
         Me.DGV_PROMOCIONES.MultiSelect = False
         Me.DGV_PROMOCIONES.Name = "DGV_PROMOCIONES"
         Me.DGV_PROMOCIONES.ReadOnly = True
         Me.DGV_PROMOCIONES.RowTemplate.Height = 24
         Me.DGV_PROMOCIONES.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DGV_PROMOCIONES.Size = New System.Drawing.Size(824, 491)
+        Me.DGV_PROMOCIONES.Size = New System.Drawing.Size(824, 607)
         Me.DGV_PROMOCIONES.TabIndex = 0
         '
         'OPCIONES

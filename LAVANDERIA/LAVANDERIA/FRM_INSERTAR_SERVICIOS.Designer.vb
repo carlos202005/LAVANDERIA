@@ -36,11 +36,17 @@ Partial Class FRM_INSERTAR_SERVICIOS
         Me.CB_MEDIDA = New System.Windows.Forms.ComboBox()
         Me.CB_TIPO = New System.Windows.Forms.ComboBox()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.LBL_PRECIO_1 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.LBL_PRECIO_2 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.LBL_IGV = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'BTN_SALIR
         '
-        Me.BTN_SALIR.Location = New System.Drawing.Point(284, 198)
+        Me.BTN_SALIR.Location = New System.Drawing.Point(283, 243)
         Me.BTN_SALIR.Name = "BTN_SALIR"
         Me.BTN_SALIR.Size = New System.Drawing.Size(100, 83)
         Me.BTN_SALIR.TabIndex = 9
@@ -50,7 +56,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         '
         'BTN_NUEVO
         '
-        Me.BTN_NUEVO.Location = New System.Drawing.Point(173, 198)
+        Me.BTN_NUEVO.Location = New System.Drawing.Point(172, 243)
         Me.BTN_NUEVO.Name = "BTN_NUEVO"
         Me.BTN_NUEVO.Size = New System.Drawing.Size(100, 83)
         Me.BTN_NUEVO.TabIndex = 8
@@ -60,7 +66,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         '
         'TXT_PRECIO2
         '
-        Me.TXT_PRECIO2.Location = New System.Drawing.Point(376, 104)
+        Me.TXT_PRECIO2.Location = New System.Drawing.Point(124, 148)
         Me.TXT_PRECIO2.MaxLength = 10
         Me.TXT_PRECIO2.Name = "TXT_PRECIO2"
         Me.TXT_PRECIO2.Size = New System.Drawing.Size(153, 22)
@@ -69,7 +75,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(299, 107)
+        Me.Label5.Location = New System.Drawing.Point(30, 151)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(71, 17)
         Me.Label5.TabIndex = 36
@@ -129,7 +135,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(30, 150)
+        Me.Label6.Location = New System.Drawing.Point(30, 197)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(60, 17)
         Me.Label6.TabIndex = 40
@@ -139,7 +145,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         '
         Me.CB_MEDIDA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CB_MEDIDA.FormattingEnabled = True
-        Me.CB_MEDIDA.Location = New System.Drawing.Point(124, 147)
+        Me.CB_MEDIDA.Location = New System.Drawing.Point(124, 194)
         Me.CB_MEDIDA.Name = "CB_MEDIDA"
         Me.CB_MEDIDA.Size = New System.Drawing.Size(153, 24)
         Me.CB_MEDIDA.TabIndex = 6
@@ -148,7 +154,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         '
         Me.CB_TIPO.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CB_TIPO.FormattingEnabled = True
-        Me.CB_TIPO.Location = New System.Drawing.Point(376, 147)
+        Me.CB_TIPO.Location = New System.Drawing.Point(376, 194)
         Me.CB_TIPO.Name = "CB_TIPO"
         Me.CB_TIPO.Size = New System.Drawing.Size(153, 24)
         Me.CB_TIPO.TabIndex = 7
@@ -156,17 +162,77 @@ Partial Class FRM_INSERTAR_SERVICIOS
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(299, 150)
+        Me.Label7.Location = New System.Drawing.Point(299, 197)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(40, 17)
         Me.Label7.TabIndex = 42
         Me.Label7.Text = "TIPO"
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(299, 107)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(65, 17)
+        Me.Label3.TabIndex = 43
+        Me.Label3.Text = "CON IGV"
+        '
+        'LBL_PRECIO_1
+        '
+        Me.LBL_PRECIO_1.AutoSize = True
+        Me.LBL_PRECIO_1.Location = New System.Drawing.Point(376, 109)
+        Me.LBL_PRECIO_1.Name = "LBL_PRECIO_1"
+        Me.LBL_PRECIO_1.Size = New System.Drawing.Size(13, 17)
+        Me.LBL_PRECIO_1.TabIndex = 44
+        Me.LBL_PRECIO_1.Text = "-"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(299, 153)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(65, 17)
+        Me.Label9.TabIndex = 45
+        Me.Label9.Text = "CON IGV"
+        '
+        'LBL_PRECIO_2
+        '
+        Me.LBL_PRECIO_2.AutoSize = True
+        Me.LBL_PRECIO_2.Location = New System.Drawing.Point(376, 151)
+        Me.LBL_PRECIO_2.Name = "LBL_PRECIO_2"
+        Me.LBL_PRECIO_2.Size = New System.Drawing.Size(13, 17)
+        Me.LBL_PRECIO_2.TabIndex = 46
+        Me.LBL_PRECIO_2.Text = "-"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(299, 22)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(31, 17)
+        Me.Label11.TabIndex = 47
+        Me.Label11.Text = "IGV"
+        '
+        'LBL_IGV
+        '
+        Me.LBL_IGV.AutoSize = True
+        Me.LBL_IGV.Location = New System.Drawing.Point(376, 22)
+        Me.LBL_IGV.Name = "LBL_IGV"
+        Me.LBL_IGV.Size = New System.Drawing.Size(13, 17)
+        Me.LBL_IGV.TabIndex = 48
+        Me.LBL_IGV.Text = "-"
+        '
         'FRM_INSERTAR_SERVICIOS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(551, 298)
+        Me.ClientSize = New System.Drawing.Size(551, 338)
+        Me.Controls.Add(Me.LBL_IGV)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.LBL_PRECIO_2)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.LBL_PRECIO_1)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.CB_TIPO)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.CB_MEDIDA)
@@ -202,4 +268,10 @@ Partial Class FRM_INSERTAR_SERVICIOS
     Friend WithEvents Label7 As Label
     Friend WithEvents BTN_SALIR As Button
     Friend WithEvents BTN_NUEVO As Button
+    Friend WithEvents Label3 As Label
+    Friend WithEvents LBL_PRECIO_1 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents LBL_PRECIO_2 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents LBL_IGV As Label
 End Class

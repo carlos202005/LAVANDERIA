@@ -43,21 +43,24 @@ Partial Class FRM_CLIENTE_CRUD
         Me.RB_NARUTAL = New System.Windows.Forms.RadioButton()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TXT_TELEFONO
         '
-        Me.TXT_TELEFONO.Location = New System.Drawing.Point(606, 180)
-        Me.TXT_TELEFONO.MaxLength = 11
+        Me.TXT_TELEFONO.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TXT_TELEFONO.Location = New System.Drawing.Point(607, 198)
+        Me.TXT_TELEFONO.MaxLength = 9
         Me.TXT_TELEFONO.Name = "TXT_TELEFONO"
         Me.TXT_TELEFONO.Size = New System.Drawing.Size(159, 22)
-        Me.TXT_TELEFONO.TabIndex = 7
+        Me.TXT_TELEFONO.TabIndex = 8
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(486, 183)
+        Me.Label5.Location = New System.Drawing.Point(487, 203)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(83, 17)
         Me.Label5.TabIndex = 50
@@ -65,16 +68,17 @@ Partial Class FRM_CLIENTE_CRUD
         '
         'TXT_CELULAR
         '
-        Me.TXT_CELULAR.Location = New System.Drawing.Point(297, 182)
-        Me.TXT_CELULAR.MaxLength = 11
+        Me.TXT_CELULAR.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TXT_CELULAR.Location = New System.Drawing.Point(298, 202)
+        Me.TXT_CELULAR.MaxLength = 9
         Me.TXT_CELULAR.Name = "TXT_CELULAR"
         Me.TXT_CELULAR.Size = New System.Drawing.Size(175, 22)
-        Me.TXT_CELULAR.TabIndex = 6
+        Me.TXT_CELULAR.TabIndex = 7
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(178, 185)
+        Me.Label6.Location = New System.Drawing.Point(154, 203)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(71, 17)
         Me.Label6.TabIndex = 48
@@ -82,15 +86,16 @@ Partial Class FRM_CLIENTE_CRUD
         '
         'TXT_CORREO
         '
-        Me.TXT_CORREO.Location = New System.Drawing.Point(297, 226)
+        Me.TXT_CORREO.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TXT_CORREO.Location = New System.Drawing.Point(298, 246)
         Me.TXT_CORREO.Name = "TXT_CORREO"
-        Me.TXT_CORREO.Size = New System.Drawing.Size(468, 22)
-        Me.TXT_CORREO.TabIndex = 8
+        Me.TXT_CORREO.Size = New System.Drawing.Size(175, 22)
+        Me.TXT_CORREO.TabIndex = 9
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(181, 229)
+        Me.Label7.Location = New System.Drawing.Point(157, 251)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(68, 17)
         Me.Label7.TabIndex = 46
@@ -98,16 +103,17 @@ Partial Class FRM_CLIENTE_CRUD
         '
         'TXT_DOCUMENTO
         '
-        Me.TXT_DOCUMENTO.Location = New System.Drawing.Point(297, 56)
+        Me.TXT_DOCUMENTO.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TXT_DOCUMENTO.Location = New System.Drawing.Point(297, 80)
         Me.TXT_DOCUMENTO.MaxLength = 11
         Me.TXT_DOCUMENTO.Name = "TXT_DOCUMENTO"
         Me.TXT_DOCUMENTO.Size = New System.Drawing.Size(175, 22)
-        Me.TXT_DOCUMENTO.TabIndex = 1
+        Me.TXT_DOCUMENTO.TabIndex = 2
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(177, 59)
+        Me.Label8.Location = New System.Drawing.Point(154, 85)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(98, 17)
         Me.Label8.TabIndex = 44
@@ -115,15 +121,16 @@ Partial Class FRM_CLIENTE_CRUD
         '
         'TXT_APELLIDOS_MAT
         '
-        Me.TXT_APELLIDOS_MAT.Location = New System.Drawing.Point(606, 137)
+        Me.TXT_APELLIDOS_MAT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TXT_APELLIDOS_MAT.Location = New System.Drawing.Point(607, 157)
         Me.TXT_APELLIDOS_MAT.Name = "TXT_APELLIDOS_MAT"
         Me.TXT_APELLIDOS_MAT.Size = New System.Drawing.Size(159, 22)
-        Me.TXT_APELLIDOS_MAT.TabIndex = 5
+        Me.TXT_APELLIDOS_MAT.TabIndex = 6
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(486, 140)
+        Me.Label3.Location = New System.Drawing.Point(487, 160)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(112, 17)
         Me.Label3.TabIndex = 42
@@ -131,15 +138,16 @@ Partial Class FRM_CLIENTE_CRUD
         '
         'TXT_APELLIDOS_PAT
         '
-        Me.TXT_APELLIDOS_PAT.Location = New System.Drawing.Point(297, 139)
+        Me.TXT_APELLIDOS_PAT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TXT_APELLIDOS_PAT.Location = New System.Drawing.Point(298, 159)
         Me.TXT_APELLIDOS_PAT.Name = "TXT_APELLIDOS_PAT"
         Me.TXT_APELLIDOS_PAT.Size = New System.Drawing.Size(175, 22)
-        Me.TXT_APELLIDOS_PAT.TabIndex = 4
+        Me.TXT_APELLIDOS_PAT.TabIndex = 5
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(177, 142)
+        Me.Label4.Location = New System.Drawing.Point(154, 160)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(110, 17)
         Me.Label4.TabIndex = 40
@@ -147,15 +155,16 @@ Partial Class FRM_CLIENTE_CRUD
         '
         'TXT_NOMBRES
         '
-        Me.TXT_NOMBRES.Location = New System.Drawing.Point(297, 97)
+        Me.TXT_NOMBRES.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TXT_NOMBRES.Location = New System.Drawing.Point(298, 117)
         Me.TXT_NOMBRES.Name = "TXT_NOMBRES"
         Me.TXT_NOMBRES.Size = New System.Drawing.Size(468, 22)
-        Me.TXT_NOMBRES.TabIndex = 3
+        Me.TXT_NOMBRES.TabIndex = 4
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(177, 100)
+        Me.Label2.Location = New System.Drawing.Point(154, 120)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(87, 17)
         Me.Label2.TabIndex = 38
@@ -166,16 +175,16 @@ Partial Class FRM_CLIENTE_CRUD
         Me.Button1.Location = New System.Drawing.Point(27, 35)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(111, 88)
-        Me.Button1.TabIndex = 10
+        Me.Button1.TabIndex = 11
         Me.Button1.Text = "ACEPTAR"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(27, 167)
+        Me.Button2.Location = New System.Drawing.Point(27, 162)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(111, 86)
-        Me.Button2.TabIndex = 11
+        Me.Button2.TabIndex = 12
         Me.Button2.Text = "SALIR"
         Me.Button2.UseVisualStyleBackColor = True
         '
@@ -183,10 +192,10 @@ Partial Class FRM_CLIENTE_CRUD
         '
         Me.GroupBox1.Controls.Add(Me.RB_JURIDICA)
         Me.GroupBox1.Controls.Add(Me.RB_NARUTAL)
-        Me.GroupBox1.Location = New System.Drawing.Point(478, 35)
+        Me.GroupBox1.Location = New System.Drawing.Point(478, 59)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(288, 52)
-        Me.GroupBox1.TabIndex = 2
+        Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "TIPO DE CLIENTE"
         '
@@ -195,9 +204,9 @@ Partial Class FRM_CLIENTE_CRUD
         Me.RB_JURIDICA.AutoSize = True
         Me.RB_JURIDICA.Location = New System.Drawing.Point(154, 22)
         Me.RB_JURIDICA.Name = "RB_JURIDICA"
-        Me.RB_JURIDICA.Size = New System.Drawing.Size(90, 21)
+        Me.RB_JURIDICA.Size = New System.Drawing.Size(109, 21)
         Me.RB_JURIDICA.TabIndex = 1
-        Me.RB_JURIDICA.Text = "JURIDICA"
+        Me.RB_JURIDICA.Text = "MAYORISTA"
         Me.RB_JURIDICA.UseVisualStyleBackColor = True
         '
         'RB_NARUTAL
@@ -206,16 +215,16 @@ Partial Class FRM_CLIENTE_CRUD
         Me.RB_NARUTAL.Checked = True
         Me.RB_NARUTAL.Location = New System.Drawing.Point(23, 24)
         Me.RB_NARUTAL.Name = "RB_NARUTAL"
-        Me.RB_NARUTAL.Size = New System.Drawing.Size(94, 21)
+        Me.RB_NARUTAL.Size = New System.Drawing.Size(88, 21)
         Me.RB_NARUTAL.TabIndex = 0
         Me.RB_NARUTAL.TabStop = True
-        Me.RB_NARUTAL.Text = "NATURAL"
+        Me.RB_NARUTAL.Text = "NORMAL"
         Me.RB_NARUTAL.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(181, 268)
+        Me.Label1.Location = New System.Drawing.Point(487, 249)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(89, 17)
         Me.Label1.TabIndex = 57
@@ -223,18 +232,39 @@ Partial Class FRM_CLIENTE_CRUD
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(297, 263)
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker1.Location = New System.Drawing.Point(607, 246)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.DateTimePicker1.Size = New System.Drawing.Size(468, 22)
-        Me.DateTimePicker1.TabIndex = 9
+        Me.DateTimePicker1.Size = New System.Drawing.Size(159, 22)
+        Me.DateTimePicker1.TabIndex = 10
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(154, 35)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(134, 17)
+        Me.Label9.TabIndex = 58
+        Me.Label9.Text = "TIPO DOCUMENTO"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(298, 32)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(174, 24)
+        Me.ComboBox1.TabIndex = 1
         '
         'FRM_CLIENTE_CRUD
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(807, 307)
+        Me.ClientSize = New System.Drawing.Size(807, 301)
         Me.ControlBox = False
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox1)
@@ -284,4 +314,6 @@ Partial Class FRM_CLIENTE_CRUD
     Friend WithEvents RB_NARUTAL As RadioButton
     Friend WithEvents Label1 As Label
     Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents Label9 As Label
+    Friend WithEvents ComboBox1 As ComboBox
 End Class

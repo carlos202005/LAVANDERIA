@@ -62,10 +62,7 @@ Public Class DAPromocion_Det
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
-
-            cmd.Parameters.AddWithValue("@id_promodet", dts.gid_promodet)
-            cmd.Parameters.AddWithValue("@id_promocion", dts.gid_promocion)
-
+            cmd.Parameters.AddWithValue("@id_promocion_det", dts.gid_promodet)
 
             If cmd.ExecuteNonQuery Then
                 Return True

@@ -40,6 +40,7 @@ Public Class FRM_SERVICIOS
 
     Private Sub FRM_SERVICIOS_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CARGARDATAGRIDVIEW()
+        DGV_SERVICIOS.Columns.Item(0).Visible = False
     End Sub
 
     Private Sub BTN_VER_Click(sender As Object, e As EventArgs) Handles BTN_VER.Click
@@ -48,6 +49,10 @@ Public Class FRM_SERVICIOS
             VARIABLES_GLOBALES.ID_SERVICIO = CODIGO
             FRM_INSERTAR_SERVICIOS.BTN_NUEVO.Enabled = False
             FRM_INSERTAR_SERVICIOS.BTN_NUEVO.Visible = False
+            FRM_INSERTAR_SERVICIOS.TXT_CODIGO.Enabled = False
+            FRM_INSERTAR_SERVICIOS.TXT_NOMBRE.Enabled = False
+            FRM_INSERTAR_SERVICIOS.TXT_PRECIO1.Enabled = False
+            FRM_INSERTAR_SERVICIOS.TXT_PRECIO2.Enabled = False
             FRM_INSERTAR_SERVICIOS.Show()
             Me.Close()
         End If
@@ -68,7 +73,6 @@ Public Class FRM_SERVICIOS
             End If
         End If
     End Sub
-
 
     Sub CARGAR_SERVICIOS_NOMBRE()
         Try
@@ -107,5 +111,7 @@ Public Class FRM_SERVICIOS
         If RB_NOMBRE.Checked = True Then
             CARGAR_SERVICIOS_NOMBRE()
         End If
+
     End Sub
+
 End Class

@@ -109,7 +109,8 @@
     End Sub
 
     Private Sub FRM_PRINCIPAL_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Me.Location = Screen.PrimaryScreen.WorkingArea.Location
+        Me.Size = Screen.PrimaryScreen.WorkingArea.Size
     End Sub
 
     Private Sub ToolStripButton8_Click(sender As Object, e As EventArgs) Handles ToolStripButton8.Click

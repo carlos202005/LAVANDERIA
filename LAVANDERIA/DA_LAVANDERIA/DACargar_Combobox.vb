@@ -23,6 +23,23 @@ Public Class DACargar_Combobox
         End With
     End Sub
 
+
+    Sub cargarTipoDocumento(ByVal com As ComboBox)
+        With cmd
+            .CommandType = CommandType.Text
+            .CommandText = "select * from Tabla_tipo where id_padre = 39"
+            .Connection = Cn
+        End With
+        Da.SelectCommand = cmd
+        Dt = New DataTable
+        Da.Fill(Dt)
+        With com
+            .DataSource = Dt
+            .DisplayMember = "valor"
+            .ValueMember = "id_tabla"
+        End With
+    End Sub
+
     Sub cargarSucursal(ByVal com As ComboBox)
         With cmd
             .CommandType = CommandType.Text

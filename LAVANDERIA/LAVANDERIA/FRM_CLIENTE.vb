@@ -46,6 +46,7 @@ Public Class FRM_CLIENTE
 
     Private Sub FRM_CLIENTE_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CARGARDATAGRIDVIEW()
+        DGV_CLIENTES.Columns.Item(0).Visible = False
     End Sub
 
     Sub CARGARDATAGRIDVIEW()
@@ -68,6 +69,17 @@ Public Class FRM_CLIENTE
             VARIABLES_GLOBALES.ID_CLIENTE = CODIGO
             FRM_CLIENTE_CRUD.Button1.Enabled = False
             FRM_CLIENTE_CRUD.Button1.Visible = False
+            FRM_CLIENTE_CRUD.TXT_APELLIDOS_MAT.Enabled = False
+            FRM_CLIENTE_CRUD.TXT_APELLIDOS_PAT.Enabled = False
+            FRM_CLIENTE_CRUD.TXT_CELULAR.Enabled = False
+            FRM_CLIENTE_CRUD.TXT_CORREO.Enabled = False
+            FRM_CLIENTE_CRUD.TXT_DOCUMENTO.Enabled = False
+            FRM_CLIENTE_CRUD.TXT_NOMBRES.Enabled = False
+            FRM_CLIENTE_CRUD.TXT_TELEFONO.Enabled = False
+            FRM_CLIENTE_CRUD.GroupBox1.Enabled = False
+            FRM_CLIENTE_CRUD.DateTimePicker1.Enabled = False
+            FRM_CLIENTE_CRUD.ComboBox1.Enabled = False
+
             FRM_CLIENTE_CRUD.Show()
             Me.Close()
         End If

@@ -12,6 +12,7 @@
     Dim usu_mod As Integer
     Dim usu_eli As Integer
     Dim id_tipo As Integer
+    Dim id_tipdocumento As Integer
 
     Public Property gid_cli
         Get
@@ -131,12 +132,21 @@
         End Set
     End Property
 
+    Public Property gid_tipdocumento
+        Get
+            Return id_tipdocumento
+        End Get
+        Set(value)
+            id_tipdocumento = value
+        End Set
+    End Property
+
     Public Sub New()
 
     End Sub
 
 
-    Public Sub New(ByVal id_cli As Integer, ByVal nom_cli As String, ByVal apepat_cli As String, ByVal apemat_cli As String, ByVal correo As String, ByVal dni As String, ByVal celular As String, ByVal fec_nacimiento As String, ByVal telefono As String, ByVal usu_reg As Integer, ByVal usu_mod As Integer, ByVal usu_eli As Integer, ByVal id_tipo As Integer)
+    Public Sub New(ByVal id_cli As Integer, ByVal nom_cli As String, ByVal apepat_cli As String, ByVal apemat_cli As String, ByVal correo As String, ByVal dni As String, ByVal celular As String, ByVal fec_nacimiento As String, ByVal telefono As String, ByVal usu_reg As Integer, ByVal usu_mod As Integer, ByVal usu_eli As Integer, ByVal id_tipo As Integer, ByVal id_tipdocumento As Integer)
         gid_cli = id_cli
         gnom_cli = nom_cli
         gapepat_cli = apepat_cli
@@ -150,5 +160,6 @@
         gusu_mod = usu_mod
         gusu_eli = usu_eli
         gid_tipo = id_tipo
+        gid_tipdocumento = id_tipdocumento
     End Sub
 End Class

@@ -106,19 +106,19 @@ Partial Class FRM_PRINCIPAL
         'UsuariosToolStripMenuItem
         '
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(166, 26)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'ClientesToolStripMenuItem
         '
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(166, 26)
         Me.ClientesToolStripMenuItem.Text = "Clientes"
         '
         'ProveedoresToolStripMenuItem
         '
         Me.ProveedoresToolStripMenuItem.Name = "ProveedoresToolStripMenuItem"
-        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(166, 26)
         Me.ProveedoresToolStripMenuItem.Text = "Proveedores"
         '
         'ComprasToolStripMenuItem
@@ -131,7 +131,7 @@ Partial Class FRM_PRINCIPAL
         'RecibosToolStripMenuItem
         '
         Me.RecibosToolStripMenuItem.Name = "RecibosToolStripMenuItem"
-        Me.RecibosToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.RecibosToolStripMenuItem.Size = New System.Drawing.Size(136, 26)
         Me.RecibosToolStripMenuItem.Text = "Recibos"
         '
         'CajaToolStripMenuItem
@@ -365,7 +365,6 @@ Partial Class FRM_PRINCIPAL
         Me.Name = "FRM_PRINCIPAL"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "LAVANDERIA"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ToolStrip1.ResumeLayout(False)

@@ -73,4 +73,8 @@ Public Class FRM_GASTOS
             DAConsultas_Completas_Base.cargarDocumento_Pago(VARIABLES_GLOBALES.ID_RECIBOS, TXT_DESCRIPCION, DTP_FECHA_VENCIMIENTO, TXT_CODIGO_DOC, TXT_SERIE, TXT_NUMERO, TXT_MONTO, TXT_OBSERVACION, CB_PROVEEDOR, CB_SUCURSAL)
         End If
     End Sub
+
+    Private Sub TXT_SERIE_PreviewKeyDown(sender As Object, e As PreviewKeyDownEventArgs) Handles TXT_SERIE.PreviewKeyDown, TXT_NUMERO.PreviewKeyDown
+        TXT_CODIGO_DOC.Text = TXT_SERIE.Text & "-" & TXT_NUMERO.Text
+    End Sub
 End Class

@@ -1,6 +1,7 @@
 ﻿Imports DA_LAVANDERIA
 Imports BE_LAVANDERIA
 Public Class FRM_INSERTAR_SERVICIOS
+
     Private Sub BTN_SALIR_Click(sender As Object, e As EventArgs) Handles BTN_SALIR.Click
         VARIABLES_GLOBALES.ID_SERVICIO = Nothing
         FRM_SERVICIOS.Show()
@@ -8,6 +9,13 @@ Public Class FRM_INSERTAR_SERVICIOS
     End Sub
 
     Private Sub FRM_INSERTAR_SERVICIOS_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim r As New Globalization.CultureInfo("es-ES")
+        r.NumberFormat.CurrencyDecimalSeparator = "."
+
+        r.NumberFormat.NumberDecimalSeparator = "."
+
+        System.Threading.Thread.CurrentThread.CurrentCulture = r
+
         Dim DAConsultas_Base As New DAConsultas_Base
         Dim DACargar_Combobox As New DACargar_Combobox
         Dim DAConsultas_Completas_Base As New DAConsultas_Completas_Base
@@ -28,7 +36,22 @@ Public Class FRM_INSERTAR_SERVICIOS
             DAConsultas_Completas_Base.cargarServicios(DAConsultas_Base.mostrar_Id_Servicio(VARIABLES_GLOBALES.ID_SERVICIO), TXT_CODIGO, TXT_NOMBRE, TXT_PRECIO1, TXT_PRECIO2, CB_MEDIDA, CB_TIPO)
         End If
 
+        LBL_IGV.Text = DAConsultas_Base.mostrarIGV & "% "
 
+    End Sub
+
+    Public Sub NumerosyDecimal(ByVal CajaTexto As TextBox, ByVal e As System.Windows.Forms.KeyPressEventArgs)
+        If Char.IsDigit(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+        ElseIf e.KeyChar = "." And Not CajaTexto.Text.IndexOf(".") Then
+            e.Handled = True
+        ElseIf e.KeyChar = "." Then
+            e.Handled = False
+        Else
+            e.Handled = True
+        End If
     End Sub
 
     Private Sub BTN_NUEVO_Click(sender As Object, e As EventArgs) Handles BTN_NUEVO.Click
@@ -80,6 +103,24 @@ Public Class FRM_INSERTAR_SERVICIOS
         TXT_PRECIO2.Text = ""
         CB_MEDIDA.SelectedIndex = 0
         CB_TIPO.SelectedIndex = 0
+    End Sub
+
+    Private Sub TXT_PRECIO1_Leave(sender As Object, e As EventArgs) Handles TXT_PRECIO1.Leave
+        Dim DAConsultas_Base As New DAConsultas_Base
+        LBL_PRECIO_1.Text = ((Double.Parse(DAConsultas_Base.mostrarIGV) / 100) + 1) * Double.Parse(TXT_PRECIO1.Text)
+    End Sub
+
+    Private Sub TXT_PRECIO2_Leave(sender As Object, e As EventArgs) Handles TXT_PRECIO2.Leave
+        Dim DAConsultas_Base As New DAConsultas_Base
+        LBL_PRECIO_2.Text = ((Double.Parse(DAConsultas_Base.mostrarIGV) / 100) + 1) * Double.Parse(TXT_PRECIO2.Text)
+    End Sub
+
+    Private Sub TXT_PRECIO2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TXT_PRECIO2.KeyPress
+        NumerosyDecimal(TXT_PRECIO2, e)
+    End Sub
+
+    Private Sub TXT_PRECIO1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TXT_PRECIO1.KeyPress
+        NumerosyDecimal(TXT_PRECIO1, e)
     End Sub
 
 End Class

@@ -21,6 +21,24 @@ Public Class DAConsultas_Base
         End Try
     End Function
 
+    Public Function mostrarId_Promocion_Detalle(ByVal mostrarId_Promocion_Det As Integer) As Integer
+        Try
+            Conectar()
+            cmd = New SqlCommand("select id_promodet from promocion_det where id_promodet='" & mostrarId_Promocion_Det & "'")
+            cmd.CommandType = CommandType.Text
+            cmd.Connection = cnn
+
+            Dim da As Integer
+            da = cmd.ExecuteScalar()
+            Return da
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            Desconectar()
+        End Try
+    End Function
+
     Public Function mostrarId_Servicio_Ultima() As String
         Try
             Conectar()
@@ -155,6 +173,24 @@ Public Class DAConsultas_Base
             cmd.Connection = cnn
 
             Dim da As String
+            da = cmd.ExecuteScalar()
+            Return da
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            Desconectar()
+        End Try
+    End Function
+
+    Public Function mostrarIGV() As Integer
+        Try
+            Conectar()
+            cmd = New SqlCommand("select valor from Tabla_tipo where id_padre=33")
+            cmd.CommandType = CommandType.Text
+            cmd.Connection = cnn
+
+            Dim da As Integer
             da = cmd.ExecuteScalar()
             Return da
         Catch ex As Exception

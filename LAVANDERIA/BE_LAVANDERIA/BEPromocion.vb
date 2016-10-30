@@ -108,4 +108,5 @@
         gusu_mod = usu_mod
         gusu_eli = usu_eli
     End Sub
+
 End Class
