@@ -46,6 +46,7 @@ Partial Class FRM_GASTOS
         '
         'TXT_SERIE
         '
+        Me.TXT_SERIE.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_SERIE.Location = New System.Drawing.Point(144, 59)
         Me.TXT_SERIE.MaxLength = 4
         Me.TXT_SERIE.Name = "TXT_SERIE"
@@ -63,9 +64,10 @@ Partial Class FRM_GASTOS
         '
         'TXT_CODIGO_DOC
         '
+        Me.TXT_CODIGO_DOC.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_CODIGO_DOC.Enabled = False
         Me.TXT_CODIGO_DOC.Location = New System.Drawing.Point(144, 99)
-        Me.TXT_CODIGO_DOC.MaxLength = 30
+        Me.TXT_CODIGO_DOC.MaxLength = 20
         Me.TXT_CODIGO_DOC.Name = "TXT_CODIGO_DOC"
         Me.TXT_CODIGO_DOC.Size = New System.Drawing.Size(407, 22)
         Me.TXT_CODIGO_DOC.TabIndex = 2
@@ -81,7 +83,9 @@ Partial Class FRM_GASTOS
         '
         'TXT_DESCRIPCION
         '
+        Me.TXT_DESCRIPCION.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_DESCRIPCION.Location = New System.Drawing.Point(144, 141)
+        Me.TXT_DESCRIPCION.MaxLength = 100
         Me.TXT_DESCRIPCION.Multiline = True
         Me.TXT_DESCRIPCION.Name = "TXT_DESCRIPCION"
         Me.TXT_DESCRIPCION.Size = New System.Drawing.Size(407, 70)
@@ -98,6 +102,7 @@ Partial Class FRM_GASTOS
         '
         'TXT_NUMERO
         '
+        Me.TXT_NUMERO.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_NUMERO.Location = New System.Drawing.Point(414, 61)
         Me.TXT_NUMERO.MaxLength = 8
         Me.TXT_NUMERO.Name = "TXT_NUMERO"
@@ -132,6 +137,7 @@ Partial Class FRM_GASTOS
         '
         'TXT_MONTO
         '
+        Me.TXT_MONTO.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_MONTO.Location = New System.Drawing.Point(414, 232)
         Me.TXT_MONTO.MaxLength = 6
         Me.TXT_MONTO.Name = "TXT_MONTO"
@@ -149,7 +155,9 @@ Partial Class FRM_GASTOS
         '
         'TXT_OBSERVACION
         '
+        Me.TXT_OBSERVACION.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_OBSERVACION.Location = New System.Drawing.Point(144, 316)
+        Me.TXT_OBSERVACION.MaxLength = 100
         Me.TXT_OBSERVACION.Multiline = True
         Me.TXT_OBSERVACION.Name = "TXT_OBSERVACION"
         Me.TXT_OBSERVACION.Size = New System.Drawing.Size(407, 70)

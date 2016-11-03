@@ -160,7 +160,7 @@ Public Class FRM_PROMOCIONES
 
             For n = 0 To DGVPROMOCIONES.Rows.Count - 1
                 If DGVPROMOCIONES.Item(0, n).Value <> Nothing Then
-                    If DAConsultas_Base.mostrarId_Promocion_Detalle(DGVPROMOCIONES.Item(0, n).Value) = Nothing Then
+                    If DAConsultas_Base.mostrarId_Promocion_Detalle(DGVPROMOCIONES.Item(0, n).Value) <> Nothing Then
                         BEPromocion_Det.gid_serv = DGVPROMOCIONES.Item(0, n).Value
                         BEPromocion_Det.gcantserv = DGVPROMOCIONES.Item(2, n).Value
                         BEPromocion_Det.gid_servbono = DGVPROMOCIONES.Item(3, n).Value
@@ -170,7 +170,6 @@ Public Class FRM_PROMOCIONES
                         Else
                             MsgBox("ERROR AL ACTUALIZAR LA PROMOCION...")
                         End If
-
                     Else
                         If DGVPROMOCIONES2.Enabled = True Then
                             BEPromocion_Det.gid_serv = DGVPROMOCIONES2.Item(0, n).Value

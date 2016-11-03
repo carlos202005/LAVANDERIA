@@ -1,6 +1,7 @@
 ﻿Imports BE_LAVANDERIA
 Imports DA_LAVANDERIA
 Public Class FRM_GASTOS
+
     Private Sub BTN_SALIR_Click(sender As Object, e As EventArgs) Handles BTN_SALIR.Click
         VARIABLES_GLOBALES.ID_RECIBOS = Nothing
         FRM_RECIBOS.Show()
@@ -77,4 +78,23 @@ Public Class FRM_GASTOS
     Private Sub TXT_SERIE_PreviewKeyDown(sender As Object, e As PreviewKeyDownEventArgs) Handles TXT_SERIE.PreviewKeyDown, TXT_NUMERO.PreviewKeyDown
         TXT_CODIGO_DOC.Text = TXT_SERIE.Text & "-" & TXT_NUMERO.Text
     End Sub
+
+    Private Sub TXT_MONTO_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TXT_MONTO.KeyPress
+        NumerosyDecimal(TXT_MONTO, e)
+    End Sub
+
+    Public Sub NumerosyDecimal(ByVal CajaTexto As TextBox, ByVal e As System.Windows.Forms.KeyPressEventArgs)
+        If Char.IsDigit(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+        ElseIf e.KeyChar = "." And Not CajaTexto.Text.IndexOf(".") Then
+            e.Handled = True
+        ElseIf e.KeyChar = "." Then
+            e.Handled = False
+        Else
+            e.Handled = True
+        End If
+    End Sub
+
 End Class

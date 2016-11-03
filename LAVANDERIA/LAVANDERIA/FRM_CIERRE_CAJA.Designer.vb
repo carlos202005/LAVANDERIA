@@ -48,7 +48,7 @@ Partial Class FRM_CIERRE_CAJA
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.Button2.Location = New System.Drawing.Point(205, 276)
+        Me.Button2.Location = New System.Drawing.Point(12, 164)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(100, 85)
         Me.Button2.TabIndex = 1
@@ -61,7 +61,7 @@ Partial Class FRM_CIERRE_CAJA
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.Button1.Location = New System.Drawing.Point(69, 276)
+        Me.Button1.Location = New System.Drawing.Point(12, 14)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(100, 85)
         Me.Button1.TabIndex = 0
@@ -72,7 +72,7 @@ Partial Class FRM_CIERRE_CAJA
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(197, 225)
+        Me.Label15.Location = New System.Drawing.Point(315, 224)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(108, 17)
         Me.Label15.TabIndex = 34
@@ -81,7 +81,7 @@ Partial Class FRM_CIERRE_CAJA
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(167, 225)
+        Me.Label16.Location = New System.Drawing.Point(285, 224)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(24, 17)
         Me.Label16.TabIndex = 33
@@ -91,7 +91,7 @@ Partial Class FRM_CIERRE_CAJA
         '
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(32, 225)
+        Me.Label17.Location = New System.Drawing.Point(150, 224)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(64, 17)
         Me.Label17.TabIndex = 32
@@ -100,7 +100,7 @@ Partial Class FRM_CIERRE_CAJA
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(197, 189)
+        Me.Label12.Location = New System.Drawing.Point(315, 188)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(111, 17)
         Me.Label12.TabIndex = 31
@@ -109,7 +109,7 @@ Partial Class FRM_CIERRE_CAJA
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(167, 189)
+        Me.Label13.Location = New System.Drawing.Point(285, 188)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(24, 17)
         Me.Label13.TabIndex = 30
@@ -119,7 +119,7 @@ Partial Class FRM_CIERRE_CAJA
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(32, 189)
+        Me.Label14.Location = New System.Drawing.Point(150, 188)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(118, 17)
         Me.Label14.TabIndex = 29
@@ -128,7 +128,7 @@ Partial Class FRM_CIERRE_CAJA
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(197, 154)
+        Me.Label9.Location = New System.Drawing.Point(315, 153)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(120, 17)
         Me.Label9.TabIndex = 28
@@ -137,7 +137,7 @@ Partial Class FRM_CIERRE_CAJA
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(167, 154)
+        Me.Label10.Location = New System.Drawing.Point(285, 153)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(24, 17)
         Me.Label10.TabIndex = 27
@@ -147,7 +147,7 @@ Partial Class FRM_CIERRE_CAJA
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(32, 154)
+        Me.Label11.Location = New System.Drawing.Point(150, 153)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(72, 17)
         Me.Label11.TabIndex = 26
@@ -156,7 +156,7 @@ Partial Class FRM_CIERRE_CAJA
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(197, 115)
+        Me.Label6.Location = New System.Drawing.Point(315, 114)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(106, 17)
         Me.Label6.TabIndex = 25
@@ -165,7 +165,7 @@ Partial Class FRM_CIERRE_CAJA
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(167, 115)
+        Me.Label7.Location = New System.Drawing.Point(285, 114)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(24, 17)
         Me.Label7.TabIndex = 24
@@ -175,7 +175,7 @@ Partial Class FRM_CIERRE_CAJA
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(32, 115)
+        Me.Label8.Location = New System.Drawing.Point(150, 114)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(79, 17)
         Me.Label8.TabIndex = 23
@@ -184,7 +184,7 @@ Partial Class FRM_CIERRE_CAJA
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(197, 75)
+        Me.Label5.Location = New System.Drawing.Point(315, 74)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(125, 17)
         Me.Label5.TabIndex = 22
@@ -193,7 +193,7 @@ Partial Class FRM_CIERRE_CAJA
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(167, 29)
+        Me.Label3.Location = New System.Drawing.Point(285, 28)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(120, 17)
         Me.Label3.TabIndex = 21
@@ -203,7 +203,7 @@ Partial Class FRM_CIERRE_CAJA
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(32, 29)
+        Me.Label4.Location = New System.Drawing.Point(150, 28)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(58, 17)
         Me.Label4.TabIndex = 20
@@ -212,7 +212,7 @@ Partial Class FRM_CIERRE_CAJA
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(167, 75)
+        Me.Label2.Location = New System.Drawing.Point(285, 74)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(24, 17)
         Me.Label2.TabIndex = 19
@@ -222,7 +222,7 @@ Partial Class FRM_CIERRE_CAJA
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(32, 75)
+        Me.Label1.Location = New System.Drawing.Point(150, 74)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(53, 17)
         Me.Label1.TabIndex = 18
@@ -233,7 +233,7 @@ Partial Class FRM_CIERRE_CAJA
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(382, 403)
+        Me.ClientSize = New System.Drawing.Size(492, 288)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Button1)

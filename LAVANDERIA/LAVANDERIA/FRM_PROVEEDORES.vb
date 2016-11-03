@@ -4,6 +4,7 @@ Imports DA_LAVANDERIA
 Public Class FRM_PROVEEDORES
     Dim CODIGO As Integer = Nothing
     Dim dts As New DataTable
+
     Private Sub BTN_NUEVO_Click(sender As Object, e As EventArgs) Handles BTN_NUEVO.Click
         FRM_PROVEEDORES_CRUD.Show()
         Me.Close()
@@ -87,7 +88,6 @@ Public Class FRM_PROVEEDORES
         End If
     End Sub
 
-
     Sub CARGAR_BUSQUEDA_RAZON_SOCIAL()
         Try
             Dim DACargarDataGridView As New DACargarDataGridView
@@ -102,7 +102,6 @@ Public Class FRM_PROVEEDORES
         End Try
     End Sub
 
-
     Sub CARGAR_BUSQUEDA_RUC()
         Try
             Dim DACargarDataGridView As New DACargarDataGridView
@@ -116,4 +115,5 @@ Public Class FRM_PROVEEDORES
             MsgBox(ex.Message)
         End Try
     End Sub
+
 End Class

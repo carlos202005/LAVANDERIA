@@ -86,6 +86,7 @@ Partial Class FRM_USUARIOS_CRUD
         '
         Me.TXT_APE_MAT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_APE_MAT.Location = New System.Drawing.Point(575, 88)
+        Me.TXT_APE_MAT.MaxLength = 50
         Me.TXT_APE_MAT.Name = "TXT_APE_MAT"
         Me.TXT_APE_MAT.Size = New System.Drawing.Size(150, 22)
         Me.TXT_APE_MAT.TabIndex = 4
@@ -103,6 +104,7 @@ Partial Class FRM_USUARIOS_CRUD
         '
         Me.TXT_APE_PAT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_APE_PAT.Location = New System.Drawing.Point(282, 90)
+        Me.TXT_APE_PAT.MaxLength = 50
         Me.TXT_APE_PAT.Name = "TXT_APE_PAT"
         Me.TXT_APE_PAT.Size = New System.Drawing.Size(164, 22)
         Me.TXT_APE_PAT.TabIndex = 3
@@ -120,6 +122,7 @@ Partial Class FRM_USUARIOS_CRUD
         '
         Me.TXT_NOMBRE.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_NOMBRE.Location = New System.Drawing.Point(282, 55)
+        Me.TXT_NOMBRE.MaxLength = 50
         Me.TXT_NOMBRE.Name = "TXT_NOMBRE"
         Me.TXT_NOMBRE.Size = New System.Drawing.Size(443, 22)
         Me.TXT_NOMBRE.TabIndex = 2
@@ -137,6 +140,7 @@ Partial Class FRM_USUARIOS_CRUD
         '
         Me.TXT_CONTRASENA.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_CONTRASENA.Location = New System.Drawing.Point(575, 250)
+        Me.TXT_CONTRASENA.MaxLength = 20
         Me.TXT_CONTRASENA.Name = "TXT_CONTRASENA"
         Me.TXT_CONTRASENA.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TXT_CONTRASENA.Size = New System.Drawing.Size(150, 22)
@@ -146,6 +150,7 @@ Partial Class FRM_USUARIOS_CRUD
         '
         Me.TXT_USUARIO.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_USUARIO.Location = New System.Drawing.Point(282, 250)
+        Me.TXT_USUARIO.MaxLength = 20
         Me.TXT_USUARIO.Name = "TXT_USUARIO"
         Me.TXT_USUARIO.Size = New System.Drawing.Size(164, 22)
         Me.TXT_USUARIO.TabIndex = 11
@@ -170,9 +175,9 @@ Partial Class FRM_USUARIOS_CRUD
         '
         'BTN_SALIR
         '
-        Me.BTN_SALIR.Location = New System.Drawing.Point(12, 202)
+        Me.BTN_SALIR.Location = New System.Drawing.Point(12, 180)
         Me.BTN_SALIR.Name = "BTN_SALIR"
-        Me.BTN_SALIR.Size = New System.Drawing.Size(111, 68)
+        Me.BTN_SALIR.Size = New System.Drawing.Size(111, 90)
         Me.BTN_SALIR.TabIndex = 14
         Me.BTN_SALIR.Text = "SALIR"
         Me.BTN_SALIR.UseVisualStyleBackColor = True
@@ -181,7 +186,7 @@ Partial Class FRM_USUARIOS_CRUD
         '
         Me.BTN_ACEPTAR.Location = New System.Drawing.Point(12, 17)
         Me.BTN_ACEPTAR.Name = "BTN_ACEPTAR"
-        Me.BTN_ACEPTAR.Size = New System.Drawing.Size(111, 68)
+        Me.BTN_ACEPTAR.Size = New System.Drawing.Size(111, 93)
         Me.BTN_ACEPTAR.TabIndex = 13
         Me.BTN_ACEPTAR.Text = "ACEPTAR"
         Me.BTN_ACEPTAR.UseVisualStyleBackColor = True
@@ -190,6 +195,7 @@ Partial Class FRM_USUARIOS_CRUD
         '
         Me.TXT_PERFIL.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_PERFIL.Location = New System.Drawing.Point(282, 212)
+        Me.TXT_PERFIL.MaxLength = 50
         Me.TXT_PERFIL.Name = "TXT_PERFIL"
         Me.TXT_PERFIL.Size = New System.Drawing.Size(164, 22)
         Me.TXT_PERFIL.TabIndex = 10

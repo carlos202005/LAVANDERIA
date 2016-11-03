@@ -37,7 +37,7 @@ Partial Class FRM_APERTURA_CAJA
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.Button2.Location = New System.Drawing.Point(186, 173)
+        Me.Button2.Location = New System.Drawing.Point(12, 116)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(100, 88)
         Me.Button2.TabIndex = 3
@@ -50,7 +50,7 @@ Partial Class FRM_APERTURA_CAJA
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.Button1.Location = New System.Drawing.Point(49, 173)
+        Me.Button1.Location = New System.Drawing.Point(12, 12)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(100, 88)
         Me.Button1.TabIndex = 2
@@ -61,7 +61,7 @@ Partial Class FRM_APERTURA_CAJA
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(154, 76)
+        Me.Label5.Location = New System.Drawing.Point(268, 87)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(110, 17)
         Me.Label5.TabIndex = 14
@@ -71,7 +71,7 @@ Partial Class FRM_APERTURA_CAJA
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(32, 76)
+        Me.Label6.Location = New System.Drawing.Point(146, 87)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(77, 17)
         Me.Label6.TabIndex = 13
@@ -80,7 +80,7 @@ Partial Class FRM_APERTURA_CAJA
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(154, 35)
+        Me.Label3.Location = New System.Drawing.Point(268, 46)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(120, 17)
         Me.Label3.TabIndex = 12
@@ -90,7 +90,7 @@ Partial Class FRM_APERTURA_CAJA
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(32, 35)
+        Me.Label4.Location = New System.Drawing.Point(146, 46)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(58, 17)
         Me.Label4.TabIndex = 11
@@ -98,7 +98,7 @@ Partial Class FRM_APERTURA_CAJA
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(157, 121)
+        Me.TextBox1.Location = New System.Drawing.Point(271, 132)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(129, 22)
         Me.TextBox1.TabIndex = 10
@@ -107,7 +107,7 @@ Partial Class FRM_APERTURA_CAJA
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(32, 121)
+        Me.Label1.Location = New System.Drawing.Point(146, 132)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(53, 17)
         Me.Label1.TabIndex = 9
@@ -118,7 +118,7 @@ Partial Class FRM_APERTURA_CAJA
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(332, 303)
+        Me.ClientSize = New System.Drawing.Size(437, 218)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label5)

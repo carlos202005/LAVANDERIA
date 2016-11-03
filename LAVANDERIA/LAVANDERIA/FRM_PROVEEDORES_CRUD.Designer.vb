@@ -39,7 +39,8 @@ Partial Class FRM_PROVEEDORES_CRUD
         'TXT_CORREO
         '
         Me.TXT_CORREO.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TXT_CORREO.Location = New System.Drawing.Point(150, 157)
+        Me.TXT_CORREO.Location = New System.Drawing.Point(279, 172)
+        Me.TXT_CORREO.MaxLength = 50
         Me.TXT_CORREO.Name = "TXT_CORREO"
         Me.TXT_CORREO.Size = New System.Drawing.Size(443, 22)
         Me.TXT_CORREO.TabIndex = 43
@@ -47,7 +48,7 @@ Partial Class FRM_PROVEEDORES_CRUD
         'Label23
         '
         Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(30, 160)
+        Me.Label23.Location = New System.Drawing.Point(159, 175)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(68, 17)
         Me.Label23.TabIndex = 42
@@ -56,16 +57,16 @@ Partial Class FRM_PROVEEDORES_CRUD
         'TXT_TELEFONO
         '
         Me.TXT_TELEFONO.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TXT_TELEFONO.Location = New System.Drawing.Point(150, 112)
+        Me.TXT_TELEFONO.Location = New System.Drawing.Point(562, 127)
         Me.TXT_TELEFONO.MaxLength = 9
         Me.TXT_TELEFONO.Name = "TXT_TELEFONO"
-        Me.TXT_TELEFONO.Size = New System.Drawing.Size(192, 22)
+        Me.TXT_TELEFONO.Size = New System.Drawing.Size(160, 22)
         Me.TXT_TELEFONO.TabIndex = 41
         '
         'Label24
         '
         Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(30, 115)
+        Me.Label24.Location = New System.Drawing.Point(455, 130)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(83, 17)
         Me.Label24.TabIndex = 40
@@ -74,7 +75,7 @@ Partial Class FRM_PROVEEDORES_CRUD
         'TXT_CELULAR
         '
         Me.TXT_CELULAR.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TXT_CELULAR.Location = New System.Drawing.Point(439, 71)
+        Me.TXT_CELULAR.Location = New System.Drawing.Point(279, 125)
         Me.TXT_CELULAR.MaxLength = 9
         Me.TXT_CELULAR.Name = "TXT_CELULAR"
         Me.TXT_CELULAR.Size = New System.Drawing.Size(154, 22)
@@ -83,7 +84,7 @@ Partial Class FRM_PROVEEDORES_CRUD
         'Label25
         '
         Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(362, 76)
+        Me.Label25.Location = New System.Drawing.Point(159, 130)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(71, 17)
         Me.Label25.TabIndex = 38
@@ -92,16 +93,16 @@ Partial Class FRM_PROVEEDORES_CRUD
         'TXT_RUC
         '
         Me.TXT_RUC.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TXT_RUC.Location = New System.Drawing.Point(150, 71)
+        Me.TXT_RUC.Location = New System.Drawing.Point(279, 86)
         Me.TXT_RUC.MaxLength = 11
         Me.TXT_RUC.Name = "TXT_RUC"
-        Me.TXT_RUC.Size = New System.Drawing.Size(192, 22)
+        Me.TXT_RUC.Size = New System.Drawing.Size(443, 22)
         Me.TXT_RUC.TabIndex = 37
         '
         'Label26
         '
         Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(30, 74)
+        Me.Label26.Location = New System.Drawing.Point(159, 89)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(37, 17)
         Me.Label26.TabIndex = 36
@@ -110,7 +111,8 @@ Partial Class FRM_PROVEEDORES_CRUD
         'TXT_RAZON_SOCIAL
         '
         Me.TXT_RAZON_SOCIAL.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TXT_RAZON_SOCIAL.Location = New System.Drawing.Point(150, 30)
+        Me.TXT_RAZON_SOCIAL.Location = New System.Drawing.Point(279, 45)
+        Me.TXT_RAZON_SOCIAL.MaxLength = 100
         Me.TXT_RAZON_SOCIAL.Name = "TXT_RAZON_SOCIAL"
         Me.TXT_RAZON_SOCIAL.Size = New System.Drawing.Size(443, 22)
         Me.TXT_RAZON_SOCIAL.TabIndex = 35
@@ -118,7 +120,7 @@ Partial Class FRM_PROVEEDORES_CRUD
         'Label27
         '
         Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(30, 33)
+        Me.Label27.Location = New System.Drawing.Point(159, 48)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(110, 17)
         Me.Label27.TabIndex = 34
@@ -126,7 +128,7 @@ Partial Class FRM_PROVEEDORES_CRUD
         '
         'BTN_SALIR
         '
-        Me.BTN_SALIR.Location = New System.Drawing.Point(346, 198)
+        Me.BTN_SALIR.Location = New System.Drawing.Point(12, 136)
         Me.BTN_SALIR.Name = "BTN_SALIR"
         Me.BTN_SALIR.Size = New System.Drawing.Size(111, 89)
         Me.BTN_SALIR.TabIndex = 57
@@ -135,7 +137,7 @@ Partial Class FRM_PROVEEDORES_CRUD
         '
         'BTN_ACEPTAR
         '
-        Me.BTN_ACEPTAR.Location = New System.Drawing.Point(191, 198)
+        Me.BTN_ACEPTAR.Location = New System.Drawing.Point(12, 12)
         Me.BTN_ACEPTAR.Name = "BTN_ACEPTAR"
         Me.BTN_ACEPTAR.Size = New System.Drawing.Size(111, 89)
         Me.BTN_ACEPTAR.TabIndex = 56
@@ -146,7 +148,7 @@ Partial Class FRM_PROVEEDORES_CRUD
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(610, 299)
+        Me.ClientSize = New System.Drawing.Size(774, 234)
         Me.Controls.Add(Me.BTN_SALIR)
         Me.Controls.Add(Me.BTN_ACEPTAR)
         Me.Controls.Add(Me.TXT_CORREO)

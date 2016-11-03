@@ -1,6 +1,7 @@
 ﻿Imports BE_LAVANDERIA
 Imports DA_LAVANDERIA
 Public Class FRM_USUARIOS_CRUD
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BTN_ACEPTAR.Click
         Dim BEEmpleado As New BEEmpleado
         Dim BEPerfil As New BEPerfil
@@ -78,4 +79,25 @@ Public Class FRM_USUARIOS_CRUD
         FRM_USUARIOS.Show()
         Me.Close()
     End Sub
+
+    Private Sub TXT_DNI_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TXT_DNI.KeyPress, TXT_CELULAR.KeyPress
+        If Char.IsDigit(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+        Else
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TXT_NOMBRE_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TXT_NOMBRE.KeyPress, TXT_APE_PAT.KeyPress, TXT_APE_MAT.KeyPress
+        If Char.IsLetter(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+        Else
+            e.Handled = True
+        End If
+    End Sub
+
 End Class

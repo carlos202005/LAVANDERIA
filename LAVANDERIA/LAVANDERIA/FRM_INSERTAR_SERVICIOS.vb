@@ -123,4 +123,14 @@ Public Class FRM_INSERTAR_SERVICIOS
         NumerosyDecimal(TXT_PRECIO1, e)
     End Sub
 
+    Private Sub TXT_NOMBRE_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TXT_NOMBRE.KeyPress
+        If Char.IsLetter(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+        Else
+            e.Handled = True
+        End If
+    End Sub
+
 End Class

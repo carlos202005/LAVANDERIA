@@ -87,4 +87,14 @@ Public Class FRM_CLIENTE_CRUD
         End If
     End Sub
 
+    Private Sub TXT_DOCUMENTO_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TXT_TELEFONO.KeyPress, TXT_DOCUMENTO.KeyPress, TXT_CELULAR.KeyPress
+        If Char.IsDigit(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+        Else
+            e.Handled = True
+        End If
+    End Sub
+
 End Class

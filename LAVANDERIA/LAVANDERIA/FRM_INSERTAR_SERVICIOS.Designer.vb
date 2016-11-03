@@ -46,7 +46,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         '
         'BTN_SALIR
         '
-        Me.BTN_SALIR.Location = New System.Drawing.Point(283, 243)
+        Me.BTN_SALIR.Location = New System.Drawing.Point(12, 138)
         Me.BTN_SALIR.Name = "BTN_SALIR"
         Me.BTN_SALIR.Size = New System.Drawing.Size(100, 83)
         Me.BTN_SALIR.TabIndex = 9
@@ -56,7 +56,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         '
         'BTN_NUEVO
         '
-        Me.BTN_NUEVO.Location = New System.Drawing.Point(172, 243)
+        Me.BTN_NUEVO.Location = New System.Drawing.Point(12, 12)
         Me.BTN_NUEVO.Name = "BTN_NUEVO"
         Me.BTN_NUEVO.Size = New System.Drawing.Size(100, 83)
         Me.BTN_NUEVO.TabIndex = 8
@@ -66,7 +66,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         '
         'TXT_PRECIO2
         '
-        Me.TXT_PRECIO2.Location = New System.Drawing.Point(124, 148)
+        Me.TXT_PRECIO2.Location = New System.Drawing.Point(261, 151)
         Me.TXT_PRECIO2.MaxLength = 10
         Me.TXT_PRECIO2.Name = "TXT_PRECIO2"
         Me.TXT_PRECIO2.Size = New System.Drawing.Size(153, 22)
@@ -75,7 +75,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(30, 151)
+        Me.Label5.Location = New System.Drawing.Point(167, 154)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(71, 17)
         Me.Label5.TabIndex = 36
@@ -83,7 +83,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         '
         'TXT_PRECIO1
         '
-        Me.TXT_PRECIO1.Location = New System.Drawing.Point(124, 104)
+        Me.TXT_PRECIO1.Location = New System.Drawing.Point(261, 107)
         Me.TXT_PRECIO1.MaxLength = 10
         Me.TXT_PRECIO1.Name = "TXT_PRECIO1"
         Me.TXT_PRECIO1.Size = New System.Drawing.Size(153, 22)
@@ -92,7 +92,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(30, 107)
+        Me.Label4.Location = New System.Drawing.Point(167, 110)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(71, 17)
         Me.Label4.TabIndex = 34
@@ -100,7 +100,9 @@ Partial Class FRM_INSERTAR_SERVICIOS
         '
         'TXT_NOMBRE
         '
-        Me.TXT_NOMBRE.Location = New System.Drawing.Point(124, 57)
+        Me.TXT_NOMBRE.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TXT_NOMBRE.Location = New System.Drawing.Point(261, 60)
+        Me.TXT_NOMBRE.MaxLength = 150
         Me.TXT_NOMBRE.Name = "TXT_NOMBRE"
         Me.TXT_NOMBRE.Size = New System.Drawing.Size(405, 22)
         Me.TXT_NOMBRE.TabIndex = 2
@@ -108,7 +110,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(30, 60)
+        Me.Label2.Location = New System.Drawing.Point(167, 63)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(68, 17)
         Me.Label2.TabIndex = 32
@@ -116,8 +118,9 @@ Partial Class FRM_INSERTAR_SERVICIOS
         '
         'TXT_CODIGO
         '
+        Me.TXT_CODIGO.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_CODIGO.Enabled = False
-        Me.TXT_CODIGO.Location = New System.Drawing.Point(124, 19)
+        Me.TXT_CODIGO.Location = New System.Drawing.Point(261, 22)
         Me.TXT_CODIGO.MaxLength = 4
         Me.TXT_CODIGO.Name = "TXT_CODIGO"
         Me.TXT_CODIGO.Size = New System.Drawing.Size(122, 22)
@@ -126,7 +129,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(30, 22)
+        Me.Label1.Location = New System.Drawing.Point(167, 25)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(63, 17)
         Me.Label1.TabIndex = 30
@@ -135,7 +138,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(30, 197)
+        Me.Label6.Location = New System.Drawing.Point(167, 200)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(60, 17)
         Me.Label6.TabIndex = 40
@@ -145,7 +148,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         '
         Me.CB_MEDIDA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CB_MEDIDA.FormattingEnabled = True
-        Me.CB_MEDIDA.Location = New System.Drawing.Point(124, 194)
+        Me.CB_MEDIDA.Location = New System.Drawing.Point(261, 197)
         Me.CB_MEDIDA.Name = "CB_MEDIDA"
         Me.CB_MEDIDA.Size = New System.Drawing.Size(153, 24)
         Me.CB_MEDIDA.TabIndex = 6
@@ -154,7 +157,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         '
         Me.CB_TIPO.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CB_TIPO.FormattingEnabled = True
-        Me.CB_TIPO.Location = New System.Drawing.Point(376, 194)
+        Me.CB_TIPO.Location = New System.Drawing.Point(513, 197)
         Me.CB_TIPO.Name = "CB_TIPO"
         Me.CB_TIPO.Size = New System.Drawing.Size(153, 24)
         Me.CB_TIPO.TabIndex = 7
@@ -162,7 +165,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(299, 197)
+        Me.Label7.Location = New System.Drawing.Point(436, 200)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(40, 17)
         Me.Label7.TabIndex = 42
@@ -171,7 +174,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(299, 107)
+        Me.Label3.Location = New System.Drawing.Point(436, 110)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(65, 17)
         Me.Label3.TabIndex = 43
@@ -180,7 +183,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         'LBL_PRECIO_1
         '
         Me.LBL_PRECIO_1.AutoSize = True
-        Me.LBL_PRECIO_1.Location = New System.Drawing.Point(376, 109)
+        Me.LBL_PRECIO_1.Location = New System.Drawing.Point(513, 112)
         Me.LBL_PRECIO_1.Name = "LBL_PRECIO_1"
         Me.LBL_PRECIO_1.Size = New System.Drawing.Size(13, 17)
         Me.LBL_PRECIO_1.TabIndex = 44
@@ -189,7 +192,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(299, 153)
+        Me.Label9.Location = New System.Drawing.Point(436, 156)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(65, 17)
         Me.Label9.TabIndex = 45
@@ -198,7 +201,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         'LBL_PRECIO_2
         '
         Me.LBL_PRECIO_2.AutoSize = True
-        Me.LBL_PRECIO_2.Location = New System.Drawing.Point(376, 151)
+        Me.LBL_PRECIO_2.Location = New System.Drawing.Point(513, 154)
         Me.LBL_PRECIO_2.Name = "LBL_PRECIO_2"
         Me.LBL_PRECIO_2.Size = New System.Drawing.Size(13, 17)
         Me.LBL_PRECIO_2.TabIndex = 46
@@ -207,7 +210,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(299, 22)
+        Me.Label11.Location = New System.Drawing.Point(436, 25)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(31, 17)
         Me.Label11.TabIndex = 47
@@ -216,7 +219,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         'LBL_IGV
         '
         Me.LBL_IGV.AutoSize = True
-        Me.LBL_IGV.Location = New System.Drawing.Point(376, 22)
+        Me.LBL_IGV.Location = New System.Drawing.Point(513, 25)
         Me.LBL_IGV.Name = "LBL_IGV"
         Me.LBL_IGV.Size = New System.Drawing.Size(13, 17)
         Me.LBL_IGV.TabIndex = 48
@@ -226,7 +229,7 @@ Partial Class FRM_INSERTAR_SERVICIOS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(551, 338)
+        Me.ClientSize = New System.Drawing.Size(682, 253)
         Me.Controls.Add(Me.LBL_IGV)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.LBL_PRECIO_2)

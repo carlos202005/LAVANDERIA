@@ -335,7 +335,7 @@ Partial Class FRM_PROMOCIONES
         Me.DTP_FECHA_FIN.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DTP_FECHA_FIN.Location = New System.Drawing.Point(456, 207)
         Me.DTP_FECHA_FIN.Name = "DTP_FECHA_FIN"
-        Me.DTP_FECHA_FIN.Size = New System.Drawing.Size(156, 22)
+        Me.DTP_FECHA_FIN.Size = New System.Drawing.Size(168, 22)
         Me.DTP_FECHA_FIN.TabIndex = 5
         '
         'DTP_FECHA_INI
@@ -343,7 +343,7 @@ Partial Class FRM_PROMOCIONES
         Me.DTP_FECHA_INI.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DTP_FECHA_INI.Location = New System.Drawing.Point(151, 205)
         Me.DTP_FECHA_INI.Name = "DTP_FECHA_INI"
-        Me.DTP_FECHA_INI.Size = New System.Drawing.Size(170, 22)
+        Me.DTP_FECHA_INI.Size = New System.Drawing.Size(210, 22)
         Me.DTP_FECHA_INI.TabIndex = 4
         '
         'Label4
